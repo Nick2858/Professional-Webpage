@@ -1,14 +1,7 @@
 import "../App.css";
 
 function ProjectsPage() {
-  return (
-    <>
-      <div id="Projects" className="ProjectsPage">
-        {" "}
-        Hello{" "}
-      </div>
-    </>
-  );
+  return <div className="ProjectsPage">Hello</div>;
 }
 
 export default ProjectsPage;

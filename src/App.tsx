@@ -1,3 +1,4 @@
+import "./App.css";
 import LandingPage from "./components/LandingPage";
 import AboutPage from "./components/AboutPage";
 import ProjectsPage from "./components/ProjectsPage";
@@ -20,6 +21,7 @@ function App() {
           to="Home"
           activeClass="activeNavPages"
           spy={true}
+          style={{ color: "white" }}
         >
           {" "}
           Home{" "}
@@ -30,6 +32,7 @@ function App() {
           to="About"
           activeClass="activeNavPages"
           spy={true}
+          style={{ color: "white" }}
         >
           {" "}
           About{" "}
@@ -40,6 +43,7 @@ function App() {
           to="Projects"
           activeClass="activeNavPages"
           spy={true}
+          style={{ color: "white" }}
         >
           {" "}
           Projects{" "}
