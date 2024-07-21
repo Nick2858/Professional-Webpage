@@ -2,6 +2,7 @@ body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;  
     scrollbar-width: none;
+    -webkit-animation-duration: 20.0s;
 
 }
   
@@ -14,7 +15,7 @@ body::-webkit-scrollbar {
     text-align: center;
     overflow:hidden;
     z-index: 1;
-
+    scroll-timeline: 10s;
 }
 
 .Jets{
@@ -35,8 +36,8 @@ body::-webkit-scrollbar {
     
     color: #023047;
     font-size: 10vw;
-    font-weight: 600;
-    margin-top: 40vh;
+    font-weight: 650;
+    margin-top: 30vh;
     z-index: 2;
     opacity: 100%;
     left: 50%;
@@ -58,7 +59,7 @@ body::-webkit-scrollbar {
 
 .Cloud1{
     display:block;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -79,7 +80,7 @@ body::-webkit-scrollbar {
 .Cloud2{
     display:block;
     position: relative;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -99,7 +100,7 @@ body::-webkit-scrollbar {
 .Cloud3{
     display:block;
     position: relative;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -119,7 +120,7 @@ body::-webkit-scrollbar {
 .Cloud4{
     display:block;
     position: relative;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 45vh;
     z-index: 1;
     opacity: 100%;
@@ -140,7 +141,7 @@ body::-webkit-scrollbar {
 .Cloud5{
     display:block;
     position: relative;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -162,7 +163,7 @@ body::-webkit-scrollbar {
 .Cloud6{
     display:block;
     position: relative;
-    margin-top: 40vh;
+    margin-top: 30vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -182,6 +183,7 @@ body::-webkit-scrollbar {
 
 
 .NavBar {
+
     display: table;
     table-layout: fixed;
     width: 100%;
@@ -235,7 +237,7 @@ body::-webkit-scrollbar {
     
     
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     background-color: #f3f3f3;
     
     padding-top: max(70px, 10%);

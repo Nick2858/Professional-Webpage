@@ -11,6 +11,7 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import React, { useState, useEffect } from "react";
 
 function App() {
   return (
@@ -53,7 +54,7 @@ function App() {
       <Element name="Home">
         <LandingPage />
       </Element>
-      <Element name="About">
+      <Element name="About" id="About">
         <AboutPage />
       </Element>
       <Element name="Projects">
