@@ -144,7 +144,19 @@
 .Footer{
     width: 100%;
     height: 200px;
+    padding: 40px;
     background-color: #023047;
-    text-align: center;
+    text-align: left;
 
+}
+
+.Icon{
+    height: 40%;
+    width: fit-content;
+    padding: 10px;
+    opacity: 60%;
+}
+
+.Icon:hover{
+    opacity: 100%;
 }
