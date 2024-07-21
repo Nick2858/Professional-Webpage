@@ -10,10 +10,10 @@ function AboutPage() {
           <p className="PageText">
             Hi I'm Nicholas, a second year Mechanical Engineering Student at the
             University of Toronto. I'm currently a Student Researcher with the
-            Latner Thoracic Research Laboratories studying Computational Fluid
-            Dynamics (CFD) models of airways for various therapeutic
-            applications. My interests include robotics, aerospace,
-            bioengineering, CFD, automotives and programming.
+            Latner Thoracic Research Laboratories working on Computational Fluid
+            Dynamics (CFD) models for lung airways. My interests include
+            robotics, aerospace, bioengineering, CFD, automotives and
+            programming.
           </p>
         </body>
       </div>
