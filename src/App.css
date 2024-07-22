@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 .LandingPage {
     width: 100vw;
-    height: 400vh;
+    height: 200vh;
     background-color: #71cbff;
     position:relative;
     text-align: center;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 .Jets{
     height: 200vh;
     width: fit-content;
-    margin-top: 200vh;
+    margin-top: 100vh;
 
     z-index: 2;
     
@@ -181,6 +181,37 @@ body::-webkit-scrollbar {
     to {margin-top: 40%; margin-left: 60vw;}
 }
 
+.Arrow{
+    display:block;
+    position: relative;
+    margin-top: 30vh;
+    height: 11vh;
+    z-index: 1;
+    opacity: 100%;
+    left: 50%;
+    top: 60vh;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    text-align: center;
+    animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+    to {top: 58vh; height: 11vh}
+}
+
+.Explore{
+    display:block;
+    position: relative;
+    margin-top: 30vh;
+    font-size: 20px;
+    left: 50%;
+    top: 65vh;
+    transform: translate(-50%, -50%);
+    position:fixed;
+    text-align: center;
+    cursor: pointer;
+    }
 
 .NavBar {
 
