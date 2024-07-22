@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 .LandingPage {
     width: 100vw;
-    height: 200vh;
+    height: 250vh;
     background-color: #71cbff;
     position:relative;
     text-align: center;
@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
 
 
 @keyframes nameAnimation {
-    to {margin: 0%;}
+    to {margin: 0%; opacity:-50%; font-size:20vw}
     
 }
 
