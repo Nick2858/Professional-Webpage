@@ -15,7 +15,7 @@ function WorkDisplay({ children }: Props) {
   return (
     <div className="WorkDisplay">
       <img src={children.image} className="WorkImage"></img>
-      <div className="WorkInfo">{children.description}</div>
+      <div className="WorkInfo">{children.jobtitle}</div>
     </div>
   );
 }

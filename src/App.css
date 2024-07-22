@@ -351,6 +351,8 @@ body::-webkit-scrollbar {
     flex-wrap: nowrap;
     justify-content: left;
     align-items: left;
+    gap:1%;
+    
     position:relative;
     height: 25vh;
     width: 100%;
