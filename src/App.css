@@ -190,11 +190,11 @@ body::-webkit-scrollbar {
     z-index: 1;
     opacity: 100%;
     left: 50%;
-    top: 60vh;
+    top: 59vh;
     transform: translate(-50%, -50%);
     position:fixed;
     text-align: center;
-    animation: bounce 3s infinite alternate;
+    animation: bounce 1500ms infinite alternate;
 }
 
 @keyframes bounce {
