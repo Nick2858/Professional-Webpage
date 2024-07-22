@@ -323,7 +323,7 @@ body::-webkit-scrollbar {
     padding-left: 40px;
     flex-grow: 1;
     flex-basis: 450px;
-    width: auto;
+    width: 70%;
     height: auto;
     font-size:40px;
     background-color: transparent;
@@ -345,11 +345,19 @@ body::-webkit-scrollbar {
 
 
 .WorkDisplay{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: left;
     position:relative;
     height: 25vh;
     width: 100%;
     background-color: white;
-    
+    text-align: left;
+    overflow: hidden;
+    padding: 1%;
     box-shadow: 5px 5px 5px 5px rgb(154, 154, 154);
     border-radius: 0px;
     animation: InFromRight linear;
@@ -373,13 +381,26 @@ body::-webkit-scrollbar {
         opacity: 100%;
     }
 
-    90%{
+}   
 
-        opacity: 0%;
-    }
-    100%{
-        opacity: 0%;
-    }
+.WorkImage{
+
+
+    float: left;
+    position:relative;
+    flex-shrink: 1;
+    height: 100%;
+    border-radius: 3px;
+    border:  solid #000000;
+    
+
+}
+
+.WorkInfo{
+    width: auto;
+    height: auto;
+    min-width: 70%;
+    flex-shrink: 1;
 }
 
 .HardSkills{

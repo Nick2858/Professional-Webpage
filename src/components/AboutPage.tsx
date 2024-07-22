@@ -1,5 +1,6 @@
 import "../App.css";
 import WorkDisplay from "./WorkDisplay";
+import Experiences from "../assets/experience.json";
 
 function AboutPage() {
   return (
@@ -22,9 +23,10 @@ function AboutPage() {
           </body>
         </div>
         <h1 className="PageTitle"> Experience</h1>
-        <WorkDisplay text="HI" />
-        <WorkDisplay text="HI" />
-        <WorkDisplay text="HI" />
+        {Experiences.map((experience) => (
+          <WorkDisplay>{experience}</WorkDisplay>
+        ))}
+
         <div className="HardSkills">
           <img className="SkillIcon" src="/SkillLogos/html.webp"></img>
           <img className="SkillIcon" src="/SkillLogos/css.png"></img>

@@ -1,15 +1,21 @@
+import "../App.css";
+
 interface Props {
-  text: string;
+  children: {
+    id: number;
+    jobtitle: string;
+    company: string;
+    date: string;
+    description: string;
+    image: string;
+  };
 }
 
-function WorkDisplay({ text }: Props) {
-  const evenStyle = {};
-
-  const oddStyle = {};
-
+function WorkDisplay({ children }: Props) {
   return (
     <div className="WorkDisplay">
-      <img></img>
+      <img src={children.image} className="WorkImage"></img>
+      <div className="WorkInfo">{children.description}</div>
     </div>
   );
 }
