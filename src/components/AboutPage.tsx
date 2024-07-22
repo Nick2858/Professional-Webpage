@@ -1,21 +1,40 @@
 import "../App.css";
+import WorkDisplay from "./WorkDisplay";
 
 function AboutPage() {
   return (
     <>
       <div id="About" className="AboutPage">
-        <img className="AboutProfile" src="ProfileImage.jpg"></img>
-        <body className="PageInfo">
-          <h1 className="PageTitle">About Me</h1>
-          <p className="PageText">
-            Hi, I'm Nicholas, a second year Mechanical Engineering Student at
-            the University of Toronto. I'm currently working on Computational
-            Fluid Dynamics (CFD) models for lung airways as a Student Researcher
-            with the Latner Thoracic Research Laboratories. My fields of
-            interest include robotics, aerospace, bioengineering, CFD,
-            automotives and programming.
-          </p>
-        </body>
+        <h1 className="PageTitle" style={{ fontSize: "80px" }}>
+          About Me
+        </h1>
+        <div className="AboutMe">
+          <img className="AboutProfile" src="ProfileImage.jpg"></img>
+          <body className="PageInfo">
+            <p className="PageText">
+              Hi, I'm Nicholas, a second year Mechanical Engineering Student at
+              the University of Toronto. I'm currently working on Computational
+              Fluid Dynamics (CFD) models for lung airways as a Student
+              Researcher with the Latner Thoracic Research Laboratories. My
+              fields of interest include robotics, aerospace, bioengineering,
+              CFD, automotives and programming.
+            </p>
+          </body>
+        </div>
+        <h1 className="PageTitle"> Experience</h1>
+        <WorkDisplay text="HI" />
+        <WorkDisplay text="HI" />
+        <WorkDisplay text="HI" />
+        <div className="HardSkills">
+          <img className="SkillIcon" src="/SkillLogos/html.webp"></img>
+          <img className="SkillIcon" src="/SkillLogos/css.png"></img>
+          <img className="SkillIcon" src="/SkillLogos/Javascript.png"></img>
+          <img className="SkillIcon" src="/SkillLogos/react.png"></img>
+          <img className="SkillIcon" src="/SkillLogos/python.png"></img>
+          <img className="SkillIcon" src="/SkillLogos/office.webp"></img>
+          <img className="SkillIcon" src="/SkillLogos/solidworks.png"></img>
+          <img className="SkillIcon" src="/SkillLogos/3dSlicer.png"></img>
+        </div>
       </div>
     </>
   );
