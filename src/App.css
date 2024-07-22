@@ -197,7 +197,7 @@ body::-webkit-scrollbar {
 }
 
 @keyframes bounce {
-    to {top: 58vh; height: 11vh}
+    to {top: 58vh; height: 10vh}
 }
 
 .Explore{
