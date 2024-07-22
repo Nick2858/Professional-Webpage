@@ -9,7 +9,7 @@ function AboutPage() {
         <h1 className="PageTitle" style={{ fontSize: "80px" }}>
           About Me
         </h1>
-        <div className="AboutMe">
+        <div className="AboutMe" style={{ paddingTop: "7vh", gap: "10px" }}>
           <img className="AboutProfile" src="ProfileImage.jpg"></img>
           <body className="PageInfo">
             <p className="PageText">
@@ -22,12 +22,15 @@ function AboutPage() {
             </p>
           </body>
         </div>
-        <h1 className="PageTitle"> Experience</h1>
+        <h1 className="PageTitle" style={{ padding: "7vh" }}>
+          {" "}
+          Experience
+        </h1>
+
         {Experiences.map((experience) => (
           <WorkDisplay>{experience}</WorkDisplay>
         ))}
-
-        <div className="HardSkills">
+        <div className="HardSkills" style={{ padding: "7vh" }}>
           <img className="SkillIcon" src="/SkillLogos/html.webp"></img>
           <img className="SkillIcon" src="/SkillLogos/css.png"></img>
           <img className="SkillIcon" src="/SkillLogos/Javascript.png"></img>

@@ -267,7 +267,7 @@ body::-webkit-scrollbar {
 .AboutPage{
     display: grid;
     grid-template-rows: auto;
-    gap: 7vh;
+    
     z-index: 3;
     
     width: 100%;
@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     text-align: left;
 
     position: relative;
@@ -311,7 +311,7 @@ body::-webkit-scrollbar {
     max-width: min(400px,70%);
     height:fit-content;
     flex-shrink:20;
-
+    box-shadow: 0px 0px 5px 1px rgb(154, 154, 154);
     padding: 0%;
     border: solid black;
     
@@ -336,6 +336,7 @@ body::-webkit-scrollbar {
     font: "Arial";
     font-size: 50px;
     color: #2274A5;
+    
 
 }
 .PageText{
@@ -358,14 +359,13 @@ body::-webkit-scrollbar {
     width: 100%;
     background-color: white;
     text-align: left;
-    overflow-x: scroll;
     padding: 1%;
-    box-shadow: 5px 5px 5px 5px rgb(154, 154, 154);
-    border-radius: 0px;
+    box-shadow: 2px 2px 100px 5px rgb(154, 154, 154);
+    
     animation: InFromRight linear;
     animation-duration: 2s;
     animation-timeline: view();
-    border-radius: 10px;
+    border-radius: 0px;
     border: 1px solid black;
 
     -ms-overflow-style: none;  
@@ -413,7 +413,7 @@ body::-webkit-scrollbar {
 
     flex-basis: 400px;
     flex-grow: 1;
-    width: 1000px;
+    max-width: 1000px;
 
 
 }
