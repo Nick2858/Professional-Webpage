@@ -60,11 +60,11 @@ body::-webkit-scrollbar {
 
 .Cloud1{
     display:block;
-    margin-top: 30vh;
+    margin-top: 25vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
-    left: 40%;
+    left: 45%;
     top: 0;
     transform: translate(-50%, -50%);
     position:fixed;
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 @keyframes cloud1Animation {
-    to {margin-top: 0%; margin-left: -60vw;}
+    to {margin-top: 10%; margin-left: -60vw;}
 }
 .Cloud2{
     display:block;
@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
     display:block;
     position: relative;
     margin-top: 30vh;
-    height: 40vh;
+    height: 50vh;
     z-index: 1;
     opacity: 100%;
     left: 50%;
@@ -116,12 +116,12 @@ body::-webkit-scrollbar {
  
 }
 @keyframes cloud3Animation {
-    to {margin-top: 20%; margin-left: 80vw;}
+    to {margin-top: 40%; margin-left: 80vw;}
 }
 .Cloud4{
     display:block;
     position: relative;
-    margin-top: 30vh;
+    margin-top: 40vh;
     height: 45vh;
     z-index: 1;
     opacity: 100%;
@@ -136,17 +136,17 @@ body::-webkit-scrollbar {
  
 }
 @keyframes cloud4Animation {
-    to {margin-top: 20%; margin-left: -80vw;}
+    to {margin-top: 60%; margin-left: -80vw;}
 }
 
 .Cloud5{
     display:block;
     position: relative;
-    margin-top: 30vh;
+    margin-top: 5vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
-    left: 50%;
+    left: 35%;
     top: 35vh;
     transform: translate(-50%, -50%);
     position:fixed;
@@ -157,14 +157,14 @@ body::-webkit-scrollbar {
  
 }
 @keyframes cloud5Animation {
-    to {margin-top: 40%; margin-left: -60vw;}
+    to {margin-top: 20%; margin-left: -60vw;}
 }
 
 
 .Cloud6{
     display:block;
     position: relative;
-    margin-top: 30vh;
+    margin-top: 35vh;
     height: 40vh;
     z-index: 1;
     opacity: 100%;
@@ -179,7 +179,7 @@ body::-webkit-scrollbar {
  
 }
 @keyframes cloud6Animation {
-    to {margin-top: 40%; margin-left: 60vw;}
+    to {margin-top: 60%; margin-left: 160vw;}
 }
 
 .Arrow{
@@ -350,7 +350,7 @@ body::-webkit-scrollbar {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: left;
     gap:1%;
 
