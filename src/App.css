@@ -319,7 +319,7 @@ body::-webkit-scrollbar {
 }
 
 .PageInfo{
-    
+    flex-grow: inherit;
     padding-top: 0px;
     padding-left: 40px;
     flex-grow: 1;
@@ -362,7 +362,7 @@ body::-webkit-scrollbar {
     padding: 1%;
     box-shadow: 0px 5px 50px 2px rgb(154, 154, 154);
     
-    animation: InFromRight linear;
+    animation: FadeIn linear;
     animation-duration: 2s;
     animation-timeline: view();
     border-radius: 0px;
@@ -378,7 +378,7 @@ body::-webkit-scrollbar {
     display: none;
   }
 
-@keyframes InFromRight {
+@keyframes FadeIn {
     0%{
         opacity: 0%;
     }
@@ -436,14 +436,15 @@ body::-webkit-scrollbar {
 
 .ProjectsPage{
     z-index: 3;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1%;
     
-    width: 100%;
-    min-height: 110vh;
-    
-    width: 100%;
+    max-width: 100%;
     min-height: 110vh;
         
     position: relative;
+    overflow: hidden;
     
     padding-top: max(70px, 5%);
     padding-left: 10%;
@@ -456,13 +457,83 @@ body::-webkit-scrollbar {
     
 }
 
+
 .canvas {
-    width: 30vh !important;
-    height: 30vh !important;
-    border: 2px solid black;
-    border-radius: 10px;
+    align-content: center;
+    aspect-ratio: 3/3;
+    width: max(30vw, 400px);
+    margin: 4vh 4vh 4vh 0;
+    
 }
 
+.ProjectDisplay{
+    
+    justify-content: left;
+    align-items: left;
+    gap:1%;
+    margin-top: 40px;
+    
+
+    position:relative;
+    min-height: min(40%);
+    width: 100%;
+    background-color: #023047;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 5px 50px 2px rgb(46, 46, 46);
+    
+    border-radius: 10px;
+
+
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    -webkit-animation-duration: 20.0s;
+    
+}
+
+
+.ProjectDisplay::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .ProjectInfo{
+    flex-grow: inherit;
+    padding-top: 0px;
+    padding-left: 40px;
+    flex-grow: 1;
+    flex-basis: 450px;
+    width: 100%;
+    height: auto;
+    font-size:40px;
+    background-color: transparent;
+    
+}
+
+.InfoGrid{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.LearnMore{
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 5px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+    height: 30px;
+    width: fit-content;
+    background-color: #71cbff;
+    border: 1px solid #023047;
+}
+
+.LearnMore:hover{
+    text-decoration: none;
+
+}
 .Footer{
     width: 100%;
     height: 200px;
