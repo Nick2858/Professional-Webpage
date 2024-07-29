@@ -443,6 +443,11 @@ body::-webkit-scrollbar {
     
 }
 
+canvas {
+    width: fit-content !important;
+    height: 50vh !important;
+}
+
 .Footer{
     width: 100%;
     height: 200px;
