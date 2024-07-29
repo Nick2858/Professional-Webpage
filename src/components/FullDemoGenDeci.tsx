@@ -30,24 +30,24 @@ type GLTFResult = GLTF & {
     GEN17: THREE.Mesh;
   };
   materials: {
-    ["Material.002"]: THREE.MeshStandardMaterial;
-    ["Material.003"]: THREE.MeshStandardMaterial;
-    ["Material.004"]: THREE.MeshStandardMaterial;
-    ["Material.005"]: THREE.MeshStandardMaterial;
-    ["Material.006"]: THREE.MeshStandardMaterial;
-    ["Material.007"]: THREE.MeshStandardMaterial;
-    ["Material.008"]: THREE.MeshStandardMaterial;
-    ["Material.009"]: THREE.MeshStandardMaterial;
-    ["Material.010"]: THREE.MeshStandardMaterial;
-    ["Material.011"]: THREE.MeshStandardMaterial;
-    ["Material.012"]: THREE.MeshStandardMaterial;
-    ["Material.013"]: THREE.MeshStandardMaterial;
-    ["Material.014"]: THREE.MeshStandardMaterial;
-    ["Material.015"]: THREE.MeshStandardMaterial;
-    ["Material.016"]: THREE.MeshStandardMaterial;
-    ["Material.017"]: THREE.MeshStandardMaterial;
-    ["Material.018"]: THREE.MeshStandardMaterial;
-    ["Material.019"]: THREE.MeshStandardMaterial;
+    ["Material.037"]: THREE.MeshStandardMaterial;
+    ["Material.038"]: THREE.MeshStandardMaterial;
+    ["Material.039"]: THREE.MeshStandardMaterial;
+    ["Material.040"]: THREE.MeshStandardMaterial;
+    ["Material.041"]: THREE.MeshStandardMaterial;
+    ["Material.042"]: THREE.MeshStandardMaterial;
+    ["Material.043"]: THREE.MeshStandardMaterial;
+    ["Material.044"]: THREE.MeshStandardMaterial;
+    ["Material.045"]: THREE.MeshStandardMaterial;
+    ["Material.046"]: THREE.MeshStandardMaterial;
+    ["Material.047"]: THREE.MeshStandardMaterial;
+    ["Material.048"]: THREE.MeshStandardMaterial;
+    ["Material.049"]: THREE.MeshStandardMaterial;
+    ["Material.050"]: THREE.MeshStandardMaterial;
+    ["Material.051"]: THREE.MeshStandardMaterial;
+    ["Material.052"]: THREE.MeshStandardMaterial;
+    ["Material.053"]: THREE.MeshStandardMaterial;
+    ["Material.054"]: THREE.MeshStandardMaterial;
   };
 };
 
@@ -57,93 +57,111 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
     <group {...props} dispose={null}>
       <mesh
         geometry={nodes.GEN0.geometry}
-        material={materials["Material.002"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.037"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN1.geometry}
-        material={materials["Material.003"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.038"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN2.geometry}
-        material={materials["Material.004"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.039"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN3.geometry}
-        material={materials["Material.005"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.040"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN4.geometry}
-        material={materials["Material.006"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.041"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN5.geometry}
-        material={materials["Material.007"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.042"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN6.geometry}
-        material={materials["Material.008"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.043"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN7.geometry}
-        material={materials["Material.009"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.044"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN8.geometry}
-        material={materials["Material.010"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.045"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN9.geometry}
-        material={materials["Material.011"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.046"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN10.geometry}
-        material={materials["Material.012"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.047"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN11.geometry}
-        material={materials["Material.013"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.048"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN12.geometry}
-        material={materials["Material.014"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.049"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN13.geometry}
-        material={materials["Material.015"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.050"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN14.geometry}
-        material={materials["Material.016"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.051"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN15.geometry}
-        material={materials["Material.017"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.052"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN16.geometry}
-        material={materials["Material.018"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.053"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
       <mesh
         geometry={nodes.GEN17.geometry}
-        material={materials["Material.019"]}
-        position={[-150.746, -192.857, 106.545]}
+        material={materials["Material.054"]}
+        position={[149.173, -154.388, -114.406]}
+        rotation={[Math.PI, -0.016, Math.PI]}
       />
     </group>
   );

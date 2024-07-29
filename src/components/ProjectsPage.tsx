@@ -13,7 +13,7 @@ function ProjectsPage() {
       </h1>
       <div className="canvas">
         <Canvas>
-          <ambientLight />
+          <ambientLight intensity={1} />
           <Suspense fallback={null}>
             <Model scale={0.015} />
             <OrbitControls enableZoom={false} />
