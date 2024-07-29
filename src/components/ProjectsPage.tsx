@@ -14,8 +14,8 @@ function ProjectsPage() {
       <Canvas className="canvas">
         <ambientLight />
         <Suspense fallback={null}>
-          <Model scale={0.5} />
-          <OrbitControls enableZoom={true} />
+          <Model scale={0.015} />
+          <OrbitControls enableZoom={false} />
         </Suspense>
       </Canvas>
     </div>
