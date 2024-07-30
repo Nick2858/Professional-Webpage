@@ -48,9 +48,9 @@ function ProjectsPage() {
               A python script in Blender that allows you to convert lung airway
               data from a CSV file into hollow 3D STL branch objects. This
               program is intended for researchers looking to analyze CFD models
-              of airways. Interact with 3D demo on the right by dragging cursor.
-              by dragging with your cursor (demo airway data from Schmidt et al
-              2004). Press the Github logo to learn more.
+              of airways. Interact with 3D demo on the right by dragging cursor
+              (demo airway data from Schmidt et al 2004). Press the Github logo
+              to learn more.
             </body>
           </div>
           <div className="canvas" ref={ref}>
