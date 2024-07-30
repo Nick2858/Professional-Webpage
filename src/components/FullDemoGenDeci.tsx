@@ -55,7 +55,7 @@ type GLTFResult = GLTF & {
 };
 
 export default function Model(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("/FullDemoGenDeci.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF("./FullDemoGenDeci.glb") as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
@@ -171,4 +171,4 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/FullDemoGenDeci.glb");
+useGLTF.preload("./FullDemoGenDeci.glb");

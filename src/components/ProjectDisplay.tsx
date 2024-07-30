@@ -27,7 +27,7 @@ function ProjectDisplay({ children }: Props) {
               target="_blank"
               style={{ padding: " 0 20px 0 0" }}
             >
-              <img className="Icon" src="/github-mark-white.svg"></img>
+              <img className="Icon" src="./github-mark-white.svg"></img>
             </a>
             {children.projectTitle}
           </h1>

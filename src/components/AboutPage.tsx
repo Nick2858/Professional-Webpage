@@ -10,7 +10,7 @@ function AboutPage() {
           About Me
         </h1>
         <div className="AboutMe" style={{ paddingTop: "7vh", gap: "10px" }}>
-          <img className="AboutProfile" src="ProfileImage.jpg"></img>
+          <img className="AboutProfile" src="./ProfileImage.jpg"></img>
           <body className="PageInfo">
             <p className="PageText">
               Hi, I'm Nicholas. A second year Mechanical Engineering Student at
@@ -31,14 +31,14 @@ function AboutPage() {
           <WorkDisplay>{experience}</WorkDisplay>
         ))}
         <div className="HardSkills" style={{ padding: "7vh" }}>
-          <img className="SkillIcon" src="/SkillLogos/html.webp"></img>
-          <img className="SkillIcon" src="/SkillLogos/css.png"></img>
-          <img className="SkillIcon" src="/SkillLogos/Javascript.png"></img>
-          <img className="SkillIcon" src="/SkillLogos/react.png"></img>
-          <img className="SkillIcon" src="/SkillLogos/python.png"></img>
-          <img className="SkillIcon" src="/SkillLogos/office.webp"></img>
-          <img className="SkillIcon" src="/SkillLogos/solidworks.png"></img>
-          <img className="SkillIcon" src="/SkillLogos/3dSlicer.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/html.webp"></img>
+          <img className="SkillIcon" src="./SkillLogos/css.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/Javascript.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/react.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/python.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/office.webp"></img>
+          <img className="SkillIcon" src="./SkillLogos/solidworks.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/3dSlicer.png"></img>
         </div>
       </div>
     </>

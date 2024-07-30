@@ -32,7 +32,7 @@ function ProjectsPage() {
                 target="_blank"
                 style={{ padding: " 0 20px 0 0" }}
               >
-                <img className="Icon" src="/github-mark-white.svg"></img>
+                <img className="Icon" src="./github-mark-white.svg"></img>
               </a>
               Branch Builder
             </h1>
