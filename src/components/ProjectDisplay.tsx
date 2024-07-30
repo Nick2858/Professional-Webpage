@@ -35,7 +35,7 @@ function ProjectDisplay({ children }: Props) {
             className="ProjectInfo"
             style={{
               color: "white",
-              fontSize: "30px",
+              fontSize: "25px",
               padding: " 0 10px 30px 10px",
             }}
           >
