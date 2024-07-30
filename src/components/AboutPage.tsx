@@ -13,7 +13,7 @@ function AboutPage() {
           <img className="AboutProfile" src="ProfileImage.jpg"></img>
           <body className="PageInfo">
             <p className="PageText">
-              Hi, I'm Nicholas, a second year Mechanical Engineering Student at
+              Hi, I'm Nicholas. A second year Mechanical Engineering Student at
               the University of Toronto. I'm currently working on Computational
               Fluid Dynamics (CFD) models for lung airways as a Student
               Researcher with the Latner Thoracic Research Laboratories. My

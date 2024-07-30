@@ -6,7 +6,10 @@ Command: npx gltfjsx@6.4.1 FullDemoGenDeci.glb -t
 import * as THREE from "three";
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import { useRef } from "react";
 import { GLTF } from "three-stdlib";
+import { useFrame } from "@react-three/fiber";
+import { Mesh } from "three";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -53,6 +56,7 @@ type GLTFResult = GLTF & {
 
 export default function Model(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF("/FullDemoGenDeci.glb") as GLTFResult;
+
   return (
     <group {...props} dispose={null}>
       <mesh

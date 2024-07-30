@@ -1,6 +1,6 @@
 import "../App.css";
 import Model from "./FullDemoGenDeci";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
@@ -44,8 +44,8 @@ function ProjectsPage() {
               A python script in Blender that allows you to convert lung airway
               data from a CSV file into 3D STL branch objects for CFD analysis.
               Interact with the 3D airway demo on the right by dragging with
-              your cursor. Demo airway data from Schmidt et al 2004. Click on
-              the GitHub logo at the top to visit the repository.
+              your cursor. Demo airway data from Schmidt et al 2004. Press the
+              Github logo to learn more.
             </body>
           </div>
           <div className="canvas">
@@ -59,6 +59,9 @@ function ProjectsPage() {
           </div>
         </div>
       </div>
+      {Projects.map((project) => (
+        <ProjectDisplay>{project}</ProjectDisplay>
+      ))}
     </div>
   );
 }
