@@ -48,7 +48,7 @@ function ProjectsPage() {
               A python script in Blender that allows you to convert lung airway
               data from a CSV file into 3D STL branch objects for CFD analysis.
               Interact with the 3D airway demo on the right by dragging with
-              your cursor. Demo airway data from Schmidt et al 2004. Press the
+              your cursor (demo airway data from Schmidt et al 2004). Press the
               Github logo to learn more.
             </body>
           </div>
