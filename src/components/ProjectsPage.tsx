@@ -6,8 +6,12 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
+import { useInView } from "react-intersection-observer";
+
+const DisableRender = () => useFrame(() => null, 1000);
 
 function ProjectsPage() {
+  const { ref, inView } = useInView();
   return (
     <div className="ProjectsPage">
       <h1 className="PageTitle" style={{ fontSize: "80px" }}>
@@ -48,8 +52,9 @@ function ProjectsPage() {
               Github logo to learn more.
             </body>
           </div>
-          <div className="canvas">
+          <div className="canvas" ref={ref}>
             <Canvas>
+              {!inView && <DisableRender />}
               <ambientLight intensity={1} />
               <Suspense fallback={null}>
                 <Model scale={0.02} />
