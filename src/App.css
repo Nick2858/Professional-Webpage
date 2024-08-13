@@ -496,13 +496,16 @@ body::-webkit-scrollbar {
     -ms-overflow-style: none;  
     scrollbar-width: none;
     -webkit-animation-duration: 20.0s;
+    animation-duration: 20.0s;
     
 }
 
-
+    
 .ProjectDisplay::-webkit-scrollbar {
     display: none;
-  }
+
+}
+
 
 .ProjectInfo{
     flex-grow: inherit;
