@@ -1,10 +1,19 @@
 [
+    
     {
         "id":1,
-        "projectTitle": "Journey Mapping Project",
+        "projectTitle": "Journey Mapping Project (APS112)",
         "description": "As part of a team of six first-year Engineering students in my Engineering Strategies and Practices II course (APS112), we developed a tool to visualize the effects of one-way conversions on driving routes for the City of Toronto Cyclists and Pedestrian's Team. This was achieved using OpenStreetMap Editor to built and export custom traffic restrictions to a JSON file. This file was then processed in Python and used to display custom routes on MapBox API in JavaScript. ",
         "link": "https://github.com/Nick2858/Journey-Mapping-Project",
         "picture": "./projectsPics/PWProjectRoute1.png"
+    },
+
+    {
+        "id":2,
+        "projectTitle": "CNC Router Design (MIE243)",
+        "description": "In a team of four second-year Engineering students as part of my Mechanical Design course (MIE243) we researched, budgeted and designed a hobby CNC router.  ",
+        "link": "",
+        "picture": "./projectsPics/CNCRouter.png"
     }
 
 ]

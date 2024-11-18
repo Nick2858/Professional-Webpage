@@ -478,12 +478,13 @@ body::-webkit-scrollbar {
     display: block;
     justify-content: left;
     align-items: left;
-    gap:1%;
-    margin-top: 40px;
+    gap:30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
     
 
     position:relative;
-    min-height: 40%;
     width: 100%;
     background-color: #023047;
     text-align: left;
@@ -493,7 +494,7 @@ body::-webkit-scrollbar {
     
     border-radius: 10px;
 
-    -ms-overflow-style: none;  
+    -ms-overflow-style: hidden;  
     scrollbar-width: none;
     -webkit-animation-duration: 20.0s;
     animation-duration: 20.0s;
