@@ -27,10 +27,7 @@ export default function Model2(props: JSX.IntrinsicElements["group"]) {
   
   useEffect(() => {
     if (modelRef.current) {
-      // Set initial position (X, Y, Z)
-
-      // Set initial rotation (in radians)
-      modelRef.current.rotation.set(0, 1.2* Math.PI , 0); // Rotate 45° on X and Y axes
+      modelRef.current.rotation.set(0, 1.2* Math.PI , 0);
     }
   }, []);
   
@@ -49,4 +46,4 @@ export default function Model2(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/MouseAirWaysImage.glb");
+useGLTF.preload("/MouseAirWaysImage.glb"); 
