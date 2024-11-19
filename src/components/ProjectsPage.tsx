@@ -8,15 +8,12 @@ import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
 import { useInView } from "react-intersection-observer";
-import * as THREE from 'three';
-
-
+import * as THREE from "three";
 
 const DisableRender = () => useFrame(() => null, 1000);
 const DisableRender2 = () => useFrame(() => null, 1000);
 
 function ProjectsPage() {
-  
   const { inView: inView1, ref: ref1 } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -27,10 +24,8 @@ function ProjectsPage() {
     threshold: 0.1,
   });
 
-  var a = new THREE.Vector3(-10,5,1);//tilted a bit on x and y - feel free to plug your different axis here
-  var b = new THREE.Vector3(10,20,1);//tilted a bit on x and y - feel free to plug your different axis here
-
-
+  var a = new THREE.Vector3(-10, 5, 1); //tilted a bit on x and y - feel free to plug your different axis here
+  var b = new THREE.Vector3(10, 20, 1); //tilted a bit on x and y - feel free to plug your different axis here
 
   return (
     <div className="ProjectsPage">
@@ -104,7 +99,6 @@ function ProjectsPage() {
                 fontSize: "50px",
               }}
             >
-
               Airway Imaging
             </h1>
             <body
@@ -132,15 +126,13 @@ function ProjectsPage() {
                 decay={0.4}
                 position={a}
               />
-              
+
               <Suspense fallback={null}>
                 <Model2 scale={0.004} />
-              
-                            </Suspense>
+              </Suspense>
             </Canvas>
           </div>
         </div>
-      
       </div>
       <div className="ProjectDisplay">
         <div className="InfoGrid">
@@ -173,18 +165,21 @@ function ProjectsPage() {
               Lung Images of Mice.
             </body>
           </div>
-          
-          <iframe  width="100%" height="720" src="https://www.youtube.com/embed/RDK9m6hkhY0" title="SignLanguageInterpreterDemoVideo"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-          
+          <div className="ProjectImage" style={{ height: "50vh" }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/RDK9m6hkhY0"
+              title="SignLanguageInterpreterDemoVideo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
         </div>
-      
       </div>
       {Projects.map((project) => (
         <ProjectDisplay>{project}</ProjectDisplay>
       ))}
     </div>
-
-    
   );
 }
 
