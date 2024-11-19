@@ -22,13 +22,19 @@ function ProjectDisplay({ children }: Props) {
               fontSize: "50px",
             }}
           >
+
+            {
+              children.link!=="" &&(
             <a
               href={children.link}
               target="_blank"
               style={{ padding: " 0 20px 0 0" }}
             >
               <img className="Icon" src="./github-mark-white.svg"></img>
-            </a>
+            </a>)
+
+            }
+            
             {children.projectTitle}
           </h1>
           <body
@@ -40,7 +46,9 @@ function ProjectDisplay({ children }: Props) {
             }}
           >
             {" "}
-            {children.description} Press the Github logo to learn more.
+            {children.description} 
+            {children.link!==""&&("Press the Github logo to learn more.")}
+            
           </body>
         </div>
         <img className="ProjectImage" src={children.picture}></img>

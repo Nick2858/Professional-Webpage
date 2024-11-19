@@ -449,11 +449,11 @@ body::-webkit-scrollbar {
     padding-top: max(70px, 5%);
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: max(2%, 100px);
+    padding-bottom: max(2%, 500px);
 
     text-align: center;
     background-color: #ffffff;
-    position: relative;
+
     
 }
 
@@ -479,12 +479,11 @@ body::-webkit-scrollbar {
     justify-content: left;
     align-items: left;
     gap:30px;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin: auto;
 
     
 
-    position:relative;
+    position: relative;
     width: 100%;
     background-color: #023047;
     text-align: left;
@@ -539,7 +538,7 @@ body::-webkit-scrollbar {
     background-color: #023047;
     text-align: left;
     position: relative;
-    z-index: 3;
+    z-index: 4;
 
 }
 

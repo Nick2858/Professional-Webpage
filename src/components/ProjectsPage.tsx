@@ -10,6 +10,8 @@ import Projects from "../assets/projects.json";
 import { useInView } from "react-intersection-observer";
 import * as THREE from 'three';
 
+
+
 const DisableRender = () => useFrame(() => null, 1000);
 const DisableRender2 = () => useFrame(() => null, 1000);
 
@@ -102,13 +104,7 @@ function ProjectsPage() {
                 fontSize: "50px",
               }}
             >
-              <a
-                href="https://github.com/Nick2858/Branch-Builder"
-                target="_blank"
-                style={{ padding: " 0 20px 0 0" }}
-              >
-                <img className="Icon" src="./github-mark-white.svg"></img>
-              </a>
+
               Airway Imaging
             </h1>
             <body
@@ -144,11 +140,51 @@ function ProjectsPage() {
             </Canvas>
           </div>
         </div>
+      
+      </div>
+      <div className="ProjectDisplay">
+        <div className="InfoGrid">
+          <div className="ProjectInfo">
+            <h1
+              style={{
+                padding: "20px 0 10px 10px",
+                color: "white",
+                fontSize: "50px",
+              }}
+            >
+              <a
+                href="https://github.com/Nick2858/Sign-Language-Interpreter"
+                target="_blank"
+                style={{ padding: " 0 20px 0 0" }}
+              >
+                <img className="Icon" src="./github-mark-white.svg"></img>
+              </a>
+              Alphabetic Sign Language Interpreter
+            </h1>
+            <body
+              className="ProjectInfo"
+              style={{
+                color: "white",
+                fontSize: "25px",
+                padding: " 0 10px 30px 10px",
+              }}
+            >
+              {" "}
+              Lung Images of Mice.
+            </body>
+          </div>
+          
+          <iframe  width="100%" height="720" src="https://www.youtube.com/embed/RDK9m6hkhY0" title="SignLanguageInterpreterDemoVideo"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+          
+        </div>
+      
       </div>
       {Projects.map((project) => (
         <ProjectDisplay>{project}</ProjectDisplay>
       ))}
     </div>
+
+    
   );
 }
 
