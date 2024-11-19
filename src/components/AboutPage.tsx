@@ -39,6 +39,7 @@ function AboutPage() {
           <img className="SkillIcon" src="./SkillLogos/office.webp"></img>
           <img className="SkillIcon" src="./SkillLogos/solidworks.png"></img>
           <img className="SkillIcon" src="./SkillLogos/3dSlicer.png"></img>
+          <img className="SkillIcon" src="./SkillLogos/Matlab.png"></img>
         </div>
       </div>
     </>

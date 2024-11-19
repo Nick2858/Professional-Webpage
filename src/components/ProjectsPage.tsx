@@ -8,11 +8,28 @@ import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
 import { useInView } from "react-intersection-observer";
+import * as THREE from 'three';
 
 const DisableRender = () => useFrame(() => null, 1000);
+const DisableRender2 = () => useFrame(() => null, 1000);
 
 function ProjectsPage() {
-  const { ref, inView } = useInView();
+  
+  const { inView: inView1, ref: ref1 } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { inView: inView2, ref: ref2 } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  var a = new THREE.Vector3(-10,5,1);//tilted a bit on x and y - feel free to plug your different axis here
+  var b = new THREE.Vector3(10,20,1);//tilted a bit on x and y - feel free to plug your different axis here
+
+
+
   return (
     <div className="ProjectsPage">
       <h1 className="PageTitle" style={{ fontSize: "80px" }}>
@@ -54,10 +71,19 @@ function ProjectsPage() {
               to learn more.
             </body>
           </div>
-          <div className="canvas" ref={ref}>
+          <div className="canvas" ref={ref1}>
             <Canvas>
-              {!inView && <DisableRender />}
-              <ambientLight intensity={2} />
+              {!inView1 && <DisableRender />}
+              <ambientLight intensity={1} />
+              <spotLight
+                color={"#880808"}
+                intensity={30}
+                distance={0}
+                angle={3.14}
+                penumbra={0.4}
+                decay={0.1}
+                position={a}
+              />
               <Suspense fallback={null}>
                 <Model scale={0.02} />
                 <OrbitControls enableZoom={false} />
@@ -97,22 +123,24 @@ function ProjectsPage() {
               Lung Images of Mice.
             </body>
           </div>
-          <div className="canvas" ref={ref}>
+          <div className="canvas" ref={ref2}>
             <Canvas>
-              {!inView && <DisableRender />}
-              <ambientLight intensity={1.6} />
+              {!inView2 && <DisableRender2 />}
+              <ambientLight intensity={1} />
               <spotLight
-                color={"#722F37"}
-                intensity={25}
-                distance={40}
+                color={"#880808"}
+                intensity={30}
+                distance={0}
                 angle={3.14}
-                penumbra={1}
-                decay={0}
+                penumbra={0.4}
+                decay={0.4}
+                position={a}
               />
+              
               <Suspense fallback={null}>
                 <Model2 scale={0.004} />
-                <OrbitControls enableZoom={false} />
-              </Suspense>
+              
+                            </Suspense>
             </Canvas>
           </div>
         </div>

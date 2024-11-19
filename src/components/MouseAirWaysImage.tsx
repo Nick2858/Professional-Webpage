@@ -4,9 +4,11 @@ Command: npx gltfjsx@6.4.1 public/MouseAirWaysImage.glb -t
 */
 
 import * as THREE from "three";
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import { Group, Mesh, MeshStandardMaterial } from 'three';
+import { useFrame } from '@react-three/fiber';
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -19,13 +21,31 @@ type GLTFResult = GLTF & {
 
 export default function Model2(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF("/MouseAirWaysImage.glb") as GLTFResult;
+  
+  
+  const modelRef = useRef<Group | null>(null);;
+  
+  useEffect(() => {
+    if (modelRef.current) {
+      // Set initial position (X, Y, Z)
+
+      // Set initial rotation (in radians)
+      modelRef.current.rotation.set(0, 1.2* Math.PI , 0); // Rotate 45° on X and Y axes
+    }
+  }, []);
+  
+  
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.004; // Rotate on the X-axis every frame
+      
+    }
+  });
+
   return (
-    <group {...props} dispose={null}>
-      <mesh
-        geometry={nodes.MouseAirwayCast.geometry}
-        material={materials["Material.001"]}
-      />
-    </group>
+    <group {...props} dispose={null} ref={modelRef}>
+    <mesh geometry={nodes.MouseAirwayCast.geometry} material={materials["Material.001"]} />
+  </group>
   );
 }
 

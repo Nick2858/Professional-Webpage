@@ -435,7 +435,7 @@ body::-webkit-scrollbar {
 }
 
 .ProjectsPage{
-    z-index: 3;
+    z-index: 4;
     display: grid;
     grid-template-rows: auto;
     gap: 1%;
@@ -449,7 +449,7 @@ body::-webkit-scrollbar {
     padding-top: max(70px, 5%);
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 2%;
+    padding-bottom: max(2%, 100px);
 
     text-align: center;
     background-color: #ffffff;
