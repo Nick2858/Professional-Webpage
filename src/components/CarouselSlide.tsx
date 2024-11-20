@@ -42,7 +42,7 @@ export default class ProjectsCarousel extends React.Component {
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={50}
-        totalSlides={5}
+        totalSlides={6}
         infinite={true}
         dragEnabled={false}
       >
@@ -56,7 +56,7 @@ export default class ProjectsCarousel extends React.Component {
               <ProjectDisplay>{project}</ProjectDisplay>
             </Slide>
           ))}
-          <Slide index={2}>
+          <Slide index={3}>
             <div className="ProjectDisplay">
               <div className="InfoGrid">
                 <h1
@@ -106,7 +106,7 @@ export default class ProjectsCarousel extends React.Component {
               </div>
             </div>
           </Slide>
-          <Slide index={3}>
+          <Slide index={4}>
             <div className="ProjectDisplay">
               <div className="InfoGrid">
                 <div className="ProjectInfo">
