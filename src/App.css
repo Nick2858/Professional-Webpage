@@ -478,7 +478,7 @@ body::-webkit-scrollbar {
 .canvas {
     align-content: center;
     aspect-ratio: 3/3;
-    width: min(30vw,300px);
+    width: max(30vw,5vh);
     margin: 4vh 4vh 4vh 0;
     
 }
