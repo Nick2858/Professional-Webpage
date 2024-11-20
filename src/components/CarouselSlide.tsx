@@ -86,7 +86,8 @@ export default class ProjectsCarousel extends React.Component {
                     height="100%"
                     src="https://www.youtube.com/embed/RDK9m6hkhY0"
                     title="SignLanguageInterpreterDemoVideo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                   ></iframe>
                 </div>
               </div>
