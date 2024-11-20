@@ -9,12 +9,15 @@ import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
 import { useInView } from "react-intersection-observer";
 import * as THREE from "three";
+import ProjectsCarousel from "./CarouselSlide";
+import { Carousel } from "react-bootstrap";
 
 const DisableRender = () => useFrame(() => null, 1000);
 const DisableRender2 = () => useFrame(() => null, 1000);
 
 function ProjectsPage() {
-  const { inView: inView1, ref: ref1 } = useInView({
+  {
+    /*const { inView: inView1, ref: ref1 } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -26,13 +29,15 @@ function ProjectsPage() {
 
   var a = new THREE.Vector3(-10, 5, 1); //tilted a bit on x and y - feel free to plug your different axis here
   var b = new THREE.Vector3(10, 20, 1); //tilted a bit on x and y - feel free to plug your different axis here
-
+*/
+  }
   return (
     <div className="ProjectsPage">
-      <h1 className="PageTitle" style={{ fontSize: "80px" }}>
+      <h1 className="PageTitle" style={{ fontSize: "10vh" }}>
         Projects
       </h1>
-      <div className="ProjectDisplay">
+      <ProjectsCarousel />
+      {/*<div className="ProjectDisplay">
         <div className="InfoGrid">
           <div className="ProjectInfo">
             <h1
@@ -162,7 +167,10 @@ function ProjectsPage() {
               }}
             >
               {" "}
-              Lung Images of Mice.
+              This is a project I developped in 2022 while I was in high school.
+              It utilizes Open-CV and MediaPipe to translate alphabetical sign
+              language to text on a screen with Text-To-Speech playback using
+              pyttsx3.
             </body>
           </div>
           <div className="ProjectImage" style={{ height: "50vh" }}>
@@ -178,7 +186,7 @@ function ProjectsPage() {
       </div>
       {Projects.map((project) => (
         <ProjectDisplay>{project}</ProjectDisplay>
-      ))}
+      ))}*/}
     </div>
   );
 }
