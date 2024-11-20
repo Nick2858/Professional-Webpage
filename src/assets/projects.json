@@ -14,6 +14,13 @@
         "description": "In a team of four second-year Engineering students as part of my Mechanical Design course (MIE243) we researched, budgeted and designed a hobby CNC router.  ",
         "link": "",
         "picture": "./projectsPics/CNCRouter.png"
+    },
+    {
+        "id":3,
+        "projectTitle": "Basic Machining Course",
+        "description": "In a team of four second-year Engineering students as part of my Mechanical Design course (MIE243) we researched, budgeted and designed a hobby CNC router.  ",
+        "link": "",
+        "picture": "./projectsPics/GeorgeBrown.jpg"
     }
 
 ]

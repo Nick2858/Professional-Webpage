@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
 }
 
 .Jets{
+    display:inline;
     height: 200vh;
     width: fit-content;
     margin-top: 100vh;
@@ -62,6 +63,7 @@ body::-webkit-scrollbar {
     display:block;
     margin-top: 25vh;
     height: 40vh;
+    width:fit-content;
     z-index: 1;
     opacity: 100%;
     left: 45%;
@@ -81,6 +83,7 @@ body::-webkit-scrollbar {
 .Cloud2{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 30vh;
     height: 40vh;
     z-index: 1;
@@ -101,6 +104,7 @@ body::-webkit-scrollbar {
 .Cloud3{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 30vh;
     height: 50vh;
     z-index: 1;
@@ -121,6 +125,7 @@ body::-webkit-scrollbar {
 .Cloud4{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 40vh;
     height: 45vh;
     z-index: 1;
@@ -142,6 +147,7 @@ body::-webkit-scrollbar {
 .Cloud5{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 5vh;
     height: 40vh;
     z-index: 1;
@@ -164,6 +170,7 @@ body::-webkit-scrollbar {
 .Cloud6{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 35vh;
     height: 40vh;
     z-index: 1;
@@ -185,6 +192,7 @@ body::-webkit-scrollbar {
 .Arrow{
     display:block;
     position: relative;
+    width:fit-content;
     margin-top: 30vh;
     height: 11vh;
     z-index: 1;
@@ -219,12 +227,12 @@ body::-webkit-scrollbar {
     display: table;
     table-layout: fixed;
     width: 100%;
-    height: 60px;
+    height: 7%;
     text-align: center;
     vertical-align: middle;
     background-color: #2274A5;
     position: fixed;
-    z-index: 4;
+    z-index: 5;
 
     
 }
@@ -232,7 +240,7 @@ body::-webkit-scrollbar {
 .NavPages{
     display: table-cell;
     font: "Tahoma";
-    font-size: 25px;
+    font-size: max(2vw, 2vh);
     height: 100%;
     color: white;
     margin: auto;
@@ -241,7 +249,7 @@ body::-webkit-scrollbar {
     
     font-weight: 500;
     background-color: #2274A5;
-    padding-inline:30px;
+    padding-inline:10vw;
     
     border: none;
     cursor: pointer;
@@ -449,7 +457,7 @@ body::-webkit-scrollbar {
     padding-top: max(70px, 5%);
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: max(2%, 500px);
+    padding-bottom: max(2%, 50px);
 
     text-align: center;
     background-color: #ffffff;
@@ -460,7 +468,8 @@ body::-webkit-scrollbar {
 .ProjectImage{
     align-content: center;
     height: fit-content;
-    width: max(50vw, 300px);
+    width: 30vw ;
+    height:min-content;
     margin: 0 0 7vh 0;
 
     border-radius: 10px 10px 10px 10px;
@@ -480,7 +489,7 @@ body::-webkit-scrollbar {
     align-items: left;
     gap:30px;
     margin: auto;
-
+    height:100%;
     
 
     position: relative;
@@ -488,9 +497,6 @@ body::-webkit-scrollbar {
     background-color: #023047;
     text-align: left;
     padding: 20px;
-    box-shadow: 0px 5px 50px 2px rgb(46, 46, 46);
-    
-    
     border-radius: 10px;
 
     -ms-overflow-style: hidden;  
@@ -499,8 +505,65 @@ body::-webkit-scrollbar {
     animation-duration: 20.0s;
     
 }
-
+.carousel-wrapper {
+    position: relative; /* Makes sure the carousel container is the reference for absolute positioning */
+    overflow: hidden;   /* Hide any content that overflows (for proper carousel behavior) */
+  }
+  
+  .carousel-container {
+    margin: 1% auto;
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .carousel-slider {
+    display: flex;       /* Use flexbox to display slides inline */
+    flex-wrap: nowrap;   /* Prevent slides from wrapping to the next line */
+    transition: transform 0.5s ease; /* Optional: Smooth transition for sliding */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+ 
+  .carousel-button img {
+    width: 40px;  /* Adjust size of the arrow image */
+    height: auto; /* Maintain aspect ratio of the image */
+  }
+  
+  .carousel-wrapper img {
+    display: block;
+  }
+  
+  .carousel-button-left {
     
+    left: -8%; 
+    transform:rotate(90deg);
+  }
+  
+  .carousel-button-right {
+    transform:rotate(-90deg);
+    right: -8%; 
+  }
+  .carousel-button img {
+    width: 40px;  
+    height: auto; 
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
 .ProjectDisplay::-webkit-scrollbar {
     display: none;
 
@@ -545,6 +608,7 @@ body::-webkit-scrollbar {
 .Icon{
     height: 40%;
     width: fit-content;
+    display:inline;
     padding: 10px;
     opacity: 60%;
 }

@@ -5,7 +5,6 @@ interface Props {
     id: number;
     projectTitle: string;
     description: string;
-    link: string;
     picture: string;
   };
 }
@@ -14,29 +13,18 @@ function ProjectDisplay({ children }: Props) {
   return (
     <div className="ProjectDisplay">
       <div className="InfoGrid">
+        <h1
+          style={{
+            padding: "20px 20px 10px 40px",
+            width: "100%",
+            color: "white",
+            fontSize: "50px",
+            justifyContent: "left",
+          }}
+        >
+          {children.projectTitle}
+        </h1>
         <div className="ProjectInfo">
-          <h1
-            style={{
-              padding: "20px 0 10px 10px",
-              color: "white",
-              fontSize: "50px",
-            }}
-          >
-
-            {
-              children.link!=="" &&(
-            <a
-              href={children.link}
-              target="_blank"
-              style={{ padding: " 0 20px 0 0" }}
-            >
-              <img className="Icon" src="./github-mark-white.svg"></img>
-            </a>)
-
-            }
-            
-            {children.projectTitle}
-          </h1>
           <body
             className="ProjectInfo"
             style={{
@@ -46,9 +34,7 @@ function ProjectDisplay({ children }: Props) {
             }}
           >
             {" "}
-            {children.description} 
-            {children.link!==""&&("Press the Github logo to learn more.")}
-            
+            {children.description}
           </body>
         </div>
         <img className="ProjectImage" src={children.picture}></img>

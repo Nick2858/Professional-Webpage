@@ -79,4 +79,4 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/AirwaySegment.glb");
+useGLTF.preload("./AirwaySegment.glb");
