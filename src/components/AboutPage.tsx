@@ -6,10 +6,10 @@ function AboutPage() {
   return (
     <>
       <div id="About" className="AboutPage">
-        <h1 className="PageTitle" style={{ fontSize: "80px" }}>
+        <h1 className="PageTitle" style={{ fontSize: "min(80px,6vw)" }}>
           About Me
         </h1>
-        <div className="AboutMe" style={{ paddingTop: "7vh", gap: "10px" }}>
+        <div className="AboutMe" style={{ paddingTop: "4vw", gap: "10px" }}>
           <img className="AboutProfile" src="./ProfileImage.jpg"></img>
           <body className="PageInfo">
             <p className="PageText">

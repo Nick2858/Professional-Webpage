@@ -342,7 +342,7 @@ body::-webkit-scrollbar {
 
 .PageTitle{
     font: "Arial";
-    font-size: 50px;
+    font-size: min(60px,4vw);
     color: #2274A5;
     
 
@@ -454,7 +454,7 @@ body::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
     
-    padding-top: max(70px, 5%);
+    padding-top: max(5%);
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: max(2%, 50px);
@@ -479,6 +479,7 @@ body::-webkit-scrollbar {
     align-content: center;
     aspect-ratio: 3/3;
     width: max(30vw, 300px);
+    max-width:700px;
     margin: 4vh 4vh 4vh 0;
     
 }
@@ -487,23 +488,22 @@ body::-webkit-scrollbar {
     display: block;
     justify-content: left;
     align-items: left;
-    gap:30px;
-    margin: auto;
-    height:100%;
+    
+    height:80vh;
     
 
     position: relative;
     width: 100%;
     background-color: #023047;
     text-align: left;
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
 
     -ms-overflow-style: hidden;  
     scrollbar-width: none;
     -webkit-animation-duration: 20.0s;
     animation-duration: 20.0s;
-    
+    overflow-y: scroll;
 }
 .carousel-wrapper {
     position: relative; /* Makes sure the carousel container is the reference for absolute positioning */
@@ -511,6 +511,8 @@ body::-webkit-scrollbar {
   }
   
   .carousel-container {
+    width: 100%;
+    max-width: 80vw; /* or any other fixed value */
     margin: 1% auto;
     position: relative;
     overflow: hidden; /* Hide overflow */
@@ -543,14 +545,15 @@ body::-webkit-scrollbar {
   }
   
   .carousel-button-left {
-    
-    left: -8%; 
+    top:50vh;
+    left: -8vw; 
     transform:rotate(90deg);
   }
   
   .carousel-button-right {
     transform:rotate(-90deg);
-    right: -8%; 
+    top:50vh;
+    right: -8vw; 
   }
   .carousel-button img {
     width: 40px;  
@@ -575,7 +578,7 @@ body::-webkit-scrollbar {
     padding-top: 0px;
     padding-left: 2vw;
     flex-grow: 1;
-    flex-basis: max(450px, 50%);
+    flex-basis: 70%;
     width: 100%;
     height: auto;
     font-size:40px;
@@ -589,6 +592,24 @@ body::-webkit-scrollbar {
     align-content: center;
     justify-content: center;
 }
+
+
+.prc-dotGroup {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .carousel__dot {
+    height: 2vh;
+    width: 2vh;
+    margin: 0.25vw;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  .carousel__dot--selected {
+    background-color: black;
+  }
+
 
 .LearnMore:hover{
     text-decoration: none;

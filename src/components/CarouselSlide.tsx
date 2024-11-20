@@ -5,6 +5,7 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
+  DotGroup
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import ProjectDisplay from "./ProjectDisplay";
@@ -41,10 +42,12 @@ export default class ProjectsCarousel extends React.Component {
     return (
       <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={50}
+        naturalSlideHeight={60}
         totalSlides={6}
+        isIntrinsicHeight
         infinite={true}
         dragEnabled={false}
+
       >
         <ButtonBack className="carousel-button carousel-button-left">
           <img src="./planeArrow.png"></img>
@@ -59,19 +62,18 @@ export default class ProjectsCarousel extends React.Component {
           <Slide index={3}>
             <div className="ProjectDisplay">
               <div className="InfoGrid">
+                
+                <div className="ProjectInfo">
                 <h1
                   style={{
-                    padding: "20px 20px 10px 40px",
-                    width: "100%",
+                    padding: "20px 20px 10px 10px",
+                    
                     color: "white",
                     fontSize: "50px",
-                    justifyContent: "left",
                   }}
                 >
                   Alphabetic Sign Language Interpreter
-                </h1>
-                <div className="ProjectInfo">
-                  <body
+                </h1><body
                     className="ProjectInfo"
                     style={{
                       color: "white",
@@ -110,7 +112,7 @@ export default class ProjectsCarousel extends React.Component {
             <div className="ProjectDisplay">
               <div className="InfoGrid">
                 <div className="ProjectInfo">
-                  <h1
+                <h1
                     style={{
                       padding: "20px 0 10px 10px",
                       color: "white",
@@ -207,6 +209,7 @@ export default class ProjectsCarousel extends React.Component {
         <ButtonNext className="carousel-button carousel-button-right">
           <img src="./planeArrow.png"></img>
         </ButtonNext>
+        <DotGroup className="prc-dotGroup"/>
       </CarouselProvider>
     );
   }

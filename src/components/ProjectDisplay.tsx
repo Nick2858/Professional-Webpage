@@ -13,18 +13,19 @@ function ProjectDisplay({ children }: Props) {
   return (
     <div className="ProjectDisplay">
       <div className="InfoGrid">
+        
+        <div className="ProjectInfo">
         <h1
           style={{
-            padding: "20px 20px 10px 40px",
-            width: "100%",
+            padding: "20px 20px 30px 10px",
+            
             color: "white",
             fontSize: "50px",
-            justifyContent: "left",
+            
           }}
         >
           {children.projectTitle}
         </h1>
-        <div className="ProjectInfo">
           <body
             className="ProjectInfo"
             style={{
