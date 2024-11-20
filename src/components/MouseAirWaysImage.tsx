@@ -20,7 +20,7 @@ type GLTFResult = GLTF & {
 };
 
 export default function Model2(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("/MouseAirWaysImage.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF("./MouseAirWaysImage.glb") as GLTFResult;
 
   const modelRef = useRef<Group | null>(null);
 

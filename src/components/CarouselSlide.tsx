@@ -19,23 +19,7 @@ import { Suspense } from "react";
 import { useInView } from "react-intersection-observer";
 import * as THREE from "three";
 
-const DisableRender = () => useFrame(() => null, 1000);
-const DisableRender2 = () => useFrame(() => null, 1000);
-{
-  /*
-const { inView: inView1, ref: ref1 } = useInView({
-  triggerOnce: true,
-  threshold: 0.1,
-});
-
-const { inView: inView2, ref: ref2 } = useInView({
-  triggerOnce: true,
-  threshold: 0.1,
-});
-*/
-}
-var a = new THREE.Vector3(-10, 5, 1); //tilted a bit on x and y - feel free to plug your different axis here
-var b = new THREE.Vector3(10, 20, 1); //tilted a bit on x and y - feel free to plug your different axis here
+var a = new THREE.Vector3(-10, 5, 1); 
 
 export default class ProjectsCarousel extends React.Component {
   render() {
