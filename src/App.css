@@ -641,3 +641,27 @@ body::-webkit-scrollbar {
     opacity: 100%;
 }
 
+.ResumeButton{
+    font: "Tahoma";
+    font-size: max(2vw, 2vh);
+    height: auto;
+    width:auto;
+    color: white;
+    margin: auto;
+    vertical-align: middle;
+    
+    
+    font-weight: 500;
+    background-color: transparent;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+}
+
+.ResumeButton:hover{
+    background-color: #2274A5;
+}

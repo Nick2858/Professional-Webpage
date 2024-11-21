@@ -12,6 +12,9 @@ function Footer() {
       >
         <img className="Icon" src="./In-White-128.png"></img>
       </a>
+      <a href="./Resume.pdf" target="_blank">
+        <button className="ResumeButton">Resume</button>
+      </a>
     </div>
   );
 }
