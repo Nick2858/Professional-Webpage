@@ -14,8 +14,8 @@ function AboutPage() {
           <body className="PageInfo">
             <p className="PageText">
               Hi, I'm Nicholas. A second year Mechanical Engineering Student at
-              the University of Toronto. My fields of interest include robotics,
-              aerospace, bioengineering, CFD, automotives and programming.
+              the University of Toronto pursuing a minor in Robotics, and Engineering Business. 
+              My fields of interest include robotics, aerospace, bioengineering, CFD, automotives and programming.
             </p>
           </body>
         </div>
@@ -27,6 +27,10 @@ function AboutPage() {
         {Experiences.map((experience) => (
           <WorkDisplay>{experience}</WorkDisplay>
         ))}
+        <h1 className="PageTitle" style={{ padding: "7vh 7vh 0 7vh" }}>
+          {" "}
+          Skills
+        </h1>
         <div className="HardSkills" style={{ padding: "7vh" }}>
           <img className="SkillIcon" src="./SkillLogos/html.webp"></img>
           <img className="SkillIcon" src="./SkillLogos/css.png"></img>
