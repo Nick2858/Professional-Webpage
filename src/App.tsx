@@ -14,8 +14,6 @@ import {
 } from "react-scroll";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-console.log("");
-
 function App() {
   return (
     <div>
