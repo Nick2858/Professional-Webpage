@@ -1,51 +1,25 @@
-import "../App.css";
+import "../components/CSS/NavBar.css";
 import {
-  Link,
   Element,
   Events,
   animateScroll as scroll,
   scrollSpy,
   scroller,
 } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <div className="NavBar">
-      <Link
-        className="NavPages"
-        to="Home"
-        activeClass="activeNavPages"
-        spy={true}
-        style={{ color: "white" }}
-      >
-        {" "}
-        Home{" "}
+    <nav className="NavBar">
+      <Link className="NavPages" to="/Portfolio-Website/">
+        <img className="HomeButton" src="Home.png"></img>
       </Link>
 
-      <Link
-        className="NavPages"
-        to="About"
-        activeClass="activeNavPages"
-        spy={true}
-        style={{ color: "white" }}
-      >
-        {" "}
-        About{" "}
+      <Link className="NavPages" to="/Portfolio-Website/Projects">
+        Projects
       </Link>
-
-      <Link
-        className="NavPages"
-        to="Projects"
-        activeClass="activeNavPages"
-        spy={true}
-        style={{ color: "white" }}
-      >
-        {" "}
-        Projects{" "}
-      </Link>
-    </div>
+    </nav>
   );
-}
+};
 
 export default NavBar;

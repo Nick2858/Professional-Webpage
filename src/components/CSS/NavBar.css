@@ -1,0 +1,52 @@
+.NavBar {
+  width: 100%;
+  height: 7%;
+  display: inline;
+  text-align: right;
+  align-items: right;
+  background-color: #2274a5;
+  position: fixed;
+  padding: 0.1vh;
+  z-index: 5;
+}
+
+.NavPages {
+  font: "Tahoma";
+  font-size: 200%;
+  height: 100%;
+
+  font-weight: 500;
+
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  gap: 10vw;
+  margin-top: 10%;
+  margin-right: 5%;
+  color: white !important;
+}
+
+.NavPages:hover {
+  border: none;
+  font-style: black;
+  color: black !important;
+  text-decoration: none;
+}
+
+.activeNavPages {
+  text-decoration: none;
+}
+
+.HomeButton {
+  display: inline-block;
+  position: relative;
+  filter: invert(1);
+  height: 60%;
+  margin-top: -0.7%;
+
+  width: fit-content;
+}
+.HomeButton:hover {
+  display: inline;
+  filter: invert(0);
+}

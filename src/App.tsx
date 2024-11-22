@@ -4,30 +4,22 @@ import AboutPage from "./components/AboutPage";
 import ProjectsPage from "./components/ProjectsPage";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Element name="Home">
-        <LandingPage />
-      </Element>
-      <Element name="About" id="About">
-        <AboutPage />
-      </Element>
-      <Element name="Projects">
-        <ProjectsPage />
-      </Element>
-      <Footer />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/Portfolio-Website/" element={<LandingPage />} />
+          <Route
+            path="/Portfolio-Website/Projects"
+            element={<ProjectsPage />}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
