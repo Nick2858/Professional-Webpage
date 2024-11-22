@@ -12,14 +12,13 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
-import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+console.log("");
 
 function App() {
   return (
-    
     <div>
-      
       <NavBar />
       <Element name="Home">
         <LandingPage />
