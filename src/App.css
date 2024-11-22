@@ -1,667 +1,629 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;
-    -webkit-animation-duration: 20.0s;
-
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-animation-duration: 20s;
 }
-  
 
 .LandingPage {
-    width: 100vw;
-    height: 250vh;
-    background-color: #71cbff;
-    position:relative;
-    text-align: center;
-    overflow:hidden;
-    z-index: 1;
-    scroll-timeline: 10s;
+  width: 100vw;
+  height: 250vh;
+  background-color: #71cbff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  scroll-timeline: 10s;
 }
 
-.Jets{
-    display:inline;
-    height: 200vh;
-    width: fit-content;
-    margin-top: 100vh;
+.Jets {
+  display: inline;
+  height: 200vh;
+  width: fit-content;
+  margin-top: 100vh;
 
-    z-index: 2;
-    
+  z-index: 2;
 }
 
 @keyframes flyBy {
-    to {margin-top: 200%;}
+  to {
+    margin-top: 200%;
   }
-
-
-.Name{
-    
-    color: #023047;
-    font-size: 10vw;
-    font-weight: 650;
-    margin-top: 30vh;
-    z-index: 2;
-    opacity: 100%;
-    left: 50%;
-    top: 10vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: nameAnimation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
 }
 
+.Name {
+  color: #023047;
+  font-size: 10vw;
+  font-weight: 650;
+  margin-top: 30vh;
+  z-index: 2;
+  opacity: 100%;
+  left: 50%;
+  top: 10vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: nameAnimation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
+}
 
 @keyframes nameAnimation {
-    to {margin: 0%; opacity:-50%; font-size:20vw}
-    
+  to {
+    margin: 0%;
+    opacity: -50%;
+    font-size: 20vw;
+  }
 }
 
-.Cloud1{
-    display:block;
-    margin-top: 25vh;
-    height: 40vh;
-    width:fit-content;
-    z-index: 1;
-    opacity: 100%;
-    left: 45%;
-    top: 0;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud1Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud1 {
+  display: block;
+  margin-top: 25vh;
+  height: 40vh;
+  width: fit-content;
+  z-index: 1;
+  opacity: 100%;
+  left: 45%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud1Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 
 @keyframes cloud1Animation {
-    to {margin-top: 10%; margin-left: -60vw;}
+  to {
+    margin-top: 10%;
+    margin-left: -60vw;
+  }
 }
-.Cloud2{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 30vh;
-    height: 40vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 60%;
-    top: 3vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud2Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud2 {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 30vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 60%;
+  top: 3vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud2Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 @keyframes cloud2Animation {
-    to {margin-top: 0%; margin-left: 100vw;}
+  to {
+    margin-top: 0%;
+    margin-left: 100vw;
+  }
 }
-.Cloud3{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 30vh;
-    height: 50vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 50%;
-    top: 20vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud3Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud3 {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 30vh;
+  height: 50vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 50%;
+  top: 20vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud3Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 @keyframes cloud3Animation {
-    to {margin-top: 40%; margin-left: 80vw;}
+  to {
+    margin-top: 40%;
+    margin-left: 80vw;
+  }
 }
-.Cloud4{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 40vh;
-    height: 45vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 35%;
-    top: 20vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud4Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud4 {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 40vh;
+  height: 45vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 35%;
+  top: 20vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud4Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 @keyframes cloud4Animation {
-    to {margin-top: 60%; margin-left: -80vw;}
+  to {
+    margin-top: 60%;
+    margin-left: -80vw;
+  }
 }
 
-.Cloud5{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 5vh;
-    height: 40vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 35%;
-    top: 35vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud5Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud5 {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 5vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 35%;
+  top: 35vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud5Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 @keyframes cloud5Animation {
-    to {margin-top: 20%; margin-left: -60vw;}
+  to {
+    margin-top: 20%;
+    margin-left: -60vw;
+  }
 }
 
-
-.Cloud6{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 35vh;
-    height: 40vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 55%;
-    top: 25vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: cloud6Animation linear;
-    animation-duration: 3s;
-    animation-timeline:scroll();
- 
+.Cloud6 {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 35vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 55%;
+  top: 25vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: cloud6Animation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
 }
 @keyframes cloud6Animation {
-    to {margin-top: 60%; margin-left: 160vw;}
+  to {
+    margin-top: 60%;
+    margin-left: 160vw;
+  }
 }
 
-.Arrow{
-    display:block;
-    position: relative;
-    width:fit-content;
-    margin-top: 30vh;
-    height: 11vh;
-    z-index: 1;
-    opacity: 100%;
-    left: 50%;
-    top: 59vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    animation: bounce 1500ms infinite alternate;
+.Arrow {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-top: 30vh;
+  height: 11vh;
+  z-index: 1;
+  opacity: 100%;
+  left: 50%;
+  top: 59vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  animation: bounce 1500ms infinite alternate;
 }
 
 @keyframes bounce {
-    to {top: 58vh; height: 10vh}
+  to {
+    top: 58vh;
+    height: 10vh;
+  }
 }
 
-.Explore{
-    display:block;
-    position: relative;
-    margin-top: 30vh;
-    font-size: 20px;
-    left: 50%;
-    top: 65vh;
-    transform: translate(-50%, -50%);
-    position:fixed;
-    text-align: center;
-    cursor: pointer;
-    }
+.Explore {
+  display: block;
+  position: relative;
+  margin-top: 30vh;
+  font-size: 20px;
+  left: 50%;
+  top: 65vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  cursor: pointer;
+}
 
 .NavBar {
-
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 7%;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #2274A5;
-    position: fixed;
-    z-index: 5;
-
-    
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 7%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #2274a5;
+  position: fixed;
+  z-index: 5;
 }
 
-.NavPages{
-    display: table-cell;
-    font: "Tahoma";
-    font-size: max(2vw, 2vh);
-    height: 100%;
-    color: white;
-    margin: auto;
-    vertical-align: middle;
-    
-    
-    font-weight: 500;
-    background-color: #2274A5;
-    padding-inline:10vw;
-    
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    
-    
+.NavPages {
+  display: table-cell;
+  font: "Tahoma";
+  font-size: max(2vw, 2vh);
+  height: 100%;
+  color: white;
+  margin: auto;
+  vertical-align: middle;
+
+  font-weight: 500;
+  background-color: #2274a5;
+  padding-inline: 10vw;
+
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.NavPages:hover{
-    border: 3px solid #023047;
-
+.NavPages:hover {
+  border: 3px solid #023047;
 }
 
-.activeNavPages{
-
-    background-color: #023047;
-    text-decoration: none;
-    
-    
+.activeNavPages {
+  background-color: #023047;
+  text-decoration: none;
 }
 
+.AboutPage {
+  display: grid;
+  grid-template-rows: auto;
 
-.AboutPage{
-    display: grid;
-    grid-template-rows: auto;
-    
-    z-index: 3;
-    
-    width: 100%;
-    min-height: 110vh;
-    
-    width: 100%;
-    min-height: 110vh;
-    
-    background-color: #f3f3f3;
-    
-    position: relative;
-    
-    padding-top: max(70px, 5%);
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+  z-index: 3;
 
-    text-align: center;
-    
+  width: 100%;
+  min-height: 110vh;
+
+  width: 100%;
+  min-height: 110vh;
+
+  background-color: #f3f3f3;
+
+  position: relative;
+
+  padding-top: max(70px, 5%);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+
+  text-align: center;
 }
 
-.AboutMe{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px;
-    padding: auto;
-    text-align: left;
+.AboutMe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  padding: auto;
+  text-align: left;
 
-    position: relative;
-
-
-
+  position: relative;
 }
 
-
-
-.AboutProfile{
-    
-    border-radius: 30%;
-    max-width: min(400px,70%);
-    height:fit-content;
-    flex-shrink:20;
-    box-shadow: 0px 0px 5px 1px rgb(154, 154, 154);
-    padding: 0%;
-    border: solid black;
-    
- 
+.AboutProfile {
+  border-radius: 30%;
+  max-width: min(400px, 70%);
+  height: fit-content;
+  flex-shrink: 20;
+  box-shadow: 0px 0px 5px 1px rgb(154, 154, 154);
+  padding: 0%;
+  border: solid black;
 }
 
-.PageInfo{
-    flex-grow: inherit;
-    padding-top: 0px;
-    padding-left: 40px;
-    flex-grow: 1;
-    flex-basis: 50vw;
-    width: 70%;
-    height: auto;
-    font-size:40px;
-    background-color: transparent;
-    
-    
+.PageInfo {
+  flex-grow: inherit;
+  padding-top: 0px;
+  padding-left: 40px;
+  flex-grow: 1;
+  flex-basis: 50vw;
+  width: 70%;
+  height: auto;
+  font-size: 40px;
+  background-color: transparent;
 }
 
-.PageTitle{
-    font: "Arial";
-    font-size: min(60px,4vw);
-    color: #2274A5;
-    
-
+.PageTitle {
+  font: "Arial";
+  font-size: min(60px, 4vw);
+  color: #2274a5;
 }
-.PageText{
-    font: "Arial";
-    font-size: 30px;
-    color: #4a4a4a;
+.PageText {
+  font: "Arial";
+  font-size: 30px;
+  color: #4a4a4a;
 }
 
+.WorkDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  gap: 1%;
+  margin-bottom: 1%;
+  position: relative;
+  min-height: 20vh;
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  padding: 1%;
+  box-shadow: 0px 5px 50px 2px rgb(154, 154, 154);
 
-.WorkDisplay{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-    align-items: left;
-    gap:1%;
-    margin-bottom: 1%;
-    position:relative;
-    min-height: 20vh;
-    width: 100%;
-    background-color: white;
-    text-align: left;
-    padding: 1%;
-    box-shadow: 0px 5px 50px 2px rgb(154, 154, 154);
-    
-    animation: FadeIn linear;
-    animation-duration: 2s;
-    animation-timeline: view();
-    border-radius: 0px;
-    border: 1px solid black;
+  animation: FadeIn linear;
+  animation-duration: 2s;
+  animation-timeline: view();
+  border-radius: 0px;
+  border: 1px solid black;
 
-    -ms-overflow-style: none;  
-    scrollbar-width: none;
-    -webkit-animation-duration: 20.0s;
-    
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-animation-duration: 20s;
 }
 
 .WorkDisplay::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 @keyframes FadeIn {
-    0%{
-        opacity: 0%;
-    }
+  0% {
+    opacity: 0%;
+  }
 
-    10%{
-        opacity: 0%;
-    }
+  10% {
+    opacity: 0%;
+  }
 
-    50%{
-        opacity: 100%;
-    }
-
-}   
-
-.WorkImage{
-
-
-    float: left;
-    position:relative;
-    height: 20vh;
-    width: fit-content;
-
-    border-radius: 3px;
-    border:  solid #000000;
-    
-
+  50% {
+    opacity: 100%;
+  }
 }
 
-.WorkInfo{
+.WorkImage {
+  float: left;
+  position: relative;
+  height: 20vh;
+  width: fit-content;
 
-    height: auto;
-
-    flex-basis: 400px;
-    flex-grow: 1;
-    max-width: 1000px;
-
-
+  border-radius: 3px;
+  border: solid #000000;
 }
 
-.HardSkills{
-    display:flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.WorkInfo {
+  height: auto;
 
+  flex-basis: 400px;
+  flex-grow: 1;
+  max-width: 1000px;
 }
 
-
-.SkillIcon{
-    flex: 1 1 0;
-    max-width: min(5vw, 60px);
-    height: fit-content;
+.HardSkills {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.ProjectsPage{
-    z-index: 4;
-    display: grid;
-    grid-template-rows: auto;
-    gap: 1%;
-    
-    max-width: 100%;
-    min-height: 110vh;
-        
-    position: relative;
-    overflow: hidden;
-    
-    padding-top: max(5%);
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: max(2%, 50px);
-
-    text-align: center;
-    background-color: #ffffff;
-
-    
+.SkillIcon {
+  flex: 1 1 0;
+  max-width: min(5vw, 60px);
+  height: fit-content;
 }
 
-.ProjectImage{
-    align-content: center;
-    height: fit-content;
-    width: 30vw ;
-    height:min-content;
-    margin: 0 0 7vh 0;
+.ProjectsPage {
+  z-index: 4;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1%;
 
-    border-radius: 10px 10px 10px 10px;
-   
+  max-width: 100%;
+  min-height: 110vh;
+
+  position: relative;
+  overflow: hidden;
+
+  padding-top: max(5%);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: max(2%, 50px);
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.ProjectImage {
+  align-content: center;
+  height: fit-content;
+  width: 30vw;
+  height: min-content;
+  margin: 0 0 7vh 0;
+
+  border-radius: 10px 10px 10px 10px;
 }
 
 .canvas {
-    align-content: center;
-    aspect-ratio: 3/3;
-    width: max(20vw, 300px);
-    max-width:700px;
-    margin: 4vh auto 4vh auto;
-    
+  align-content: center;
+  aspect-ratio: 3/3;
+  width: max(20vw, 300px);
+  max-width: 700px;
+  margin: 4vh auto 4vh auto;
 }
 
-.ProjectDisplay{
-    display: block;
-    justify-content: left;
-    align-items: left;
-    
-    height:80vh;
-    
+.ProjectDisplay {
+  display: block;
+  justify-content: left;
+  align-items: left;
 
-    position: relative;
-    width: 100%;
-    background-color: #023047;
-    text-align: left;
-    padding: 2%;
-    border-radius: 10px;
+  height: 80vh;
 
-    -ms-overflow-style: hidden;  
-    scrollbar-width: none;
-    -webkit-animation-duration: 20.0s;
-    animation-duration: 20.0s;
-    overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  background-color: #023047;
+  text-align: left;
+  padding: 2%;
+  border-radius: 10px;
+
+  -ms-overflow-style: hidden;
+  scrollbar-width: none;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  overflow-y: scroll;
 }
 .carousel-wrapper {
-    position: relative; /* Makes sure the carousel container is the reference for absolute positioning */
-    overflow: hidden;   /* Hide any content that overflows (for proper carousel behavior) */
-  }
-  
-  .carousel-container {
-    width: 100%;
-    max-width: 80vw; /* or any other fixed value */
-    margin: 1% auto;
-    position: relative;
-    overflow: hidden; /* Hide overflow */
-  }
-  
-  .carousel-slider {
-    display: flex;       /* Use flexbox to display slides inline */
-    flex-wrap: nowrap;   /* Prevent slides from wrapping to the next line */
-    transition: transform 0.5s ease; /* Optional: Smooth transition for sliding */
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
- 
-  .carousel-button img {
-    width: 40px;  /* Adjust size of the arrow image */
-    height: auto; /* Maintain aspect ratio of the image */
-  }
-  
-  .carousel-wrapper img {
-    display: block;
-  }
-  
-  .carousel-button-left {
-    top:50vh;
-    left: -8vw; 
-    transform:rotate(90deg);
-  }
-  
-  .carousel-button-right {
-    transform:rotate(-90deg);
-    top:50vh;
-    right: -8vw; 
-  }
-  .carousel-button img {
-    width: 40px;  
-    height: auto; 
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  position: relative; /* Makes sure the carousel container is the reference for absolute positioning */
+  overflow: hidden; /* Hide any content that overflows (for proper carousel behavior) */
+}
 
+.carousel-container {
+  width: 100%;
+  max-width: 80vw; /* or any other fixed value */
+  margin: 1% auto;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+.carousel-slider {
+  display: flex; /* Use flexbox to display slides inline */
+  flex-wrap: nowrap; /* Prevent slides from wrapping to the next line */
+  transition: transform 0.5s ease; /* Optional: Smooth transition for sliding */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button img {
+  width: 40px; /* Adjust size of the arrow image */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+.carousel-wrapper img {
+  display: block;
+}
+
+.carousel-button-left {
+  top: 50vh;
+  left: -8vw;
+  transform: rotate(90deg);
+}
+
+.carousel-button-right {
+  transform: rotate(-90deg);
+  top: 50vh;
+  right: -8vw;
+}
+.carousel-button img {
+  width: 40px;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .ProjectDisplay::-webkit-scrollbar {
-    display: none;
-
+  display: none;
 }
 
-
-.ProjectInfo{
-    flex-grow: inherit;
-    padding-top: 0px;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    flex-grow: 1;
-    flex-basis: 100%;
-    width: 100%;
-    height: auto;
-    font-size:40px;
-    background-color: transparent;
-    
+.ProjectInfo {
+  flex-grow: inherit;
+  padding-top: 0px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  flex-grow: 1;
+  flex-basis: 100%;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  background-color: transparent;
 }
 
-.InfoGrid{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+.InfoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
-
 
 .prc-dotGroup {
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-  .carousel__dot {
-    height: 2vh;
-    width: 2vh;
-    margin: 0.25vw;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0);
-  }
-  .carousel__dot--selected {
-    background-color: black;
-  }
-
-
-.LearnMore:hover{
-    text-decoration: none;
-
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
-.Footer{
-    width: 100%;
-    height: 200px;
-    padding: 40px;
-    background-color: #023047;
-    text-align: left;
-    position: relative;
-    z-index: 4;
-
+.carousel__dot {
+  height: 2vh;
+  width: 2vh;
+  margin: 0.25vw;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+}
+.carousel__dot--selected {
+  background-color: black;
 }
 
-.Icon{
-    height: 40%;
-    width: fit-content;
-    display:inline;
-    padding: 10px;
-    opacity: 60%;
+.LearnMore:hover {
+  text-decoration: none;
+}
+.Footer {
+  width: 100%;
+  height: 200px;
+  padding: 40px;
+  background-color: #023047;
+  text-align: left;
+  position: relative;
+  z-index: 4;
 }
 
-.Icon:hover{
-    opacity: 100%;
+.Icon {
+  height: 40%;
+  width: fit-content;
+  display: inline;
+  padding: 10px;
+  opacity: 60%;
 }
 
-.ResumeButton{
-    font: "Tahoma";
-    font-size: max(2vw, 2vh);
-    height: auto;
-    width:auto;
-    color: white;
-    margin: auto;
-    vertical-align: middle;
-    
-    
-    font-weight: 500;
-    background-color: transparent;
-    
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    
-    
+.Icon:hover {
+  opacity: 100%;
 }
 
-.ResumeButton:hover{
-    background-color: #2274A5;
+.ResumeButton {
+  font: "Tahoma";
+  font-size: max(2vw, 2vh);
+  height: auto;
+  width: auto;
+  color: white;
+  margin: auto;
+  vertical-align: middle;
+
+  font-weight: 500;
+  background-color: transparent;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ResumeButton:hover {
+  background-color: #2274a5;
 }
