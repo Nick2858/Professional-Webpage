@@ -17,7 +17,7 @@ function App() {
             element={<ProjectsPage />}
           />
         </Routes>
-        <Footer />
+       
       </BrowserRouter>
     </div>
   );
