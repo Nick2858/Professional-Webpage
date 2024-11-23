@@ -9,41 +9,90 @@ body::-webkit-scrollbar {
   -webkit-animation-duration: 20s;
 }
 
+
+
 .LandingPage {
   width: 100vw;
-  height: 250vh;
-  background-color: #2e3944;
+  height: 100vh;
+  background-color:  #ffffff;
   position: relative;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   z-index: 1;
   scroll-timeline: 10s;
 }
 
-.Name {
-  color: #d3d9d4;
-  font-size: 10vw;
-  font-weight: 650;
-  margin-top: 30vh;
-  z-index: 2;
-  opacity: 100%;
-  left: 50%;
-  top: 10vh;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  text-align: center;
-  animation: nameAnimation linear;
+.InnerPage{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position:relative;
+  margin-top: 2%;
+  width:100%;
+  height: 80vh;
+  background-color: #bfcbd3;
+  overflow: hidden;
+  animation: OnScroll linear;
   animation-duration: 3s;
   animation-timeline: scroll();
 }
 
+@keyframes OnScroll {
+  to{
+    font-size: xx-large !important;
+  }
+  
+}
+.Portrait{
+
+  align-items: flex-end;
+  max-height:80%;
+  width:fit-content;
+  left: 0%;
+  right: 0%;
+  bottom:0;
+
+  z-index: 2;
+
+  -webkit-filter: drop-shadow(0px 0px 5vw #003049);
+  filter: drop-shadow(0px 0px 5vw #1a272e);
+
+}
+
+@media screen and (max-width: 1000px) {
+  .Portrait{
+  }
+  
+}
+
+.Name {
+  background: -webkit-linear-gradient(#003049, #165275);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vw;
+  font-weight: 650;
+  z-index: 2;
+  opacity: 100%;
+  left: 5%;
+  top: 5%;
+  
+  position: absolute;
+  text-align: left;
+
+  animation: nameAnimation linear;
+  animation-duration: 3s;
+  animation-timeline: scroll();
+
+}
+
 @keyframes nameAnimation {
   to {
-    margin: 0%;
     opacity: -50%;
-    font-size: 20vw;
+    top: 200%;
   }
 }
+
+
 
 .Arrow {
   display: block;
@@ -51,7 +100,7 @@ body::-webkit-scrollbar {
   width: fit-content;
   margin-top: 30vh;
   height: 11vh;
-  z-index: 1;
+  z-index: 4;
   opacity: 100%;
   left: 50%;
   top: 59vh;
@@ -72,6 +121,8 @@ body::-webkit-scrollbar {
   display: block;
   position: relative;
   margin-top: 30vh;
+  z-index: 4;
+  font-weight: 500;
   font-size: 20px;
   left: 50%;
   top: 65vh;

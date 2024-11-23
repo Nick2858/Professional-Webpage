@@ -8,19 +8,25 @@ import {
   scroller,
 } from "react-scroll";
 import ProjectsCarousel from "./CarouselSlide";
-import { Carousel } from "react-bootstrap";
 import AboutPage from "./AboutPage";
 
 function LandingPage() {
   return (
     <>
+      <div className="Name"> Nicholas Karantakis </div>
       <div id="Home" className="LandingPage">
-        <div className="Name"> Nicholas Karantakis </div>
-
-        <Link to="About" duration={500}>
-          <input className="Arrow" type="image" src="./planeArrow.png"></input>
-          <div className="Explore"> Press to Explore </div>
+      
+        <div className="InnerPage">
+        
+        <Link to="About">
+        <div className="Explore"> Press to Explore </div>
+        <input className="Arrow" type="image" src="./planeArrow.png"></input>
+          
         </Link>
+       
+       <img className="Portrait" src="file.png"></img>
+        
+       </div>
       </div>
       <AboutPage />
     </>

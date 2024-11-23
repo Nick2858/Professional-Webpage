@@ -3,14 +3,13 @@ import LandingPage from "./components/LandingPage";
 import AboutPage from "./components/AboutPage";
 import ProjectsPage from "./components/ProjectsPage";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar />
         <Routes>
           <Route path="/Portfolio-Website/" element={<LandingPage />} />
           <Route
