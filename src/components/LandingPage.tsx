@@ -39,17 +39,19 @@ function LandingPage() {
         </div>
         <div className="InnerPage">
         
-        <Link to="About">
-        <div className="Explore"> Press to Explore </div>
-        <input className="Arrow" type="image" src="./planeArrow.png"></input>
-          
-        </Link>
+        
        
        <img className="Portrait" src="Portrait.png"></img>
         
        </div>
-      
       </div>
+      <div className="ExploreBar">
+      <Link to="About">
+        <div className="Explore"> Press to Explore </div>
+        <input className="Arrow" type="image" src="./planeArrow.png"></input>
+          
+        </Link>
+        </div>
       <AboutPage />
       <Footer />
     </>
