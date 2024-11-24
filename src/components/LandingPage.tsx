@@ -10,11 +10,13 @@ import {
 import ProjectsCarousel from "./CarouselSlide";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
+import NavBar from "./NavBar"
+
 
 function LandingPage() {
   return (
     <>
-      
+      <NavBar /> 
       <div id="Home" className="LandingPage">
       <div className="Name"> Nicholas Karantakis </div>
       <div className="Socials">
@@ -52,8 +54,11 @@ function LandingPage() {
           
         </Link>
         </div>
-      <AboutPage />
-      <Footer />
+      
+        
+        <AboutPage />
+        <Footer />
+      
     </>
   );
 }
