@@ -370,10 +370,9 @@ body::-webkit-scrollbar {
   flex-direction: row;
   justify-content: center;
   align-items: left;
-  aspect-ratio: 4/3;
+  height: 20vh;
   margin-bottom: 5%;
   position: relative;
-  min-height: 20vh;
   width: 40%;
   padding: 1%;
   text-align: left;
@@ -400,11 +399,11 @@ body::-webkit-scrollbar {
     justify-content: center;
   
     width:100%;
-    height:fit-content;
+    height:min-content;
   }
   
   .WorkDisplay {
-    height:fit-content;
+    height:40%;
     margin-bottom: 5%;
     width: 100%;
 

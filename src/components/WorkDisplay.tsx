@@ -27,7 +27,7 @@ function WorkDisplay({ children }: Props) {
           {children.description}
         </b>
       </div>
-      <img src={children.image} className="WorkImage"></img>
+      {/* <img src={children.image} className="WorkImage"></img> */}
     </li>
   );
 }
