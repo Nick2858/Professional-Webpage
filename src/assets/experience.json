@@ -5,7 +5,8 @@
     "company": "Bazylak Group and Latner Thoracic Research Laboratories",
     "date": "May 2024 - Aug 2024",
     "description": "This research aims to optimize the current system for modeling vasculature and airways of the lungs from CT scans to analyze their geometric characteristics.",
-    "image": "./experiencePics/Latner.png"
+    "image": "./experiencePics/Latner.png",
+    "skills": ["Computed Tomography", "Python", "MATLAB", "Office Suite", "Public Speaking"]
     },
     {
     "id":2,
@@ -13,7 +14,8 @@
     "company": "University of Toronto Aerospace Team",
     "date": "Jan 2024 - Present",
     "description": "Help to design, build, and test components of the Airframe for the University of Toronto Aerospace Team’s drone team competing in the Aerial Evolution Association of Canada UAS competition.",
-    "image": "./experiencePics/UTAT.png"
+    "image": "./experiencePics/UTAT.png",
+    "skills": ["SolidWorks", "Manufacturing", "Rapid Prototyping", "Teamwork"]
     },
     {
     "id":3,
@@ -21,7 +23,8 @@
     "company": "Roma's Hospitality Centre",
     "date": "Dec 2022 - Present",
     "description": "My responsibilities include setting up/cleaning up events, serving food and beverages, assisting guests with issues and concerns, and washing dishes.",
-    "image": "./experiencePics/Romas.png"
+    "image": "./experiencePics/Romas.png",
+    "skills": ["Teamwork", "Customer Service", "Communication"]
     },
     {
     "id":4,
@@ -29,7 +32,8 @@
     "company": "Mitsubishi Heavy Industries",
     "date": "Jun 2022 - Aug 2022",
     "description": "Helped in the production of wings for Bombardier Global Express 5000 jets. Responsibilities included cleaning, painting, sandblasting, using air-compressed tools, removing excess sealant, helping prepare wings for leak test, and more.",
-    "image": "./experiencePics/MHI.jpg"
+    "image": "./experiencePics/MHI.jpg",
+    "skills": ["Sand Blasting", "Pneumatic Tools", "Painting", "WHIMS Safety"]
     }
     
 ]

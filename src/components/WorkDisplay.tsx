@@ -8,6 +8,7 @@ interface Props {
     date: string;
     description: string;
     image: string;
+    skills: string[];
   };
 }
 
@@ -26,8 +27,12 @@ function WorkDisplay({ children }: Props) {
         <b style={{ fontSize: "15px", fontWeight: "400" }}>
           {children.description}
         </b>
+        <div className="JobSkills">
+          {children.skills.map((skill) => (
+            <div className="Skill"> {skill}</div>
+          ))}
+        </div>
       </div>
-      
     </li>
   );
 }
