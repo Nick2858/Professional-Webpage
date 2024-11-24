@@ -7,15 +7,16 @@ function AboutPage() {
     <>
       <div id="About" className="AboutPage">
         <h1 className="PageTitle" style={{ fontSize: "min(80px,6vw)" }}>
-          About Me
+          Who Am I?
         </h1>
         <div className="AboutMe" style={{ paddingTop: "4vw", gap: "10px" }}>
-          <img className="AboutProfile" src="./ProfileImage.jpg"></img>
+          
           <body className="PageInfo">
             <p className="PageText">
-              Hi, I'm Nicholas. A second year Mechanical Engineering Student at
+             A second year Mechanical Engineering Student at
               the University of Toronto pursuing a minor in Robotics, and Engineering Business. 
-              My fields of interest include robotics, aerospace, bioengineering, CFD, automotives and programming.
+              When I'm not busy with homework, I like playing instruments, exercising, hiking and playing basketball. 
+              My fields of interest include mechatronics, bioengineering, aerospace and programming.  
             </p>
           </body>
         </div>

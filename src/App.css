@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
   background-color:  #ffffff;
   position: relative;
   text-align: left;
-
+  overflow: hidden;
   z-index: 1;
   scroll-timeline: 10s;
 }
@@ -55,6 +55,7 @@ body::-webkit-scrollbar {
 
 
 
+
 .Name {
   background: -webkit-linear-gradient(#003049, #165275);
   -webkit-background-clip: text;
@@ -66,7 +67,7 @@ body::-webkit-scrollbar {
   width:100%;
   height: min-content;
   top: 1%;
-  position: absolute;
+  position: fixed;
   text-align: center;
   overflow: hidden;
   animation: nameAnimation linear;
@@ -241,7 +242,7 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-rows: auto;
 
-  z-index: 3;
+  z-index: 1;
 
   width: 100%;
   min-height: 110vh;
@@ -268,20 +269,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   gap: 0px;
   padding: auto;
-  text-align: left;
+  text-align: center;
 
   position: relative;
 }
 
-.AboutProfile {
-  border-radius: 30%;
-  max-width: min(400px, 70%);
-  height: fit-content;
-  flex-shrink: 20;
-  box-shadow: 0px 0px 5px 1px rgb(154, 154, 154);
-  padding: 0%;
-  border: solid black;
-}
 
 .PageInfo {
   flex-grow: inherit;

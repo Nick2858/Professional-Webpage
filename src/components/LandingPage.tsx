@@ -14,6 +14,8 @@ import Footer from "./Footer";
 function LandingPage() {
   return (
     <>
+      
+      <div id="Home" className="LandingPage">
       <div className="Name"> Nicholas Karantakis </div>
       <div className="Socials">
         <a href="https://github.com/Nick2858" target="_blank">
@@ -35,8 +37,6 @@ function LandingPage() {
           <button className="ResumeLinkText">Resume</button>
         </a>
         </div>
-      <div id="Home" className="LandingPage">
-      
         <div className="InnerPage">
         
         <Link to="About">
@@ -45,7 +45,7 @@ function LandingPage() {
           
         </Link>
        
-       <img className="Portrait" src="file3.png"></img>
+       <img className="Portrait" src="Portrait.png"></img>
         
        </div>
       
