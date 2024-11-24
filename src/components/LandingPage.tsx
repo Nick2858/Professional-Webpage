@@ -55,9 +55,8 @@ function LandingPage() {
         </Link>
         </div>
       
-        
-        <AboutPage />
-        <ProjectsPage />
+        <AboutPage/>
+        <ProjectsPage/>
         <Footer />
       
     </>

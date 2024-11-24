@@ -13,10 +13,10 @@ function AboutPage() {
           
           <body className="PageInfo">
             <p className="PageText">
-             A second year Mechanical Engineering Student at
+             I'm a second year Mechanical Engineering Student at
               the University of Toronto pursuing a minor in Robotics, and Engineering Business. 
-              When I'm not busy with homework, I like playing instruments, exercising, hiking and playing basketball. 
-              My fields of interest include mechatronics, bioengineering, aerospace and programming.  
+              I've worked in various industries including biomedical research, aerospace and hospitality. 
+              My future aspirations are to explore careers in different fields related to mechatronics and robotics where I can integrate my strong interest for programming and design with my passion for cross-disciplinary problem solving.
             </p>
           </body>
         </div>
