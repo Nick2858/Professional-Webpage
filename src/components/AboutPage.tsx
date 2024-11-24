@@ -17,8 +17,8 @@ function AboutPage() {
               I've worked in various industries including biomedical research,
               aerospace and hospitality. My future aspirations are to explore
               careers in different fields related to mechatronics and robotics
-              where I can integrate my strong interest for programming and
-              design with my passion for cross-disciplinary problem solving.
+              where I can integrate my strong interests in programming and
+              mechanical design with my passion for cross-disciplinary problem solving.
             </p>
           </body>
         </div>
@@ -31,6 +31,9 @@ function AboutPage() {
             <WorkDisplay>{experience}</WorkDisplay>
           ))}
         </ul>
+        <h1 className="PageTitle" style={{ padding: "3vh" }}>
+          Awards
+        </h1>
       </div>
     </>
   );

@@ -21,9 +21,7 @@ function WorkDisplay({ children }: Props) {
           {children.jobtitle} - {children.company} <br></br>
         </h1>
         <h1 style={{ fontSize: "15px" }}>{children.date}</h1>
-        <h1 style={{ fontSize: "18px", fontWeight: "600", paddingTop: "5px" }}>
-          Role:
-        </h1>
+        
         <b style={{ fontSize: "15px", fontWeight: "400" }}>
           {children.description}
         </b>

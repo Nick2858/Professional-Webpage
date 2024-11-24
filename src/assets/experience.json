@@ -4,7 +4,7 @@
     "jobtitle":"Undergraduate Researcher",
     "company": "Bazylak Group and Latner Thoracic Research Laboratories",
     "date": "May 2024 - Aug 2024",
-    "description": "This research aims to optimize the current system for modeling vasculature and airways of the lungs from CT scans to analyze their geometric characteristics.",
+    "description": "Optimized a MATLAB pipeline for extracting lung vasculature and airway geometry, achieving a 47% reduction in processing time using memory allocation techniques and MATLAB Profiler tools. Developed imaging methods producing micro-CT scans with over 1,000 airway branches (~30 generations) and constructed simplified airway geometries for CFD analysis using the Branch Builder tool.",
     "image": "./experiencePics/Latner.png",
     "skills": ["Computed Tomography", "Python", "MATLAB", "Office Suite", "Public Speaking"]
     },
@@ -13,7 +13,7 @@
     "jobtitle":"UTAT AEAC Airframe Member",
     "company": "University of Toronto Aerospace Team",
     "date": "Jan 2024 - Present",
-    "description": "Help to design, build, and test components of the Airframe for the University of Toronto Aerospace Team’s drone team competing in the Aerial Evolution Association of Canada UAS competition.",
+    "description": "Engaged in the design, fabrication, and testing of airframe components, including the shell, wings, and motor mount for drone in the Aerial Evolution Association of Canada UAS competition. Facilitated manufacturing of components using various techniques including 3D printing, carbon fiber, fiberglass, and epoxy resin to optimize weight and structural integrity.",
     "image": "./experiencePics/UTAT.png",
     "skills": ["SolidWorks", "Manufacturing", "Rapid Prototyping", "Teamwork"]
     },
@@ -22,7 +22,7 @@
     "jobtitle":"Banquet Waiter",
     "company": "Roma's Hospitality Centre",
     "date": "Dec 2022 - Present",
-    "description": "My responsibilities include setting up/cleaning up events, serving food and beverages, assisting guests with issues and concerns, and washing dishes.",
+    "description": "Supported event setup, cleanup, and food and beverage service to ensure smooth operations and a positive guest experience. Assisted attendees with concerns, provided prompt solutions, and communicating with colleagues to maintain high quality service.",
     "image": "./experiencePics/Romas.png",
     "skills": ["Teamwork", "Customer Service", "Communication"]
     },
@@ -31,7 +31,7 @@
     "jobtitle":"Production Support",
     "company": "Mitsubishi Heavy Industries",
     "date": "Jun 2022 - Aug 2022",
-    "description": "Helped in the production of wings for Bombardier Global Express 5000 jets. Responsibilities included cleaning, painting, sandblasting, using air-compressed tools, removing excess sealant, helping prepare wings for leak test, and more.",
+    "description": "Contributed to the production of Bombardier Global Express 5000 wings and center fuselage, ensuring compliance with quality standards. Performed tasks such as painting touchups, cleaning, sandblasting, and preparing wings for leak tests across multiple production stages, including spar shop, final inspection, and shipping preparation.",
     "image": "./experiencePics/MHI.jpg",
     "skills": ["Sand Blasting", "Pneumatic Tools", "Painting", "WHIMS Safety"]
     }
