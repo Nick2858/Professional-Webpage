@@ -11,7 +11,7 @@ import ProjectsCarousel from "./CarouselSlide";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import NavBar from "./NavBar"
-
+import ProjectsPage from "./ProjectsPage";
 
 function LandingPage() {
   return (
@@ -42,8 +42,8 @@ function LandingPage() {
         <div className="InnerPage">
         
         
-       
-       <img className="Portrait" src="Portrait.png"></img>
+        
+          <img className="Portrait" src="Portrait.png"></img>
         
        </div>
       </div>
@@ -57,6 +57,7 @@ function LandingPage() {
       
         
         <AboutPage />
+        <ProjectsPage />
         <Footer />
       
     </>

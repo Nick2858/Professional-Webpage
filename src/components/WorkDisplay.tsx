@@ -13,8 +13,8 @@ interface Props {
 
 function WorkDisplay({ children }: Props) {
   return (
-    <div className="WorkDisplay">
-      <img src={children.image} className="WorkImage"></img>
+    <li className="WorkDisplay">
+      
       <div className="WorkInfo">
         <h1 style={{ fontSize: "20px" }}>
           {children.jobtitle} - {children.company} <br></br>
@@ -27,7 +27,8 @@ function WorkDisplay({ children }: Props) {
           {children.description}
         </b>
       </div>
-    </div>
+      <img src={children.image} className="WorkImage"></img>
+    </li>
   );
 }
 

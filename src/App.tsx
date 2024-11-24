@@ -12,10 +12,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/Portfolio-Website/" element={<LandingPage />} />
-          <Route
-            path="/Portfolio-Website/Projects"
-            element={<ProjectsPage />}
-          />
         </Routes>
        
       </BrowserRouter>

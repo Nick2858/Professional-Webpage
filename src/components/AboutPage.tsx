@@ -6,8 +6,8 @@ function AboutPage() {
   return (
     <>
       <div id="About" className="AboutPage">
-        <h1 className="PageTitle" style={{ fontSize: "min(80px,6vw)" }}>
-          Who Am I?
+        <h1 className="PageTitle" style={{ fontSize: "min(100px,6vw)" }}>
+          About Me
         </h1>
         <div className="AboutMe" style={{ paddingTop: "4vw", gap: "10px" }}>
           
@@ -24,10 +24,11 @@ function AboutPage() {
           {" "}
           Experience
         </h1>
-
+        <ul className="WorkExperiences">
         {Experiences.map((experience) => (
           <WorkDisplay>{experience}</WorkDisplay>
         ))}
+        </ul>
         <h1 className="PageTitle" style={{ padding: "7vh 7vh 0 7vh" }}>
           {" "}
           Skills
