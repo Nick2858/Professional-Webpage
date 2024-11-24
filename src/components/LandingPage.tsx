@@ -27,7 +27,7 @@ function LandingPage() {
         >
           <img className="IconLink" src="./In-White-128.png"></img>
         </a>
-        <a href="https://github.com/Nick2858" target="_blank">
+        <a href="mailto:nicholaskarantakis@gmail.com" target="_blank">
           <img className="IconLink" src="./gmail.svg"></img>
         </a>
         
