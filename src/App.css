@@ -635,13 +635,6 @@ body::-webkit-scrollbar {
   height: auto;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
 .prc-dotGroup {
   text-align: center;
   padding-top: 20px;
@@ -777,3 +770,14 @@ img {
 }
 
 
+@media (max-width: 600px) {
+  .Arrow {
+    animation: none; /* Disable bounce animation */
+  }
+  .Socials {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
