@@ -20,7 +20,7 @@ function ProjectsPage() {
       <h1 className="PageTitle" style={{ fontSize: "min(80px,6vw)" }}>
         Projects
       </h1>
-      <ProjectsCarousel />
+      {/* <ProjectsCarousel /> */}
     </div>
   );
 }

@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   padding-bottom: 2%;
   width:100%;
   height: 80vh;
-  background: -webkit-linear-gradient(#6f9fbe, #b3c6d3);
+  background: -webkit-linear-gradient(#6f9fbe, #cfcfcf);
   overflow: hidden;
   animation: OnScroll linear;
   animation-duration: 3s;
@@ -61,13 +61,13 @@ body::-webkit-scrollbar {
   background: -webkit-linear-gradient(#003049, #165275);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: 650;
   z-index: 2;
   opacity: 100%;
   width:100%;
   height: min-content;
-  top: 3vh;
+  top: 4vh;
   position: fixed;
   text-align: center;
   overflow: hidden;
@@ -245,7 +245,7 @@ body::-webkit-scrollbar {
 .ExploreBar{
   width: 100vw;
   height: 25vh;
-  background-color:  #ffffff;
+  background-color:  #f3f3f3;
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -270,6 +270,7 @@ body::-webkit-scrollbar {
   z-index: 6;
   display: inline;
   vertical-align: middle;
+
 
 }
 
@@ -337,6 +338,16 @@ body::-webkit-scrollbar {
 .PageTitle {
   position: relative;
   font: "Arial";
+  font-size: min(100px,6vw);
+  color: #2274a5;
+  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation-duration: 2s;
+  animation-timeline: view();
+}
+
+.PageHeader{
+  position: relative;
+  font: "Arial";
   font-size: min(60px, 4vw);
   color: #2274a5;
   animation: FadeIn cubic-bezier(.72,.12,.88,.58);
@@ -344,10 +355,11 @@ body::-webkit-scrollbar {
   animation-timeline: view();
 }
 
-
 .PageText {
   font: "Arial";
-  font-size: 30px;
+  width: min(100%, 1400px);
+  font-size: 0.7em;
+  margin: auto;
   color: #4a4a4a;
   animation: FadeIn cubic-bezier(.72,.12,.88,.58);
   animation-duration: 2s;
@@ -355,6 +367,8 @@ body::-webkit-scrollbar {
 }
 
 .WorkExperiences{
+  padding:0%;
+  margin: 0;
   display:flex;
   flex-wrap:wrap;
   gap:5%;
@@ -387,6 +401,11 @@ body::-webkit-scrollbar {
   -webkit-animation-duration: 20s;
 }
 
+.WorkDisplay::-webkit-scrollbar {
+  display: none;
+}
+
+
 .JobSkills{
   padding-top: 10px;
   display:flex;
@@ -412,54 +431,8 @@ body::-webkit-scrollbar {
   background-color: #dadada;
 }
 
-@media screen and (max-width:1500px) {
-  .WorkExperiences{
-    display:flex;
-    flex-wrap:wrap;
-    
-    
-    justify-content: center;
-  
-    width: 100%;
-    height: fit-content;
-  }
-  
-  .WorkDisplay {
-    height: max(fit-content);
-    margin-bottom: 5%;
-    width: 40%;
-
-  }
-}
-
-@media screen and (max-width:700px) {
-  .WorkDisplay {
-    height: fit-content;
-    margin-bottom: 5%;
-    width: 100%;  
-
-  }
 
 
-}
-
-.WorkDisplay::-webkit-scrollbar {
-  display: none;
-}
-
-@keyframes FadeIn {
-  0% {
-    opacity: 0%;
-  }
-
-  10% {
-    opacity: 0%;
-  }
-
-  50% {
-    opacity: 100%;
-  }
-}
 
 
 .WorkImage {
@@ -474,14 +447,41 @@ body::-webkit-scrollbar {
 }
 
 .WorkInfo {
-  
+
   position: relative;
   height: auto;
   text-align: left;
   flex-grow: 1;
   max-width: 1000px;
+  
 }
 
+.AwardList{
+  width:100%;
+  height:max-content;
+  display: inline;
+  overflow: visible;
+  animation: FadeIn cubic-bezier(.72,.12,0,.9);
+  animation-duration: 2s;
+  animation-timeline: view();
+  margin:0;
+  padding:0;
+
+}
+.AwardTitle {
+  position: relative;
+  font: "Arial";
+  font-size: min(60px, 4vw);
+  color: #2274a5;
+  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation-duration: 2s;
+  animation-timeline: view();
+}
+
+.AwardInfo{
+  padding:20px;
+  text-align: center;
+}
 
 .ProjectsPage {
   z-index: 4;
@@ -495,13 +495,14 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
 
-  padding-top: max(5%);
+  padding-top:max(70px, 5%);
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: max(2%, 50px);
 
   text-align: center;
   background-color: #ffffff;
+
 }
 
 .ProjectImage {
@@ -569,22 +570,38 @@ body::-webkit-scrollbar {
 
 
 .carousel-wrapper {
+  padding: 50px;
   position: relative; /* Makes sure the carousel container is the reference for absolute positioning */
-  overflow: hidden; /* Hide any content that overflows (for proper carousel behavior) */
+  overflow: visible; /* Hide any content that overflows (for proper carousel behavior) */
 }
 
 .carousel-container {
-  width: 100%;
-  max-width: 80vw; /* or any other fixed value */
-  margin: 1% auto;
+  
+  background-color: #f3f3f3;
+  box-shadow: 0px 5px 50px 2px rgb(168, 168, 168);
+  
+  flex-grow: 1;
+  text-align: left;
+  margin: auto;
+  color: rgb(0, 0, 0);
+
+  overflow: hidden;
+  width: 50%;
+  max-width: 80vw;
+  height: max-content;
   position: relative;
-  overflow: hidden; /* Hide overflow */
+  
 }
 
 .carousel-slider {
+  overflow: hidden;
   display: flex; /* Use flexbox to display slides inline */
   flex-wrap: nowrap; /* Prevent slides from wrapping to the next line */
   transition: transform 0.5s ease; /* Optional: Smooth transition for sliding */
+}
+
+.carousel-slide {
+  overflow: hidden;
 }
 
 .carousel-button {
@@ -631,7 +648,7 @@ img {
 
 .prc-dotGroup {
   text-align: center;
-  padding-top: 5px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 .carousel__dot {
@@ -642,7 +659,8 @@ img {
   border: 1px solid rgb(0, 0, 0);
 }
 .carousel__dot--selected {
-  background-color: black;
+  background-color:#2274a5;
+  border: 0px;
 }
 
 .LearnMore:hover {
@@ -671,24 +689,95 @@ img {
   opacity: 100%;
 }
 
-.ResumeButton {
+.ResumeButton{
   font: "Tahoma";
-  font-size: max(2vw, 2vh);
-  height: auto;
-  width: auto;
-  color: white;
-  margin: auto;
+  font-size: 130%;
+  height: 24%;
+  width:max-content;
+  color: #023047;
   vertical-align: middle;
-
-  font-weight: 500;
-  background-color: transparent;
-
+  opacity:60%;
+  padding-left: 2px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  background-color: #ffffff;
+  
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
+  
+  
 }
 
-.ResumeButton:hover {
-  background-color: #2274a5;
+.ResumeButton:hover{
+  opacity: 90%;
 }
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  .WorkExperiences{
+    display: flex;    
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+
+  }
+
+  .WorkDisplay {
+    height: max(70%, fit-content);;
+    margin-bottom: 5%;
+    width: 100%;
+    min-width: 80%;  
+  }
+
+  .carousel-container{
+    width: 100%;
+    height: max(70vh, fit-content);
+  }
+
+}
+
+
+@media screen and (max-width:1800px) and (min-width:100px) {
+  .WorkExperiences{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+  
+    width: 100%;
+    height: fit-content;
+
+  }
+  
+  .WorkDisplay {
+    height: max(70%, fit-content);;
+    margin-bottom: 5%;
+    width: 40%;
+
+  }
+
+  .carousel-container{
+    width: 60%;
+    height: max(70vh, fit-content);
+  }
+}
+
+

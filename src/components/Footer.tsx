@@ -3,7 +3,7 @@ import "../App.css";
 function Footer() {
   return (
     <div className="Footer">
-      <div className="Icon">
+      
         <a href="https://github.com/Nick2858" target="_blank">
           <img className="Icon" src="./github-mark-white.svg"></img>
         </a>
@@ -17,7 +17,7 @@ function Footer() {
           <button className="ResumeButton">Resume</button>
         </a>
       </div>
-    </div>
+    
   );
 }
 

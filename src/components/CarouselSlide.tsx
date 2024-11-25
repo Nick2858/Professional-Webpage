@@ -28,6 +28,7 @@ export default class ProjectsCarousel extends React.Component {
   render() {
     return (
       <CarouselProvider
+        className="overflower"
         naturalSlideWidth={100}
         naturalSlideHeight={60}
         totalSlides={indexLength+customSlidesNum}

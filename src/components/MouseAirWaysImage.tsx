@@ -24,15 +24,10 @@ export default function Model2(props: JSX.IntrinsicElements["group"]) {
 
   const modelRef = useRef<Group | null>(null);
 
-  useEffect(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.set(0, 1.2 * Math.PI, 0);
-    }
-  }, []);
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.004; // Rotate on the X-axis every frame
+      modelRef.current.rotation.y += 0.004;
     }
   });
 
