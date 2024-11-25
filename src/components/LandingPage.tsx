@@ -16,7 +16,7 @@ import ProjectsPage from "./ProjectsPage";
 function LandingPage() {
   return (
     <>
-      <NavBar /> 
+      
       <div id="Home" className="LandingPage">
       <div className="Name"> Nicholas Karantakis </div>
       <div className="Socials">
@@ -48,16 +48,14 @@ function LandingPage() {
        </div>
       </div>
       <div className="ExploreBar">
-      <Link to="About">
+      <Link to="AboutPage">
         <div className="Explore"> Press to Explore </div>
         <input className="Arrow" type="image" src="./planeArrow.png"></input>
           
         </Link>
         </div>
       
-        <AboutPage/>
-        <ProjectsPage/>
-        <Footer />
+        
       
     </>
   );

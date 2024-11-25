@@ -10,7 +10,7 @@ function NavBar(){
             <button className="NavPages"> Home </button>          
             
         </Link>
-        <Link to="About">
+        <Link to="AboutPage">
             <button className="NavPages"> About</button>          
             
         </Link>
