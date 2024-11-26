@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
@@ -11,12 +9,10 @@ body::-webkit-scrollbar {
   -webkit-animation-duration: 20s;
 }
 
-
-
 .LandingPage {
   width: 100vw;
   height: 80vh;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -24,14 +20,14 @@ body::-webkit-scrollbar {
   scroll-timeline: 10s;
 }
 
-.InnerPage{
+.InnerPage {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  position:relative;
+  position: relative;
   vertical-align: top;
   padding-bottom: 4%;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: -webkit-linear-gradient(#6f9fbe, #cfcfcf);
   overflow: hidden;
@@ -40,22 +36,19 @@ body::-webkit-scrollbar {
   animation-timeline: scroll();
 }
 
-.Portrait{
-
+.Portrait {
   overflow: hidden;
   width: auto;
   height: 50%;
-  background:  -webkit-linear-gradient(#1652753d, #002f49af);
-  bottom:0;
+  background: -webkit-linear-gradient(#1652753d, #002f49af);
+  bottom: 0;
   border: 0px solid #000000;
-  border-radius:30%;
+  border-radius: 30%;
   z-index: 2;
 
-  -webkit-filter: drop-shadow(0px 0px 10vh  #000000f6);
+  -webkit-filter: drop-shadow(0px 0px 10vh #000000f6);
   filter: drop-shadow(0px 0px 8vh #000000f6);
-
 }
-
 
 .Name {
   background: -webkit-linear-gradient(#003049, #165275);
@@ -65,7 +58,7 @@ body::-webkit-scrollbar {
   font-weight: 650;
   z-index: 2;
   opacity: 100%;
-  width:100%;
+  width: 100%;
   height: min-content;
   top: 4vh;
   position: fixed;
@@ -75,7 +68,7 @@ body::-webkit-scrollbar {
   animation-duration: 3s;
   animation-timeline: scroll();
   white-space: nowrap;
-  -webkit-filter: drop-shadow(0px 0px 2vh  #00000041);
+  -webkit-filter: drop-shadow(0px 0px 2vh #00000041);
   filter: drop-shadow(0px 0px 2vh #00000041);
 }
 
@@ -85,7 +78,6 @@ body::-webkit-scrollbar {
     top: 20%;
     text-align: center;
     font-size: 12vw;
-    
   }
 }
 
@@ -98,41 +90,45 @@ body::-webkit-scrollbar {
   justify-content: right;
 }
 
+.IconsGroup {
+  width: 100%;
+}
 .IconLink {
-  height: 90px;
+  height: min(90px, 10vw, 10vh);
   width: auto;
   display: inline;
   padding-right: 5%;
   padding-left: 5%;
-  
+
   opacity: 60%;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(101%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(177deg) brightness(101%) contrast(102%);
 }
 
 .IconLink:hover {
   opacity: 100%;
 }
 
+.ResumeLink {
+  width: 100%;
+}
 
-.ResumeLinkText{
+.ResumeLinkText {
   padding-right: 5%;
   padding-top: 3%;
   padding-bottom: 4%;
   font-weight: 500;
-  font-size: 80px;
+  font-size: min(90px, 10vw, 10vh);
   opacity: 60%;
   padding-left: 5%;
-  color:white;
+  color: white;
   cursor: pointer;
   text-decoration: none;
-  
 }
 
 .ResumeLinkText:hover {
   opacity: 100%;
 }
-
-
 
 .Arrow {
   display: block;
@@ -171,46 +167,42 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.ExploreBar{
+.ExploreBar {
   width: 100vw;
   height: 25vh;
-  background-color:  #f3f3f3;
+  background-color: #f3f3f3;
   position: relative;
   text-align: left;
-  overflow:hidden;
+  overflow: hidden;
   z-index: 1;
 }
 
-.Site{
+.Site {
   overflow: hidden;
 }
 
-
-.NavBar{
-  display:inline;
+.NavBar {
+  display: inline;
   padding-inline: 5%;
   width: 100%;
   height: 5vh;
   text-align: right;
   background-color: #e4e4e4;
   opacity: 90%;
-  position:fixed;
-  top:0%;
+  position: fixed;
+  top: 0%;
   z-index: 6;
   vertical-align: middle;
-
-
 }
 
-.NavPages{
+.NavPages {
   height: 100%;
   vertical-align: middle;
   font-size: 2.5vh;
   font-weight: 500;
   padding-inline: 1%;
   font-family: "Arial";
-  color:#165275;
-
+  color: #165275;
 }
 
 .AboutPage {
@@ -235,7 +227,6 @@ body::-webkit-scrollbar {
   padding-bottom: 10%;
 
   text-align: center;
-  
 }
 
 .AboutMe {
@@ -246,26 +237,24 @@ body::-webkit-scrollbar {
   gap: 0px;
   padding: auto;
   text-align: center;
-  
 }
-
 
 .PageTitle {
   position: relative;
   font: "Arial";
-  font-size: min(100px,8vw);
+  font-size: min(100px, 8vw);
   color: #2274a5;
-  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
   animation-duration: 2s;
   animation-timeline: view();
 }
 
-.PageHeader{
+.PageHeader {
   position: relative;
   font: "Arial";
   font-size: min(60px, 6vw);
   color: #2274a5;
-  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
   animation-duration: 2s;
   animation-timeline: view();
 }
@@ -274,7 +263,7 @@ body::-webkit-scrollbar {
   font: "Arial";
   margin: auto;
   color: #4a4a4a;
-  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
   animation-duration: 2s;
   animation-timeline: view();
   flex-grow: inherit;
@@ -287,21 +276,19 @@ body::-webkit-scrollbar {
   background-color: #f3f3f3;
 }
 
-.WorkExperiences{
-  padding:0%;
+.WorkExperiences {
+  padding: 0%;
   margin: 0;
-  display:flex;
-  flex-wrap:wrap;
-  gap:5%;
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+
   flex-direction: row;
-  
+
   justify-content: center;
 
-  width:100%;
-  height:max-content;
-
-
+  width: 100%;
+  height: max-content;
 }
 
 .WorkDisplay {
@@ -312,7 +299,7 @@ body::-webkit-scrollbar {
   padding: 1%;
   box-shadow: 0px 5px 50px 2px rgb(168, 168, 168);
 
-  animation: FadeIn cubic-bezier(.72,.12,0,.9);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0, 0.9);
   animation-duration: 2s;
   animation-timeline: view();
   border-radius: 10px;
@@ -326,23 +313,21 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
-.JobSkills{
+.JobSkills {
   padding-top: 10px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width:100%;
-  height:fit-content;
-  gap:10px;
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
 }
 
-.Skill{
-
-  color:#165275;
+.Skill {
+  color: #165275;
   font-size: "15px";
   font-weight: 500;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   text-align: center;
   border-radius: 50px;
@@ -351,10 +336,6 @@ body::-webkit-scrollbar {
 
   background-color: #dadada;
 }
-
-
-
-
 
 .WorkImage {
   float: left;
@@ -368,26 +349,23 @@ body::-webkit-scrollbar {
 }
 
 .WorkInfo {
-
   position: relative;
   height: auto;
   text-align: left;
   flex-grow: 1;
   max-width: 1000px;
-  
 }
 
-.AwardList{
-  width:100%;
-  height:max-content;
+.AwardList {
+  width: 100%;
+  height: max-content;
   display: inline;
   overflow: visible;
-  animation: FadeIn cubic-bezier(.72,.12,0,.9);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0, 0.9);
   animation-duration: 2s;
   animation-timeline: view();
-  margin:0;
-  padding:0;
-
+  margin: 0;
+  padding: 0;
 }
 
 .AwardTitle {
@@ -395,13 +373,13 @@ body::-webkit-scrollbar {
   font: "Arial";
   font-size: min(60px, 6vw);
   color: #2274a5;
-  animation: FadeIn cubic-bezier(.72,.12,.88,.58);
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
   animation-duration: 2s;
   animation-timeline: view();
 }
 
-.AwardInfo{
-  padding:20px;
+.AwardInfo {
+  padding: 20px;
   text-align: center;
 }
 
@@ -417,14 +395,13 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
 
-  padding-top:max(70px, 5%);
+  padding-top: max(70px, 5%);
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: max(2%, 50px);
 
   text-align: center;
   background-color: #ffffff;
-
 }
 
 .ProjectImage {
@@ -446,7 +423,6 @@ body::-webkit-scrollbar {
 }
 
 .ProjectDisplay {
-  
   display: block;
   justify-content: left;
   align-items: left;
@@ -480,7 +456,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: auto;
   font-size: 40px;
-  background-color: #f3f3f3;;
+  background-color: #f3f3f3;
 }
 
 .InfoGrid {
@@ -490,7 +466,6 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-
 .carousel-wrapper {
   padding: 50px;
   position: relative;
@@ -498,10 +473,9 @@ body::-webkit-scrollbar {
 }
 
 .carousel-container {
-  
   background-color: #f3f3f3;
   box-shadow: 0px 5px 50px 2px rgb(168, 168, 168);
-  
+
   flex-grow: 1;
   text-align: left;
   margin: auto;
@@ -512,7 +486,6 @@ body::-webkit-scrollbar {
   max-width: 80vw;
   height: max-content;
   position: relative;
-  
 }
 
 .carousel-slider {
@@ -572,7 +545,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgb(0, 0, 0);
 }
 .carousel__dot--selected {
-  background-color:#2274a5;
+  background-color: #2274a5;
   border: 0px;
 }
 
@@ -587,7 +560,6 @@ body::-webkit-scrollbar {
   text-align: left;
   position: relative;
   z-index: 5;
-  
 }
 
 .Icon {
@@ -602,66 +574,60 @@ body::-webkit-scrollbar {
   opacity: 100%;
 }
 
-.ResumeButton{
+.ResumeButton {
   font: "Arial";
   font-size: 130%;
   height: 24%;
-  width:max-content;
+  width: max-content;
   color: #023047;
   vertical-align: middle;
-  opacity:60%;
+  opacity: 60%;
   padding-left: 2px;
   padding-right: 10px;
   padding-bottom: 5px;
   font-weight: 700;
   background-color: #ffffff;
-  
+
   border: none;
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
-  
-  
 }
 
-.ResumeButton:hover{
+.ResumeButton:hover {
   opacity: 90%;
 }
 
-
-
-@media (max-width:1000px) {
-  .WorkExperiences{
-    display: flex;    
+@media (max-width: 1000px) {
+  .WorkExperiences {
+    display: flex;
     justify-content: center;
     width: 80%;
     height: fit-content;
-
   }
 
   .WorkDisplay {
-    height: max(70%, fit-content);;
+    height: max(70%, fit-content);
     margin-bottom: 5%;
     width: 100%;
-    min-width: 80%;  
+    min-width: 80%;
   }
 
-  .carousel-container{
+  .carousel-container {
     width: 100%;
     height: max(70vh, fit-content);
   }
   .Socials {
-
     height: 7vh;
     width: 100%;
-    position:fixed;
+    position: fixed;
     top: 15%;
-    left:0;
+    left: 0;
     z-index: 1;
     opacity: 60%;
     vertical-align: center;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
   }
   .IconLink {
     height: auto;
@@ -669,28 +635,26 @@ body::-webkit-scrollbar {
 
     padding-right: 5%;
     padding-left: 5%;
-    
   }
 
-  .LandingPage{
+  .LandingPage {
     justify-content: center;
     text-align: center;
   }
-  .InnerPage{
+  .InnerPage {
     justify-content: center;
     padding-right: 0;
     text-align: center;
   }
 
-
-  .ResumeLinkText{
+  .ResumeLinkText {
     width: 100vw;
     font-weight: 500;
     font-size: 5vh;
     opacity: 60%;
-    color:white;
+    color: white;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
   }
 
   @keyframes nameAnimation {
@@ -699,151 +663,134 @@ body::-webkit-scrollbar {
       top: 20%;
       text-align: center;
       font-size: 12vw;
-      
     }
   }
 }
 
-
-@media (max-width:1500px) {
-  .WorkExperiences{
-    display:flex;
-    flex-wrap:wrap;
+@media (max-width: 1500px) {
+  .WorkExperiences {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    
+
     justify-content: center;
-  
+
     width: 100%;
     height: fit-content;
-
   }
-  
+
   .WorkDisplay {
-    height: max(70%, fit-content);;
+    height: max(70%, fit-content);
     margin-bottom: 5%;
     width: 30%;
-
   }
 
-  .carousel-container{
+  .carousel-container {
     width: 60%;
     height: max(70vh, fit-content);
   }
 }
 
-
 @media (max-width: 600px) {
-
-  .Name{
+  .Name {
     animation: none;
     top: 6vh;
     font-size: 2.2rem;
     font-weight: 800;
-
   }
-  .NavBar{
-    text-align:center;
-    padding-left:0;
+  .NavBar {
+    text-align: center;
+    padding-left: 0;
     padding-right: 0;
-    opacity:1;
+    opacity: 1;
   }
 
-  .NavPages{
-    left:0;
+  .NavPages {
+    left: 0;
     width: 30%;
     padding-right: 0%;
     padding-left: 0%;
   }
 
-  .LandingPage{
+  .LandingPage {
     height: 65vh;
   }
-  
-  .InnerPage{
+
+  .InnerPage {
     padding-bottom: 10%;
     justify-content: center;
   }
 
-  .Portrait{
+  .Portrait {
     max-height: 40%;
-    
   }
-  .ExploreBar{
+  .ExploreBar {
     height: 35vh;
   }
   .Arrow {
     top: 65vh;
     height: 10vh;
-    width:auto;
-
+    width: auto;
   }
-  
+
   .carousel__dot {
     height: 2.5vh;
     width: 2.5vh;
   }
 
-  .Explore{
-    top: 70vh
+  .Explore {
+    top: 70vh;
   }
 
-
   .Socials {
-
     height: 7vh;
     max-width: 100%;
     top: 20%;
     left: 0%;
-    position:fixed;
+    position: fixed;
     opacity: 60%;
     vertical-align: center;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
   }
 
-  .PageTitle{
+  .PageTitle {
     font-size: xx-large;
     animation: none;
   }
 
-  .PageHeader{
+  .PageHeader {
     font-size: xx-large;
     animation: none;
   }
-  .PageText{
-    width:80%;
+  .PageText {
+    width: 80%;
     padding-left: 10%;
     padding-right: 10%;
     font-size: large;
     animation: none;
-
   }
 
-  .AboutPage{
+  .AboutPage {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-
   }
 
   .carousel-container {
     width: 95%;
-    border-radius: 10px; 
-
-  
+    border-radius: 10px;
   }
-  .WorkExperiences{
+  .WorkExperiences {
     animation: none;
   }
 
-  .WorkDisplay{
+  .WorkDisplay {
     padding: 20px;
     border-radius: 10px;
     animation: none;
   }
-
 }
-
 
 @keyframes FadeIn {
   0% {
