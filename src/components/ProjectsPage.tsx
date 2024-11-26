@@ -20,6 +20,9 @@ function ProjectsPage() {
       <h1 className="PageTitle">
         Projects
       </h1>
+      <h1 className="PageHeader" style={{color:"black", animation:"none"}}>
+        Coming Soon...
+      </h1>
       {/* <ProjectsCarousel /> */}
     </div>
   );

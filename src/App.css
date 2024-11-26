@@ -139,16 +139,15 @@ body::-webkit-scrollbar {
 
 
 .ResumeLinkText{
-
   font-weight: 500;
   font-size: 4vw;
-  
+  opacity: 60%;
   color:white;
   cursor: pointer;
   text-decoration: none
 }
 
-.ResumeLink:hover {
+.ResumeLinkText:hover {
   opacity: 100%;
 }
 
@@ -723,7 +722,7 @@ body::-webkit-scrollbar {
 }
 
 
-@media (max-width:1800px) {
+@media (max-width:1500px) {
   .WorkExperiences{
     display:flex;
     flex-wrap:wrap;
@@ -739,7 +738,7 @@ body::-webkit-scrollbar {
   .WorkDisplay {
     height: max(70%, fit-content);;
     margin-bottom: 5%;
-    width: 40%;
+    width: 30%;
 
   }
 
@@ -797,8 +796,8 @@ body::-webkit-scrollbar {
   }
   .Arrow {
     top: 65vh;
-    width:20vw;
-    height:auto;
+    height: 10vh;
+    width:auto;
 
   }
   
