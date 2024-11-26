@@ -46,8 +46,6 @@ function LandingPage() {
       </div>
         <div className="InnerPage">
         
-        
-        
           <img className="Portrait" src="Portrait.png"></img>
         
        </div>

@@ -117,22 +117,10 @@ body::-webkit-scrollbar {
   opacity: 100%;
 }
 
-.ResumeLink {
-  height: 10vh;
-  width: 30%;
-  top: 50%;
-  right: 0%;
-
-  position:fixed;
-  z-index: 3;
-  opacity: 60%;
-  vertical-align: right;
-  justify-content: right;
-}
-
 
 .ResumeLinkText{
   padding-right: 5%;
+  padding-top: 3%;
   font-weight: 500;
   font-size: 80px;
   opacity: 60%;
