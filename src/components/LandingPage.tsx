@@ -40,13 +40,10 @@ function LandingPage() {
         <a href="mailto:nicholaskarantakis@gmail.com" target="_blank">
           <img className="IconLink" src="./gmail.svg"></img>
         </a>
-        
-      </div>
-      <div className="ResumeLink">
-      <a href="./Resume.pdf" target="_blank">
+        <a href="./Resume.pdf" target="_blank">
           <button className="ResumeLinkText">Resume</button>
         </a>
-        </div>
+      </div>
         <div className="InnerPage">
         
         
