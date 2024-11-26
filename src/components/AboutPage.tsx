@@ -26,7 +26,15 @@ function AboutPage() {
           </p>
         
         </div>
-       
+        <h1 className="PageHeader" style={{ padding: "7vh" }}>
+          {" "}
+          Experience
+        </h1>
+        <ul className="WorkExperiences">
+          {Experiences.map((experience) => (
+            <WorkDisplay>{experience}</WorkDisplay>
+          ))}
+        </ul>
         <h1 className="PageHeader" style={{ padding: "10vh 0 5vh " }}>
           Awards
         </h1>
@@ -48,15 +56,8 @@ function AboutPage() {
           <DotGroup className="prc-dotGroup"/>
         </CarouselProvider>
         </ul>
-        <h1 className="PageHeader" style={{ padding: "7vh" }}>
-          {" "}
-          Experience
-        </h1>
-        <ul className="WorkExperiences">
-          {Experiences.map((experience) => (
-            <WorkDisplay>{experience}</WorkDisplay>
-          ))}
-        </ul>
+        
+        
       </div>
     </>
   );
