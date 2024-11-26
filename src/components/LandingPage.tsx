@@ -12,13 +12,33 @@ import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import NavBar from "./NavBar"
 import ProjectsPage from "./ProjectsPage";
+import { useState, useEffect } from "react";
+
 
 function LandingPage() {
+  
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      setIsVisible(scrollPosition < 1.5 * viewportHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       
       <div id="Home" className="LandingPage">
-      <div className="Name"> Nicholas Karantakis </div>
+      
+      {isVisible && (<>
+        <div className="Name"> Nicholas Karantakis </div>
       <div className="Socials">
         <a href="https://github.com/Nick2858" target="_blank">
           <img className="IconLink" src="./github-mark-white.svg"></img>
@@ -46,18 +66,20 @@ function LandingPage() {
           <img className="Portrait" src="Portrait.png"></img>
         
        </div>
+       </>)}
       </div>
       <div className="ExploreBar">
-      <Link to="AboutPage">
+        
+        {isVisible &&( 
+        <><Link to="AboutPage">
         <div className="Explore"> Press to Explore </div>
         <input className="Arrow" type="image" src="./planeArrow.png"></input>
           
-        </Link>
-        </div>
-      
-        
+        </Link></>)}
+      </div>  
       
     </>
+  
   );
 }
 

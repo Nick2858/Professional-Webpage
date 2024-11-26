@@ -4,30 +4,33 @@ import Experiences from "../assets/experience.json";
 import Awards from "../assets/awards.json";
 import AwardPage from "./AwardDisplay";
 import { CarouselProvider, Slide, Slider, ButtonBack,ButtonNext, DotGroup } from "pure-react-carousel";
-
+import { useState, useEffect } from "react";
 
 function AboutPage() {
+
+
+
+
   return (
     <>
       <div id="About" className="AboutPage">
         <h1 className="PageTitle">
           About Me
         </h1>
-        <div className="AboutMe" style={{ paddingTop: "4vw", gap: "10px" }}>
-          <body className="PageInfo">
-            <p className="PageText">
-              I'm a second year Mechanical Engineering Student at the University
-              of Toronto pursuing a minor in Robotics, and Engineering Business.
-              I've worked in various industries including biomedical research,
-              aerospace and hospitality. My future aspirations are to explore career 
-              opportunities in mechatronics and robotics, where I can combine my strong
-               interests in programming and mechanical design with my passion for cross-disciplinary
-                problem-solving.
-            </p>
-          </body>
+        <div className="AboutMe" >
+          <p className="PageText">
+            I'm a second year Mechanical Engineering Student at the University
+            of Toronto pursuing a minor in Robotics, and Engineering Business.
+            I've worked in various industries including biomedical research,
+            aerospace and hospitality. My future aspirations are to explore career 
+            opportunities in mechatronics and robotics, where I can combine my strong
+              interests in programming and mechanical design with my passion for cross-disciplinary
+              problem-solving.
+          </p>
+        
         </div>
        
-        <h1 className="AwardTitle" style={{ padding: "10vh 0 5vh " }}>
+        <h1 className="PageHeader" style={{ padding: "10vh 0 5vh " }}>
           Awards
         </h1>
         <ul className="AwardList">

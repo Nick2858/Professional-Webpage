@@ -13,10 +13,16 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import {
+  GestureHandlerRootView,
+  ScrollView // Note that this is not imported from react-native
+} from 'react-native-gesture-handler';
+
 
 function App() {
   return (
     <div>
+
       <NavBar /> 
       <Element name="Home">
         <LandingPage />
@@ -31,7 +37,6 @@ function App() {
       <Element name="About">
       <Footer />
       </Element>
-
 
 
     </div>
