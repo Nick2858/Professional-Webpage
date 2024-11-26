@@ -1,17 +1,5 @@
 import "../App.css";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
-import ProjectsCarousel from "./CarouselSlide";
-import AboutPage from "./AboutPage";
-import Footer from "./Footer";
-import NavBar from "./NavBar"
-import ProjectsPage from "./ProjectsPage";
+import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 
 

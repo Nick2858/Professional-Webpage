@@ -828,17 +828,19 @@ body::-webkit-scrollbar {
 
   .PageTitle{
     font-size: xx-large;
+    animation: none;
   }
 
   .PageHeader{
     font-size: xx-large;
+    animation: none;
   }
   .PageText{
     width:80%;
     padding-left: 10%;
     padding-right: 10%;
     font-size: large;
-    
+    animation: none;
 
   }
 
@@ -855,10 +857,14 @@ body::-webkit-scrollbar {
 
   
   }
+  .WorkExperiences{
+    animation: none;
+  }
 
   .WorkDisplay{
     padding: 20px;
     border-radius: 10px;
+    animation: none;
   }
 
 }
