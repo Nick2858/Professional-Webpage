@@ -27,7 +27,11 @@ function LandingPage() {
       
       {isVisible && (<>
         <div className="Name"> Nicholas Karantakis </div>
-      <div className="Socials">
+      
+        <div className="InnerPage">
+        
+          <img className="Portrait" src="Portrait.png"></img>
+          <div className="Socials">
         <a href="https://github.com/Nick2858" target="_blank">
           <img className="IconLink" src="./github-mark-white.svg"></img>
         </a>
@@ -44,10 +48,6 @@ function LandingPage() {
           <button className="ResumeLinkText">Resume</button>
         </a>
       </div>
-        <div className="InnerPage">
-        
-          <img className="Portrait" src="Portrait.png"></img>
-        
        </div>
        </>)}
       </div>
