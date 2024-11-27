@@ -10,17 +10,29 @@ interface Props {
 }
 
 function ProjectDisplay({ children }: Props) {
-  const even = {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
+  
+  var even = {
+    textAlign: "left",
+    alignItems: "left",
+    justifyContent: "left",
   } as React.CSSProperties;
+
+  if (children.id%2 == 1){
+    even = {
+    textAlign: "right",
+    alignItems: "right",
+    justifyContent: "right",
+  } 
+}
+  
+  
+  
   return (
-    <div className="ProjectDisplay">
+    <div className="ProjectDisplay" style={even}>
       <div className="ProjectInfo" style={even}>
-        <h1 className="PageHeader">{children.projectTitle}</h1>
-        <img className="ProjectImage" src={children.picture}></img>
-        <body className="PageText"> {children.description}</body>
+        <h1 className="ProjectHeader" style={even}>{children.projectTitle}</h1>
+        <img className="ProjectImage" style={even} src={children.picture}></img>
+        <body className="ProjectText" style={even}> {children.description}</body>
       </div>
     </div>
   );

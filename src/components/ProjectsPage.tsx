@@ -23,6 +23,7 @@ function ProjectsPage() {
         <ProjectDisplay>{project}</ProjectDisplay>
       ))}
     </div>
+
   );
 }
 
