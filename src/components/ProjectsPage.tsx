@@ -17,13 +17,11 @@ const DisableRender2 = () => useFrame(() => null, 1000);
 function ProjectsPage() {
   return (
     <div className="ProjectsPage">
-      <h1 className="PageTitle">
-        Projects
-      </h1>
-      <h1 className="PageHeader" style={{color:"black", animation:"none"}}>
-        Coming Soon...
-      </h1>
-      {/* <ProjectsCarousel /> */}
+      <h1 className="PageTitle">Projects</h1>
+
+      {Projects.map((project, id) => (
+        <ProjectDisplay>{project}</ProjectDisplay>
+      ))}
     </div>
   );
 }

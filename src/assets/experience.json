@@ -18,15 +18,6 @@
     "skills": ["SolidWorks", "Manufacturing", "Rapid Prototyping", "Teamwork"]
     },
     {
-    "id":3,
-    "jobtitle":"Banquet Waiter",
-    "company": "Roma's Hospitality Centre",
-    "date": "Dec 2022 - Present",
-    "description": "Supported event setup, cleanup, and food and beverage service to ensure smooth operations and a positive guest experience. Assisted attendees with concerns, provided prompt solutions, and communicating with colleagues to maintain high quality service.",
-    "image": "./experiencePics/Romas.png",
-    "skills": ["Teamwork", "Customer Service", "Communication"]
-    },
-    {
     "id":4,
     "jobtitle":"Production Support",
     "company": "Mitsubishi Heavy Industries",
@@ -34,6 +25,24 @@
     "description": "Contributed to the production of Bombardier Global Express 5000 wings and center fuselage, ensuring compliance with quality standards. Performed tasks such as painting touchups, cleaning, sandblasting, and preparing wings for leak tests across multiple production stages, including spar shop, final inspection, and shipping preparation.",
     "image": "./experiencePics/MHI.jpg",
     "skills": ["Sand Blasting", "Pneumatic Tools", "Painting", "WHIMS Safety"]
-    }
-    
+    },
+    {
+    "id":5,
+    "jobtitle":"Volunteer Judge",
+    "company": "UofT Discovery Symposium",
+    "date": "Jun 2024",
+    "description": "As an Undergraduate Researcher participating in the Faculty of Applied Sciences and Engineering Undergraduate Summer Research Program (FASE USRP), I volunteered as a judge for the UofT Discovery Symposium where High School students presented posters about research they conducted in the UofT Discovery program.",
+    "image": "./experiencePics/Discovery.png",
+    "skills": ["Communication", "Professionalism", "Mentorship"]
+    },
+
+    {
+    "id":3,
+    "jobtitle":"Banquet Waiter",
+    "company": "Roma's Hospitality Centre",
+    "date": "Dec 2022 - Present",
+    "description": "Supported event setup, cleanup, and food and beverage service to ensure smooth operations and a positive guest experience. Assisted attendees with concerns, provided prompt solutions, and communicating with colleagues to maintain high quality service.",
+    "image": "./experiencePics/Romas.png",
+    "skills": ["Teamwork", "Customer Service", "Communication"]
+    } 
 ]
