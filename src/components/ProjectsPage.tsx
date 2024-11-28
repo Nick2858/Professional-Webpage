@@ -7,16 +7,16 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
-import { useInView } from "react-intersection-observer";
+
 import * as THREE from "three";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 const DisableRender = () => useFrame(() => null, 1000);
 const DisableRender2 = () => useFrame(() => null, 1000);
-var a = new THREE.Vector3(-10, 5, 2); 
-
+var a = new THREE.Vector3(-10, 5, 2);
 
 function ProjectsPage() {
-
   var even = {
     textAlign: "left",
     alignItems: "left",
@@ -24,35 +24,36 @@ function ProjectsPage() {
   } as React.CSSProperties;
 
   var odd = {
-      textAlign: "right",
-      alignItems: "right",
-      justifyContent: "right",
-    } as React.CSSProperties;
- 
+    textAlign: "right",
+    alignItems: "right",
+    justifyContent: "right",
+  } as React.CSSProperties;
+
   if (window.screen.availWidth <= 600) {
     even = {
       textAlign: "center",
       alignItems: "center",
       justifyContent: "center",
-    }
+    };
 
-    odd = even
+    odd = even;
   }
-
 
   return (
     <div className="ProjectsPage">
-      <h1 className="PageTitle" style={{paddingBottom: "5vh"}}>Projects</h1>
-      
-      
+      <h1 className="PageTitle" style={{ paddingBottom: "5vh" }}>
+        Projects
+      </h1>
+
       {/*     CUSTOM PROJECT TEMPLATES      */}
-      
-      
+
       <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>Branch Builder</h1>
-          <div className="Line">{" "}</div>
-          <div className="ProjectInfo" >
-            <div>
+        <h1 className="ProjectHeader" style={even}>
+          Branch Builder
+        </h1>
+        <div className="Line"> </div>
+        <div className="ProjectInfo">
+          <div>
             <div className="canvas">
               <Canvas>
                 <ambientLight intensity={1} />
@@ -70,120 +71,158 @@ function ProjectsPage() {
                   <OrbitControls enableZoom={false} />
                 </Suspense>
               </Canvas>
-              </div>
-              <h1 className="ProjectText" style={{textAlign:"center", width: "100%", fontWeight: "600"}}> Drag to Move</h1>
             </div>
-          <div className="ProjectText" > A python script in Blender that allows you to convert lung
-                      airway data from a CSV file into hollow 3D STL branch
-                      objects. This program is intended for researchers looking to
-                      analyze CFD models of airways. Interact with 3D demo on the
-                      right by dragging cursor (demo airway data from Schmidt et
-                      al 2004).
+            <h1
+              className="ProjectText"
+              style={{ textAlign: "center", width: "100%", fontWeight: "600" }}
+            >
+              {" "}
+              Drag to Move
+            </h1>
+          </div>
+          <div className="ProjectText">
+            {" "}
+            A python script in Blender that allows you to convert lung airway
+            data from a CSV file into hollow 3D STL branch objects. This program
+            is intended for researchers looking to analyze CFD models of
+            airways. Interact with 3D demo on the right by dragging cursor (demo
+            airway data from Schmidt et al 2004).
             <div className="JobSkills">
               {["Python", "Blender"].map((skill) => (
-                <div className="Skill" style={{fontSize: "0.7em"}}> {skill}</div>
+                <div className="Skill" style={{ fontSize: "0.7em" }}>
+                  {" "}
+                  {skill}
+                </div>
               ))}
-            </div>        
+            </div>
           </div>
         </div>
-      </div>   
-
-      
+      </div>
 
       <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>Mouse Airway Imaging</h1>
-          <div className="Line">{" "}</div>
-          <div className="ProjectInfo" >
+        <h1 className="ProjectHeader" style={odd}>
+          Mouse Airway Imaging
+        </h1>
+        <div className="Line"> </div>
+        <div className="ProjectInfo">
           <div>
             <div className="canvas">
-            
-                  <Canvas>
-                    <ambientLight intensity={1} />
-                    <spotLight
-                      color={"#880808"}
-                      intensity={30}
-                      distance={0}
-                      angle={3.14}
-                      penumbra={0.4}
-                      decay={0.4}
-                      position={a}
-                    />
+              <Canvas>
+                <ambientLight intensity={1} />
+                <spotLight
+                  color={"#880808"}
+                  intensity={30}
+                  distance={0}
+                  angle={3.14}
+                  penumbra={0.4}
+                  decay={0.4}
+                  position={a}
+                />
 
-                    <Suspense fallback={null}>
-                      <Model2 scale={0.005} />
-                    </Suspense>
-                  </Canvas>
+                <Suspense fallback={null}>
+                  <Model2 scale={0.005} />
+                </Suspense>
+              </Canvas>
             </div>
-            </div>
-          <div className="ProjectText"> Part of my research with the Latner Thoracic Research Laboratories and Bazylak Group involved developing a
-                     procedure for mouse airway imaging under micro-Computed Tomography. The previous methods for imaging mouse airways in the lab involved using procedures
-                      developped for mouse lung vasculature, however, when applied to airways this led to leakages and poor results from imaging.
-                      After rigorous literature review and many trials, we developped a procedure for our lab
-                      that involved injecting a mixture of Room Temperature Vulcanizing Silicon Rubber casting material with MICROFIL into Mouse lung airways. The Silicon Rubber
-                      casting material helped to prevent leakages while the contrast agents in the MICROFIL improved the quality of the images produced from micro-CT scans.
-                      Below is an example of a 3D micro-CT image of an airway obtained using this casting method.
+          </div>
+          <div className="ProjectText">
+            {" "}
+            Part of my research with the Latner Thoracic Research Laboratories
+            and Bazylak Group involved developing a procedure for mouse airway
+            imaging under micro-Computed Tomography. The previous methods for
+            imaging mouse airways in the lab involved using procedures
+            developped for mouse lung vasculature, however, when applied to
+            airways this led to leakages and poor results from imaging. After
+            rigorous literature review and many trials, we developped a
+            procedure for our lab that involved injecting a mixture of Room
+            Temperature Vulcanizing Silicon Rubber casting material with
+            MICROFIL into Mouse lung airways. The Silicon Rubber casting
+            material helped to prevent leakages while the contrast agents in the
+            MICROFIL improved the quality of the images produced from micro-CT
+            scans. Below is an example of a 3D micro-CT image of an airway
+            obtained using this casting method.
             <div className="JobSkills">
               {["Python", "Blender"].map((skill) => (
-                <div className="Skill" style={{fontSize: "0.7em"}}> {skill}</div>
+                <div className="Skill" style={{ fontSize: "0.7em" }}>
+                  {" "}
+                  {skill}
+                </div>
               ))}
-            </div>        
+            </div>
           </div>
         </div>
-      </div>    
-      
+      </div>
+
       <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>Alphabetic Sign Language Interpreter</h1>
-          <div className="Line">{" "}</div>
-          <div className="ProjectInfo" >
-          <div className="ProjectImage" style={{aspectRatio: "4/3"}}>
-            <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/RDK9m6hkhY0?rel=0"
-                    title="SignLanguageInterpreterDemoVideo"
-                    
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                  ></iframe></div>
-          <div className="ProjectText" > This is a project I developped in 2022 while I was in high
-                    school. It utilizes Open-CV and MediaPipe to translate
-                    alphabetical sign language to text on a screen with
-                    Text-To-Speech playback using pyttsx3.
+        <h1 className="ProjectHeader" style={even}>
+          Alphabetic Sign Language Interpreter
+        </h1>
+        <div className="Line"> </div>
+        <div className="ProjectInfo">
+          <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
+            <LiteYouTubeEmbed
+              id="RDK9m6hkhY0"
+              title="SignLanguageInterpreterDemoVideo"
+            ></LiteYouTubeEmbed>
+          </div>
+          <div className="ProjectText">
+            {" "}
+            This is a project I developped in 2022 while I was in high school.
+            It utilizes Open-CV and MediaPipe to translate alphabetical sign
+            language to text on a screen with Text-To-Speech playback using
+            pyttsx3.
             <div className="JobSkills">
               {["Python", "Blender"].map((skill) => (
-                <div className="Skill" style={{fontSize: "0.7em"}}> {skill}</div>
+                <div className="Skill" style={{ fontSize: "0.7em" }}>
+                  {" "}
+                  {skill}
+                </div>
               ))}
-            </div>        
+            </div>
           </div>
         </div>
-      </div>   
-
+      </div>
 
       <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>Journey Mapping Project (APS112)</h1>
-          <div className="Line">{" "}</div>
-          <div className="ProjectInfo" >
-          <div className="ProjectImage" style={{aspectRatio: "4/3"}}>
-            <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://youtube.com/embed/HPTkwMy9wlY?rel=0"
-                    title="SignLanguageInterpreterDemoVideo"
-                    
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                  ></iframe></div>
-          <div className="ProjectText" > 
-            As part of a team of six first-year Engineering students in my Engineering Strategies and Practices II course (APS112), 
-            we developed a tool to visualize the effects of one-way conversions on driving routes for the City of Toronto Cyclists 
-            and Pedestrian's Team. This was achieved using OpenStreetMap Editor to built and export custom traffic restrictions to a JSON file. 
-            This file was then processed in Python and used to display custom routes on MapBox API in JavaScript. 
+        <h1 className="ProjectHeader" style={odd}>
+          Journey Mapping Project (APS112)
+        </h1>
+        <div className="Line"> </div>
+        <div className="ProjectInfo">
+          <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
+            <LiteYouTubeEmbed
+              id="HPTkwMy9wlY"
+              title="SignLanguageInterpreterDemoVideo"
+            ></LiteYouTubeEmbed>
+          </div>
+          <div className="ProjectText">
+            As part of a team of six first-year Engineering students in my
+            Engineering Strategies and Practices II course (APS112), we
+            developed a tool to visualize the effects of one-way conversions on
+            driving routes for the City of Toronto Cyclists and Pedestrian's
+            Team. This was achieved using OpenStreetMap Editor to built and
+            export custom traffic restrictions to a JSON file. This file was
+            then processed in Python and used to display custom routes on MapBox
+            API in JavaScript.
             <div className="JobSkills">
-              {["Python", "JavaScript", "Flask", "OpenStreetMaps", "NetworkX","Team Work", "Communication"].map((skill) => (
-                <div className="Skill" style={{fontSize: "0.7em"}}> {skill}</div>
+              {[
+                "Python",
+                "JavaScript",
+                "Flask",
+                "OpenStreetMaps",
+                "NetworkX",
+                "Team Work",
+                "Communication",
+              ].map((skill) => (
+                <div className="Skill" style={{ fontSize: "0.7em" }}>
+                  {" "}
+                  {skill}
+                </div>
               ))}
-            </div>        
+            </div>
           </div>
         </div>
-      </div>   
+      </div>
 
       {/*
         "id":1,
@@ -194,19 +233,12 @@ function ProjectsPage() {
         "skills": ["Python", "JavaScript", "Flask", "OpenStreetMaps", "NetworkX","Team Work", "Communication"]
       */}
 
-
-
-
-
       {/*     PRESET TEMPLATES      */}
-
 
       {Projects.map((project) => (
         <ProjectDisplay>{project}</ProjectDisplay>
       ))}
-             
     </div>
-
   );
 }
 
