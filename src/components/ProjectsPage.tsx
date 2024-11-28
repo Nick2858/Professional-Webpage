@@ -162,8 +162,7 @@ function ProjectsPage() {
             MICROFIL into Mouse lung airways. The Silicon Rubber casting
             material helped to prevent leakages while the contrast agents in the
             MICROFIL improved the quality of the images produced from micro-CT
-            scans. Below is an example of a 3D micro-CT image of an airway
-            obtained using this casting method.
+            scans.
             <div className="JobSkills">
               {["Biomedical Research", "Micro-CT Imaging", "MATLAB"].map(
                 (skill) => (
@@ -214,7 +213,7 @@ function ProjectsPage() {
           <div className="ProjectText">
             {" "}
             This is a project I developped in 2022 while I was in high school.
-            It utilizes Open-CV and MediaPipe to translate alphabetical sign
+            It utilizes OpenCV and MediaPipe to translate alphabetical sign
             language to text on a screen with Text-To-Speech playback using
             pyttsx3. It works by using MediaPipe libraries to detect hands and
             output the coordinates of different features. From here, a series of
@@ -222,7 +221,7 @@ function ProjectsPage() {
             differet features (e.g. the tip of the index compared to a joint in
             the thumb) to determine which letter is being displayed.
             <div className="JobSkills">
-              {["Python", "Open-CV", "MediaPipe", "Computer Vision"].map(
+              {["Python", "OpenCV", "MediaPipe", "Computer Vision"].map(
                 (skill) => (
                   <div className="Skill" style={{ fontSize: "0.7em" }}>
                     {" "}
