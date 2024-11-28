@@ -6,12 +6,11 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
+
 import * as THREE from "three";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 var a = new THREE.Vector3(-10, 5, 2);
-
+//abc
 function ProjectsPage() {
   var even = {
     textAlign: "left",
@@ -156,10 +155,13 @@ function ProjectsPage() {
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
-            <LiteYouTubeEmbed
-              id="RDK9m6hkhY0"
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/RDK9m6hkhY0?rel=0"
               title="SignLanguageInterpreterDemoVideo"
-            ></LiteYouTubeEmbed>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+            ></iframe>
           </div>
           <div className="ProjectText">
             {" "}
@@ -186,10 +188,13 @@ function ProjectsPage() {
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
-            <LiteYouTubeEmbed
-              id="HPTkwMy9wlY"
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://youtube.com/embed/HPTkwMy9wlY?rel=0"
               title="SignLanguageInterpreterDemoVideo"
-            ></LiteYouTubeEmbed>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+            ></iframe>
           </div>
           <div className="ProjectText">
             As part of a team of six first-year Engineering students in my
