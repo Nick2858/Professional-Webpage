@@ -32,6 +32,14 @@ body::-webkit-scrollbar {
   animation-timeline: scroll();
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 .Portrait {
   overflow: hidden;
   width: auto;
