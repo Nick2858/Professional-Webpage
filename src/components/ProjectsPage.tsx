@@ -1,19 +1,15 @@
 import "../App.css";
 import Model from "./FullDemoGenDeci";
 import Model2 from "./MouseAirWaysImage";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
-
 import * as THREE from "three";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
-const DisableRender = () => useFrame(() => null, 1000);
-const DisableRender2 = () => useFrame(() => null, 1000);
 var a = new THREE.Vector3(-10, 5, 2);
 
 function ProjectsPage() {
