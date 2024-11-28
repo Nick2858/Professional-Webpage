@@ -9,10 +9,22 @@ import Projects from "../assets/projects.json";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import * as THREE from "three";
+import { useInView } from "react-intersection-observer";
+import { useFrame } from "@react-three/fiber";
 
 var a = new THREE.Vector3(-10, 5, 2);
-//abc
+
 function ProjectsPage() {
+  const { inView: inView1, ref: ref1 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  const { inView: inView2, ref: ref2 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
   var even = {
     textAlign: "left",
     alignItems: "left",
@@ -49,24 +61,26 @@ function ProjectsPage() {
         </h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
-          <div>
-            <div className="canvas">
-              <Canvas>
-                <ambientLight intensity={1} />
-                <spotLight
-                  color={"#880808"}
-                  intensity={30}
-                  distance={0}
-                  angle={3.14}
-                  penumbra={0.4}
-                  decay={0.1}
-                  position={a}
-                />
-                <Suspense fallback={null}>
-                  <Model scale={0.02} />
-                  <OrbitControls enableZoom={false} />
-                </Suspense>
-              </Canvas>
+          <div className="ProjectImage">
+            <div className="canvas" ref={ref1}>
+              {inView1 && (
+                <Canvas>
+                  <ambientLight intensity={1} />
+                  <spotLight
+                    color={"#880808"}
+                    intensity={30}
+                    distance={0}
+                    angle={3.14}
+                    penumbra={0.4}
+                    decay={0.1}
+                    position={a}
+                  />
+                  <Suspense fallback={null}>
+                    <Model scale={0.02} />
+                    <OrbitControls enableZoom={false} />
+                  </Suspense>
+                </Canvas>
+              )}
             </div>
             <h1
               className="ProjectText"
@@ -79,12 +93,23 @@ function ProjectsPage() {
           <div className="ProjectText">
             {" "}
             A python script in Blender that allows you to convert lung airway
-            data from a CSV file into hollow 3D STL branch objects. This program
-            is intended for researchers looking to analyze CFD models of
-            airways. Interact with 3D demo on the right by dragging cursor (demo
-            airway data from Schmidt et al 2004).
+            data from a CSV file into hollow 3D STL branch objects for CFD
+            analysis. This is a script I developped during my summer research
+            position in the Latner Thoracic Research Laboratories and Bazylak
+            Group. The data in each row of the CSV file corresponds to a branch.
+            The program iterates through each row one at a time to build, clean,
+            hollow and export branch STL files one at a time. After each branch
+            has been created, the program groups the STL files by their
+            generation number and lobe number using the data stored in their
+            naming convention. A challenge that I had to overcome to build this
+            program was that blender is not capable of handing large amounts
+            mesh geometries, thus to overcome this, each branch had to be build
+            individually and then grouped together as a final step. To test the
+            program, I built the Human Airway Model using branch data from
+            Schmidt et al 2004. This model contains over 3000 branches and has
+            branches up to 17 generations.
             <div className="JobSkills">
-              {["Python", "Blender"].map((skill) => (
+              {["Python", "Blender", "Problem Solving"].map((skill) => (
                 <div className="Skill" style={{ fontSize: "0.7em" }}>
                   {" "}
                   {skill}
@@ -101,24 +126,26 @@ function ProjectsPage() {
         </h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
-          <div>
-            <div className="canvas">
-              <Canvas>
-                <ambientLight intensity={1} />
-                <spotLight
-                  color={"#880808"}
-                  intensity={30}
-                  distance={0}
-                  angle={3.14}
-                  penumbra={0.4}
-                  decay={0.4}
-                  position={a}
-                />
+          <div className="ProjectImage">
+            <div className="canvas" ref={ref2}>
+              {inView2 && (
+                <Canvas>
+                  <ambientLight intensity={1} />
+                  <spotLight
+                    color={"#880808"}
+                    intensity={30}
+                    distance={0}
+                    angle={3.14}
+                    penumbra={0.4}
+                    decay={0.4}
+                    position={a}
+                  />
 
-                <Suspense fallback={null}>
-                  <Model2 scale={0.005} />
-                </Suspense>
-              </Canvas>
+                  <Suspense fallback={null}>
+                    <Model2 scale={0.005} />
+                  </Suspense>
+                </Canvas>
+              )}
             </div>
           </div>
           <div className="ProjectText">
@@ -138,12 +165,14 @@ function ProjectsPage() {
             scans. Below is an example of a 3D micro-CT image of an airway
             obtained using this casting method.
             <div className="JobSkills">
-              {["Python", "Blender"].map((skill) => (
-                <div className="Skill" style={{ fontSize: "0.7em" }}>
-                  {" "}
-                  {skill}
-                </div>
-              ))}
+              {["Biomedical Research", "Micro-CT Imaging", "MATLAB"].map(
+                (skill) => (
+                  <div className="Skill" style={{ fontSize: "0.7em" }}>
+                    {" "}
+                    {skill}
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -156,24 +185,51 @@ function ProjectsPage() {
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
-            <LiteYouTubeEmbed
-              id="RDK9m6hkhY0"
-              title="SignLanguageInterpreterDemoVideo"
-            />
+            <a
+              href="https://www.youtube.com/embed/RDK9m6hkhY0"
+              target="_BLANK"
+              style={{ textDecoration: "none" }}
+            >
+              <img
+                style={{
+                  height: "auto",
+                  width: "100%",
+                }}
+                src="https://img.youtube.com/vi/RDK9m6hkhY0/0.jpg"
+              />
+              <h1
+                className="ProjectText"
+                style={{
+                  textAlign: "center",
+                  width: "100%",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                }}
+              >
+                {" "}
+                Press to Watch Video
+              </h1>
+            </a>
           </div>
           <div className="ProjectText">
             {" "}
             This is a project I developped in 2022 while I was in high school.
             It utilizes Open-CV and MediaPipe to translate alphabetical sign
             language to text on a screen with Text-To-Speech playback using
-            pyttsx3.
+            pyttsx3. It works by using MediaPipe libraries to detect hands and
+            output the coordinates of different features. From here, a series of
+            functions was coded for each letter which compare the coordinates of
+            differet features (e.g. the tip of the index compared to a joint in
+            the thumb) to determine which letter is being displayed.
             <div className="JobSkills">
-              {["Python", "Blender"].map((skill) => (
-                <div className="Skill" style={{ fontSize: "0.7em" }}>
-                  {" "}
-                  {skill}
-                </div>
-              ))}
+              {["Python", "Open-CV", "MediaPipe", "Computer Vision"].map(
+                (skill) => (
+                  <div className="Skill" style={{ fontSize: "0.7em" }}>
+                    {" "}
+                    {skill}
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -186,10 +242,31 @@ function ProjectsPage() {
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
-            <LiteYouTubeEmbed
-              id="HPTkwMy9wlY"
-              title="Journey Mapping Project"
-            />
+            <a
+              href="https://www.youtube.com/embed/HPTkwMy9wlY"
+              target="_BLANK"
+              style={{ textDecoration: "none" }}
+            >
+              <img
+                style={{
+                  height: "auto",
+                  width: "100%",
+                }}
+                src="https://img.youtube.com/vi/HPTkwMy9wlY/0.jpg"
+              />
+              <h1
+                className="ProjectText"
+                style={{
+                  textAlign: "center",
+                  width: "100%",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                }}
+              >
+                {" "}
+                Press to Watch Video
+              </h1>
+            </a>
           </div>
           <div className="ProjectText">
             As part of a team of six first-year Engineering students in my

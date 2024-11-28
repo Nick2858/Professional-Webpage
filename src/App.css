@@ -200,7 +200,7 @@ button{
   height: 5vh;
   text-align: right;
   background-color: #e4e4e4;
-  opacity: 90%;
+  opacity: 100%;
   position: fixed;
   top: 0%;
   z-index: 6;
@@ -417,12 +417,9 @@ button{
 .canvas {
   align-content: center;
   aspect-ratio: 4/3 !important;
-  width: max(20vw, 300px);
-  max-width: 700px;
+  width: 100%;
   margin-bottom: 20px;
-  animation: FadeIn cubic-bezier(0.64, 0.24, 0.72, 1);
-  animation-duration: 2s;
-  animation-timeline: view();
+
 }
 
 .ProjectDisplay {
@@ -444,9 +441,6 @@ button{
   font: "Arial";
   font-size: xxx-large;
   color: #000000;
-  animation: FadeIn cubic-bezier(0.64, 0.24, 0.72, 1);
-  animation-duration: 2s;
-  animation-timeline: view();
 }
 .Line {
   background-color: #2274a5;
@@ -454,22 +448,18 @@ button{
   width: 100%;
   height: 20px;
   margin-bottom: 50px;
-  animation: FadeIn cubic-bezier(0.64, 0.24, 0.72, 1);
-  animation-duration: 2s;
-  animation-timeline: view();
 }
 .ProjectText {
   font: "Arial";
   color: #000000;
-  animation: FadeIn cubic-bezier(0.64, 0.24, 0.72, 1);
   flex-basis: 500px;
   flex-grow: 1;
-  animation-duration: 2s;
-  animation-timeline: view();
   width: 50%;
   font-size: x-large;
   background-color: #ffffff;
+  text-decoration: none;
 }
+
 
 .ProjectImage {
   display: inline-block;
@@ -479,9 +469,6 @@ button{
   width: max(30vw, 500px);
   margin-bottom: 2%;
   border-radius: 10px 10px 10px 10px;
-  animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
-  animation-duration: 2s;
-  animation-timeline: view();
 }
 
 .ProjectInfo {
