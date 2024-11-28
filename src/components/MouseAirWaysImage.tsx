@@ -23,11 +23,13 @@ export default function Model2(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF("./MouseAirWaysImage.glb") as GLTFResult;
 
   const modelRef = useRef<Group | null>(null);
-
+  
+  modelRef.current?.rotateY(Math.PI/4)
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.004;
+      modelRef.current.position.set(0, 0.5, 0);
+      modelRef.current.rotateY(0.004);
     }
   });
 

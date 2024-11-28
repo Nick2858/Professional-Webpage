@@ -6,6 +6,7 @@ interface Props {
     projectTitle: string;
     description: string;
     picture: string;
+    skills: string[];
   };
 }
 
@@ -19,20 +20,38 @@ function ProjectDisplay({ children }: Props) {
 
   if (children.id%2 == 1){
     even = {
-    textAlign: "right",
-    alignItems: "right",
-    justifyContent: "right",
-  } 
-}
+      textAlign: "right",
+      alignItems: "right",
+      justifyContent: "right",
+    }
+  }
+ 
+  if (window.screen.availWidth <= 600) {
+    even = {
+      textAlign: "center",
+      alignItems: "center",
+      justifyContent: "center",
+    }
+  }
   
-  
+
   
   return (
     <div className="ProjectDisplay" style={even}>
-      <div className="ProjectInfo" style={even}>
+      
         <h1 className="ProjectHeader" style={even}>{children.projectTitle}</h1>
-        <img className="ProjectImage" style={even} src={children.picture}></img>
-        <body className="ProjectText" style={even}> {children.description}</body>
+        <div className="Line">{" "}</div>
+        <div className="ProjectInfo" >
+        <div><img className="ProjectImage" src={children.picture}></img></div>
+        <div className="ProjectText" > {children.description}
+        <div className="JobSkills">
+          {children.skills.map((skill) => (
+            <div className="Skill" style={{fontSize: "0.7em"}}> {skill}</div>
+          ))}
+        </div>
+        
+        </div>
+       
       </div>
     </div>
   );
