@@ -569,7 +569,7 @@ button{
 }
 .carousel__dot {
   height: 2vh;
-  width: 2vh;
+  aspect-ratio: 1;
   margin: 0.25vw;
   border-radius: 50%;
   border: 1px solid rgb(0, 0, 0);

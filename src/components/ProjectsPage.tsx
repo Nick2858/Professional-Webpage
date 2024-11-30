@@ -1,16 +1,13 @@
 import "../App.css";
 import Model from "./FullDemoGenDeci";
-import Model2 from "./MouseAirWaysImage";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import * as THREE from "three";
 import { useInView } from "react-intersection-observer";
-import { useFrame } from "@react-three/fiber";
 
 var a = new THREE.Vector3(-10, 5, 2);
 
@@ -63,6 +60,17 @@ function ProjectsPage() {
         <div className="ProjectInfo">
           <div className="ProjectImage">
             <div className="canvas" ref={ref1}>
+              <h1
+                className="ProjectText"
+                style={{
+                  textAlign: "center",
+                  width: "100%",
+                  fontWeight: "600",
+                }}
+              >
+                {" "}
+                Drag to Move
+              </h1>
               {inView1 && (
                 <Canvas>
                   <ambientLight intensity={1} />
@@ -82,13 +90,23 @@ function ProjectsPage() {
                 </Canvas>
               )}
             </div>
-            <h1
+
+            <span
               className="ProjectText"
-              style={{ textAlign: "center", width: "100%", fontWeight: "600" }}
+              style={{
+                textAlign: "center",
+                width: "100%",
+                wordWrap: "break-word",
+              }}
             >
-              {" "}
-              Drag to Move
-            </h1>
+              <p>
+                Data From{" "}
+                <a href="https://simtk.org/projects/lungsim">
+                  {" "}
+                  https://simtk.org/projects/lungsim
+                </a>
+              </p>
+            </span>
           </div>
           <div className="ProjectText">
             {" "}
@@ -126,28 +144,6 @@ function ProjectsPage() {
         </h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
-          <div className="ProjectImage">
-            <div className="canvas" ref={ref2}>
-              {inView2 && (
-                <Canvas>
-                  <ambientLight intensity={1} />
-                  <spotLight
-                    color={"#880808"}
-                    intensity={30}
-                    distance={0}
-                    angle={3.14}
-                    penumbra={0.4}
-                    decay={0.4}
-                    position={a}
-                  />
-
-                  <Suspense fallback={null}>
-                    <Model2 scale={0.005} />
-                  </Suspense>
-                </Canvas>
-              )}
-            </div>
-          </div>
           <div className="ProjectText">
             {" "}
             Part of my research with the Latner Thoracic Research Laboratories
