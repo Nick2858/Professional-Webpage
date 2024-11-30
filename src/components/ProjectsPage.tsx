@@ -5,7 +5,6 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import * as THREE from "three";
 import { useInView } from "react-intersection-observer";
 
