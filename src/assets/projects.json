@@ -37,7 +37,7 @@
     {
         "id":6,
         "projectTitle": "Portfolio Webpage",
-        "description": "As a Mechanical Engineering student with many hobbies and projects, as well as an avid coder. Creating a portfolio webpage was the perfect opportunity for me to develop my programming skills, as well as showcase what I've been working on in a fun and personalized way.  ",
+        "description": "As a Mechanical Engineering student with many hobbies and projects, as well as an avid coder; creating a portfolio webpage was the perfect opportunity for me to develop my programming skills, and showcase what I've been working on in a fun and personalized way.  ",
         "link": "https://github.com/Nick2858/Professional-Webpage",
         "picture": "./projectsPics/WebPage.png",
         "skills": ["React", "JavaScript", "UI Design"]
