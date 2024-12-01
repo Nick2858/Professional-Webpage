@@ -51,9 +51,17 @@ function ProjectsPage() {
 
       {/*     CUSTOM PROJECT TEMPLATES      */}
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>
-          Branch Builder
+      <div className="ProjectDisplay" style={even}>
+      <h1 className="ProjectHeader">
+      Branch Builder<a
+          href="https://github.com/Nick2858/Branch-Builder"
+          target="_blank"
+          style={{ textDecoration: "none", verticalAlign: "middle" }}
+        >
+          
+            <img src="./ArrowLink.svg" className="ProjectLink"></img>
+          
+        </a>
         </h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
@@ -137,8 +145,8 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>
+      <div className="ProjectDisplay" style={odd}>
+        <h1 className="ProjectHeader">
           Mouse Airway Imaging
         </h1>
         <div className="Line"> </div>
@@ -172,10 +180,18 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>
-          Alphabetic Sign Language Interpreter
-        </h1>
+      <div className="ProjectDisplay" style={even}>
+      <h1 className="ProjectHeader">
+            Alphabetic Sign Language Interpreter
+            <a
+          href="https://github.com/Nick2858/Sign-Language-Interpreter"
+          target="_blank"
+          style={{ textDecoration: "none", verticalAlign: "middle" }}
+        >
+          <img src="./ArrowLink.svg" className="ProjectLink"></img>
+        </a>
+          </h1>
+      
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
@@ -229,10 +245,18 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>
-          Journey Mapping Project (APS112)
-        </h1>
+      <div className="ProjectDisplay" style={odd}>
+      <h1 className="ProjectHeader">
+      Journey Mapping Project (APS112)<a
+          href="https://github.com/Nick2858/Journey-Mapping-Project"
+          target="_blank"
+          style={{ textDecoration: "none", verticalAlign: "middle" }}
+        >
+          
+            <img src="./ArrowLink.svg" className="ProjectLink"></img>
+            </a></h1>
+        
+
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>

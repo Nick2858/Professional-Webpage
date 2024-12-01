@@ -5,6 +5,7 @@ interface Props {
     id: number;
     projectTitle: string;
     description: string;
+    link: string;
     picture: string;
     skills: string[];
   };
@@ -35,8 +36,15 @@ function ProjectDisplay({ children }: Props) {
 
   return (
     <div className="ProjectDisplay" style={even}>
+      
       <h1 className="ProjectHeader" style={even}>
         {children.projectTitle}
+        
+        <a  href={children.link} target="_blank" style={{textDecoration: "none", verticalAlign:"middle"}}>
+        {(children.link != "") && 
+          <img src="./ArrowLink.svg" className="ProjectLink"></img>
+          }
+        </a> 
       </h1>
       <div className="Line"> </div>
 
