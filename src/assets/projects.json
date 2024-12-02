@@ -7,7 +7,7 @@
         "projectTitle": "CNC Router Design (MIE243)",
         "description": "Together with a team of four second year Mechanical Engineering students, I researched and designed a DIY hobbyist CNC Router setup for my MIE243 Mechanical Engineering Design course. This involved developping the engineering specifications, budgeting, researching components, and creating CAD parts and assemblies in SolidWorks. The final conceptual design included a 2ft by 3ft bed with a belt drive system in the x and y axis as well as a lead screw setup in the z axis all ran by encoded stepper motors. The design can hold a 2.2kW spindle motor capable of cutting various materials including soft metals and aluminum. The total material cost is under $2300 CAD.",
         "link": "",
-        "picture": "./projectsPics/CNCRouter.png",
+        "picture": "./projectsPics/CNCRouter.jpg",
         "skills": ["SolidWorks", "Team Work", "Communication"]
     },
     {
