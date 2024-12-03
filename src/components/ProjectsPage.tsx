@@ -5,7 +5,6 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import Projects from "../assets/projects.json";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import * as THREE from "three";
 import { useInView } from "react-intersection-observer";
 
@@ -52,9 +51,16 @@ function ProjectsPage() {
 
       {/*     CUSTOM PROJECT TEMPLATES      */}
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>
+      <div className="ProjectDisplay" style={even}>
+        <h1 className="ProjectHeader">
           Branch Builder
+          <a
+            href="https://github.com/Nick2858/Branch-Builder"
+            target="_blank"
+            style={{ textDecoration: "none", verticalAlign: "middle" }}
+          >
+            <img src="./ArrowLink.svg" className="ProjectLink"></img>
+          </a>
         </h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
@@ -137,10 +143,8 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>
-          Mouse Airway Imaging
-        </h1>
+      <div className="ProjectDisplay" style={odd}>
+        <h1 className="ProjectHeader">Mouse Airway Imaging</h1>
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectText">
@@ -151,15 +155,16 @@ function ProjectsPage() {
             imaging mouse airways in the lab involved using procedures
             developped for mouse lung vasculature, however, when applied to
             airways this led to leakages and poor results from imaging. After
-            rigorous literature review and many trials, we developped a
-            procedure for our lab that involved injecting a mixture of Room
-            Temperature Vulcanizing Silicon Rubber casting material with
+            rigorous literature review, discussions and presentations with
+            colleagues of various fields of expertise, and many trials, we
+            developped a procedure for our lab that involved injecting a mixture
+            of Room Temperature Vulcanizing Silicon Rubber casting material with
             MICROFIL into Mouse lung airways. The Silicon Rubber casting
             material helped to prevent leakages while the contrast agents in the
             MICROFIL improved the quality of the images produced from micro-CT
             scans.
             <div className="JobSkills">
-              {["Biomedical Research", "Micro-CT Imaging", "MATLAB"].map(
+              {["Biomedical Research", "Micro-CT Imaging", "MATLAB","Cross-Disciplinary"].map(
                 (skill) => (
                   <div className="Skill" style={{ fontSize: "0.7em" }}>
                     {" "}
@@ -172,10 +177,18 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={even}>
+      <div className="ProjectDisplay" style={even}>
+        <h1 className="ProjectHeader">
           Alphabetic Sign Language Interpreter
+          <a
+            href="https://github.com/Nick2858/Sign-Language-Interpreter"
+            target="_blank"
+            style={{ textDecoration: "none", verticalAlign: "middle" }}
+          >
+            <img src="./ArrowLink.svg" className="ProjectLink"></img>
+          </a>
         </h1>
+
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
@@ -230,10 +243,18 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <div className="ProjectDisplay">
-        <h1 className="ProjectHeader" style={odd}>
+      <div className="ProjectDisplay" style={odd}>
+        <h1 className="ProjectHeader">
           Journey Mapping Project (APS112)
+          <a
+            href="https://github.com/Nick2858/Journey-Mapping-Project"
+            target="_blank"
+            style={{ textDecoration: "none", verticalAlign: "middle" }}
+          >
+            <img src="./ArrowLink.svg" className="ProjectLink"></img>
+          </a>
         </h1>
+
         <div className="Line"> </div>
         <div className="ProjectInfo">
           <div className="ProjectImage" style={{ aspectRatio: "4/3" }}>
