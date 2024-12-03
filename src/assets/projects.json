@@ -5,7 +5,7 @@
     {
         "id":2,
         "projectTitle": "CNC Router Design (MIE243)",
-        "description": "Together with a team of four second year Mechanical Engineering students in MIE243 Mechanical Engineering Design, we researched and designed a DIY hobbyist CNC Router setup. This involved developing the engineering specifications, budgeting, researching components, drafting candidate designs, creating CAD parts and assemblies in SolidWorks and running static load simulations. The final conceptual design features a 2ft by 3ft bed with a belt drive system in the x and y axis as well as a lead screw setup in the z axis all ran by stepper motors. The design holds a 2.2kW spindle motor capable of cutting various materials including soft metals and aluminum.",
+        "description": "Together with a team of four second year Mechanical Engineering students in MIE243 Mechanical Engineering Design, we researched and designed a DIY hobbyist CNC Router setup. This involved developing the engineering specifications, budgeting, researching components, drafting candidate designs, creating CAD parts and assemblies in SolidWorks and running static load simulations. The final conceptual design features a 2ft by 3ft bed with a belt drive system in the x and y axis as well as a lead screw setup in the z axis all ran by stepper motors. The design holds a 2.2kW spindle motor capable of cutting various materials including wood, acrylic, and soft metals like aluminum.",
         "link": "",
         "picture": "./projectsPics/CNCRouter.jpg",
         "skills": ["SolidWorks", "Team Work", "Communication"]
@@ -29,7 +29,7 @@
     {
         "id":5,
         "projectTitle": "Resume Roast Webpage",
-        "description": "In an attempt to create a more fun and engaging way to improve resume writing, I along with two of my friends created the Resume Roast Webpage for our Ignition Hacks Hackathon submission. Resume Roast takes the user's resume, and uses AI to generate a track by Drake, which disses their resume in a personalized and playful manner to highlight its weaknesses. The user is then prompted by an AI Kendrick Lamar who will delivers constructive criticisms and offering actionable advice for improving their resume in the form of a rap song set to an iconic beat. The frontend for the webpage was built with React, Tailwind, and JavaScript. The backend used Node.js, Google AI Studio to generate lyrics, and Elevenlabs API to generate the Drake and Kendrick vocals.",
+        "description": "In an attempt to create a more fun and engaging way to improve resume writing, I along with two of my friends created the Resume Roast Webpage for our Ignition Hacks Hackathon submission. Resume Roast takes the user's resume, and uses AI to generate a track by Drake, which disses their resume in a personalized and playful manner to highlight its weaknesses. The user is then prompted by an AI Kendrick Lamar who delivers constructive criticism and offers actionable advice for improving their resume in the form of a rap song set to an iconic beat. The frontend for the webpage was built with React, Tailwind, and JavaScript. The backend used Node.js, Google AI Studio to generate lyrics, and Elevenlabs API to generate the Drake and Kendrick vocals.",
         "link": "https://github.com/Nick2858/IgnitionHacks_ResumeRoast",
         "picture": "./projectsPics/ResumeRoast.png",
         "skills": ["Gemini API", "ElevenLabs API", "React", "Team Work", "JavaScript"]
@@ -37,7 +37,7 @@
     {
         "id":6,
         "projectTitle": "Portfolio Webpage",
-        "description": "As a Mechanical Engineering student with many hobbies and projects, as well as an avid coder; creating a portfolio webpage was the perfect opportunity for me to develop my programming skills, and showcase what I've been working on in a fun and personalized way. The webpage was built using react and vite. It was coded in TypeScript and features many different custom made components for different sections of the webpage. I also wanted to give users the opportunity to engage in my projects by including 3D models and videos where applicable.",
+        "description": "As a Mechanical Engineering student with many hobbies and projects, as well as an avid coder; creating a portfolio webpage was the perfect opportunity for me to develop my programming skills, and showcase what I've been working on in a fun and personalized way. The webpage was built using react and vite. It was coded in TypeScript and features many different custom made components for different sections of the webpage. I also wanted to give users the opportunity to engage with my projects by including 3D models and videos where applicable.",
         "link": "https://github.com/Nick2858/Professional-Webpage",
         "picture": "./projectsPics/WebPage.png",
         "skills": ["React", "TypeScript", "UI Design","Three.js"]

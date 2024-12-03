@@ -4,7 +4,7 @@
     "jobtitle":"Undergraduate Researcher",
     "company": "Bazylak Group and Latner Thoracic Research Laboratories",
     "date": "May 2024 - Aug 2024",
-    "description": "Optimized a MATLAB pipeline for extracting lung vasculature and airway geometry, achieving a 47% reduction in processing time using memory allocation techniques and MATLAB Profiler tools. Developed imaging methods producing micro-CT scans with over 1,000 airway branches (~30 generations) and constructed simplified airway geometries for CFD analysis using the Branch Builder tool.",
+    "description": "Optimized a MATLAB pipeline for extracting lung vasculature and airway geometry, achieving a 47% reduction in processing time using memory allocation techniques and MATLAB Profiler tools. Developed mouse lung airway imaging methods producing micro-CT scans with over 1,000 airway branches (~30 generations) and constructed simplified airway geometries for CFD analysis using the Branch Builder tool.",
     "image": "./experiencePics/Latner.png",
     "skills": ["Micro-CT Imaging", "Python", "MATLAB", "Office Suite", "Public Speaking"]
     },
