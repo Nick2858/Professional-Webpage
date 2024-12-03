@@ -16,7 +16,7 @@
         "description": "To gain a greater understanding of design for manufacturing, I participated in a two day basic machining course at George Brown College affiliated with the University of Toronto Faculty of Engineering. In this course, I learned how to operate a mill, drill press and lathe and used my knowledge to machine a miniature piston with a functional crank slider. The piston is also capable of spinning by feeding pressurized air into the block.  ",
         "link": "",
         "picture": "./projectsPics/GeorgeBrown.jpg",
-        "skills": ["Computed Tomography", "Python", "MATLAB", "Office Suite", "Public Speaking"]
+        "skills": ["Drill Press", "Lathe", "Mill"]
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
     {
         "id":5,
         "projectTitle": "Resume Roast Webpage",
-        "description": "In an attempt to create a more fun and engaging way to improve resume writing, I along with two of my friends created the Resume Roast Webpage for our Ignition Hacks Hackathon submission. Resume Roast takes the user's resume, and uses AI to generate a track by Drake, which disses their resume in a personalized and playful manner to highlight its weaknesses. The user is then prompted by an AI Kendrick Lamar who will delivers constructive criticisms and offering actionable advice for improving your resume in the form a rap song set to an iconic beat. The frontend for the webpage was built with React, Tailwind, and JavaScript. The backend used Node.js, Google AI Studio to generate lyrics, and Elevenlabs API to generate the Drake and Kendrick vocals.",
+        "description": "In an attempt to create a more fun and engaging way to improve resume writing, I along with two of my friends created the Resume Roast Webpage for our Ignition Hacks Hackathon submission. Resume Roast takes the user's resume, and uses AI to generate a track by Drake, which disses their resume in a personalized and playful manner to highlight its weaknesses. The user is then prompted by an AI Kendrick Lamar who delivers constructive criticism and offers actionable advice for improving their resume in the form a rap song set to an iconic beat. The frontend for the webpage was built with React, Tailwind, and JavaScript. The backend used Node.js, Google AI Studio to generate lyrics, and Elevenlabs API to generate the Drake and Kendrick vocals.",
         "link": "",
         "picture": "./projectsPics/ResumeRoast.png",
         "skills": ["Gemini API", "ElevenLabs API", "React", "Team Work", "JavaScript"]

@@ -116,16 +116,15 @@ function ProjectsPage() {
             position in the Latner Thoracic Research Laboratories and Bazylak
             Group. The data in each row of the CSV file corresponds to a branch.
             The program iterates through each row one at a time to build, clean,
-            hollow and export branch STL files one at a time. After each branch
-            has been created, the program groups the STL files by their
-            generation number and lobe number using the data stored in their
-            naming convention. A challenge that I had to overcome to build this
-            program was that blender is not capable of handing large amounts
-            mesh geometries, thus to overcome this, each branch had to be build
-            individually and then grouped together as a final step. To test the
-            program, I built the Human Airway Model using branch data from
-            Schmidt et al 2004. This model contains over 3000 branches and has
-            branches up to 17 generations.
+            hollow and export branch STL files. After each branch has been
+            created, the program groups the STL files by their generation number
+            and lobe number using the data stored in their naming convention. A
+            challenge that I had to overcome to build this program was that
+            blender is not capable of handing large amounts mesh geometries,
+            thus each branch had to be built individually and then grouped
+            together as a final step. To test the program, I built the Human
+            Airway Model using branch data from Schmidt et al 2004. This model
+            contains over 3000 branches and has branches up to 17 generations.
             <div className="JobSkills">
               {["Python", "Blender", "Problem Solving"].map((skill) => (
                 <div className="Skill" style={{ fontSize: "0.7em" }}>
@@ -212,10 +211,11 @@ function ProjectsPage() {
             It utilizes OpenCV and MediaPipe to translate alphabetical sign
             language to text on a screen with Text-To-Speech playback using
             pyttsx3. It works by using MediaPipe libraries to detect hands and
-            output the coordinates of different features. From here, a series of
-            functions was coded for each letter which compare the coordinates of
-            differet features (e.g. the tip of the index compared to a joint in
-            the thumb) to determine which letter is being displayed.
+            output the coordinates of different parts of the hand. From here, a
+            series of functions was coded for each letter which compare the
+            coordinates of different features (e.g. the tip of the index
+            compared to a joint in the thumb) to determine which letter is being
+            displayed.
             <div className="JobSkills">
               {["Python", "OpenCV", "MediaPipe", "Computer Vision"].map(
                 (skill) => (
@@ -269,9 +269,13 @@ function ProjectsPage() {
             developed a tool to visualize the effects of one-way conversions on
             driving routes for the City of Toronto Cyclists and Pedestrian's
             Team. This was achieved using OpenStreetMap Editor to built and
-            export custom traffic restrictions to a JSON file. This file was
-            then processed in Python and used to display custom routes on MapBox
-            API in JavaScript.
+            export custom traffic restrictions to a GeoJSON file. From there,
+            the client could upload the GeoJSON file to a webpage that allowed
+            users to select a start and end point on a map using the MapBox API.
+            The webpage then sends the coordinate data to a python script using
+            Flask, which calculates the shortest route given the new turn
+            restrictions saved in the GeoJSON file. The webpage then displays
+            the new and old routes from before and after the changes.
             <div className="JobSkills">
               {[
                 "Python",
