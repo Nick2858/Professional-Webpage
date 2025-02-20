@@ -118,20 +118,19 @@ function ProjectsPage() {
             {" "}
             A python script in Blender that allows you to convert lung airway
             data from a CSV file into hollow 3D STL branch objects for CFD
-            analysis. This is a script I developped during my summer research
+            analysis. This is a script I developed during my summer research
             position in the Latner Thoracic Research Laboratories and Bazylak
             Group. The data in each row of the CSV file corresponds to a branch.
             The program iterates through each row one at a time to build, clean,
-            hollow and export branch STL files one at a time. After each branch
-            has been created, the program groups the STL files by their
-            generation number and lobe number using the data stored in their
-            naming convention. A challenge that I had to overcome to build this
-            program was that blender is not capable of handing large amounts
-            mesh geometries, thus to overcome this, each branch had to be build
-            individually and then grouped together as a final step. To test the
-            program, I built the Human Airway Model using branch data from
-            Schmidt et al 2004. This model contains over 3000 branches and has
-            branches up to 17 generations.
+            hollow and export branch STL files. After each branch has been
+            created, the program groups the STL files by their generation number
+            and lobe number using the data stored in their naming convention. A
+            challenge that I had to overcome to build this program was that
+            blender is not capable of handing large amounts of mesh geometries,
+            thus each branch had to be built individually and then grouped
+            together as a final step. To test the program, I built the Human
+            Airway Model using branch data from Schmidt et al 2004. This model
+            contains over 3000 branches and has branches up to 17 generations.
             <div className="JobSkills">
               {["Python", "Blender", "Problem Solving"].map((skill) => (
                 <div className="Skill" style={{ fontSize: "0.7em" }}>
@@ -153,26 +152,29 @@ function ProjectsPage() {
             Part of my research with the Latner Thoracic Research Laboratories
             and Bazylak Group involved developing a procedure for mouse airway
             imaging under micro-Computed Tomography. The previous methods for
-            imaging mouse airways in the lab involved using procedures
-            developped for mouse lung vasculature, however, when applied to
-            airways this led to leakages and poor results from imaging. After
-            rigorous literature review, discussions and presentations with
-            colleagues of various fields of expertise, and many trials, we
-            developped a procedure for our lab that involved injecting a mixture
-            of Room Temperature Vulcanizing Silicon Rubber casting material with
+            imaging mouse airways in the lab involved using procedures developed
+            for mouse lung vasculature, however, when applied to airways this
+            led to leakages and poor results from imaging. After rigorous
+            literature review, presentations, discussions with colleagues of
+            various fields of expertise, and many trials, we developed a
+            procedure for our lab that involved injecting a mixture of Room
+            Temperature Vulcanizing Silicon Rubber casting material with
             MICROFIL into Mouse lung airways. The Silicon Rubber casting
             material helped to prevent leakages while the contrast agents in the
             MICROFIL improved the quality of the images produced from micro-CT
             scans.
             <div className="JobSkills">
-              {["Biomedical Research", "Micro-CT Imaging", "MATLAB","Cross-Disciplinary"].map(
-                (skill) => (
-                  <div className="Skill" style={{ fontSize: "0.7em" }}>
-                    {" "}
-                    {skill}
-                  </div>
-                )
-              )}
+              {[
+                "Biomedical Research",
+                "Micro-CT Imaging",
+                "MATLAB",
+                "Cross-Disciplinary",
+              ].map((skill) => (
+                <div className="Skill" style={{ fontSize: "0.7em" }}>
+                  {" "}
+                  {skill}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -221,14 +223,15 @@ function ProjectsPage() {
           </div>
           <div className="ProjectText">
             {" "}
-            This is a project I developped in 2022 while I was in high school.
-            It utilizes OpenCV and MediaPipe to translate alphabetical sign
+            This is a project I developed in 2022 while I was in high school. It
+            utilizes OpenCV and MediaPipe to translate alphabetical sign
             language to text on a screen with Text-To-Speech playback using
             pyttsx3. It works by using MediaPipe libraries to detect hands and
-            output the coordinates of different features. From here, a series of
-            functions was coded for each letter which compare the coordinates of
-            differet features (e.g. the tip of the index compared to a joint in
-            the thumb) to determine which letter is being displayed.
+            output the coordinates of different parts of the hand. From here, a
+            series of functions were coded for each letter which compare the
+            coordinates of different features (e.g. the tip of the index
+            compared to a joint in the thumb) to determine which letter is being
+            displayed.
             <div className="JobSkills">
               {["Python", "OpenCV", "MediaPipe", "Computer Vision"].map(
                 (skill) => (
@@ -290,15 +293,20 @@ function ProjectsPage() {
             developed a tool to visualize the effects of one-way conversions on
             driving routes for the City of Toronto Cyclists and Pedestrian's
             Team. This was achieved using OpenStreetMap Editor to built and
-            export custom traffic restrictions to a JSON file. This file was
-            then processed in Python and used to display custom routes on MapBox
-            API in JavaScript.
+            export custom traffic restrictions to a GeoJSON file. From there,
+            the client could upload the GeoJSON file to a webpage that allowed
+            users to select a start and end point on a map using the Mapbox API.
+            The webpage then sends the coordinate data to a python script using
+            Flask, which calculates the shortest route given the new traffic
+            restrictions saved in the GeoJSON file. The webpage then displays
+            the new and old routes from before and after the changes.
             <div className="JobSkills">
               {[
                 "Python",
                 "JavaScript",
                 "Flask",
                 "OpenStreetMaps",
+                "Mapbox API",
                 "NetworkX",
                 "Teamwork",
                 "Communication",
