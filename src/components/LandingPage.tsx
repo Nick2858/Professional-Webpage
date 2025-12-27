@@ -23,37 +23,41 @@ function LandingPage() {
   return (
     <>
       <div id="Home" className="LandingPage">
+        
         {isVisible && (
           <>
-        <div className="Name"> Nicholas Karantakis </div>
-      
-        <div className="InnerPage">
-          <img className="Portrait" src="Portrait.png"></img>
-          <div className="Socials">
+            <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap" rel="stylesheet"></link>
+            <div className="Name" style={{fontFamily: "Edu NSW ACT Cursive", fontWeight: "700"}}> Nicholas Karantakis </div>
+            
+            <div className="InnerPage">
+              
+              <div className="Socials">
                 <div className="IconsGroup">
-              <a href="https://github.com/Nick2858" target="_blank">
-                    <img
-                      className="IconLink"
-                      src="./github-mark-white.svg"
-                    ></img>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/nicholas-karantakis-78a54a255"
-                target="_blank"
-              >
-                <img className="IconLink" src="./In-White-128.png"></img>
-              </a>
-              <a href="mailto:nicholaskarantakis@gmail.com" target="_blank">
-                <img className="IconLink" src="./gmail.svg"></img>
-              </a>
-            <div className="ResumeLink">
-            <a href="./Resume.pdf" target="_blank">
-              <button className="ResumeLinkText">Resume</button>
-            </a>
+                  <a href="https://github.com/Nick2858" target="_blank" className="IconBox">
+                        <img
+                          className="IconLink"
+                          src="./github-mark-white.svg"
+                        ></img>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/nicholas-karantakis-78a54a255"
+                    target="_blank"
+                    className="IconBox"
+                  >
+                    <img className="IconLink" src="./In-White-128.png"></img>
+                  </a>
+                  <a href="mailto:nicholaskarantakis@gmail.com" target="_blank" className="IconBox">
+                    <img className="IconLink" src="./gmail.svg"></img>
+                  </a>
+                  {/* <div className="ResumeLink">
+                  <a href="./Resume.pdf" target="_blank">
+                    <button className="ResumeLinkText">Resume</button>
+                  </a>
+                  </div> */}
+                </div>
+              </div>
             </div>
-          </div>
-       </div>
-            </div>
+          
           </>
         )}
       </div>

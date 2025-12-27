@@ -19,13 +19,16 @@ body::-webkit-scrollbar {
 .InnerPage {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: right;
   position: relative;
   vertical-align: top;
-  padding-bottom: 4%;
+
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(#6f9fbe, #cfcfcf);
+  background-image: url(DSC02204.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
   overflow: hidden;
   animation: OnScroll linear;
   animation-duration: 3s;
@@ -44,32 +47,26 @@ button{
   border: 0;
 }
 
-.Portrait {
-  overflow: hidden;
-  width: auto;
-  max-height: 50%;
-  background: -webkit-linear-gradient(#1652753d, #002f49af);
-  bottom: 0;
-  border: 0px solid #000000;
-  border-radius: 30%;
-  z-index: 2;
 
-  -webkit-filter: drop-shadow(0px 0px 10vh #000000f6);
-  filter: drop-shadow(0px 0px 8vh #000000f6);
+
+.backgroundImage{
+  width:100%;
+  z-index:0;
 }
 
 .Name {
-  background: -webkit-linear-gradient(#003049, #165275);
+  background: -webkit-linear-gradient(#1c9ae4, #165275);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 8vw;
-  font-weight: 650;
-  z-index: 2;
+  font-weight: 700;
+
+  z-index: 3;
   opacity: 100%;
   width: 100%;
   height: min-content;
-  top: 4vh;
+  top: 26vh;
   position: fixed;
   text-align: center;
   overflow: hidden;
@@ -77,8 +74,9 @@ button{
   animation-duration: 3s;
   animation-timeline: scroll();
   white-space: nowrap;
-  -webkit-filter: drop-shadow(0px 0px 2vh #00000041);
-  filter: drop-shadow(0px 0px 2vh #00000041);
+  -webkit-filter: drop-shadow(0px 0px 2px #000000);
+  filter: drop-shadow(0px 0px 2px #000000);
+
 }
 
 @keyframes nameAnimation {
@@ -91,44 +89,55 @@ button{
 }
 
 .Socials {
-  height: 40%;
-  width: min(500px, 50%);
+  width: 100%;
+  padding-bottom:3vh;
+  height: auto;
   z-index: 1;
-  opacity: 60%;
+  opacity: 100%;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
 
-  justify-content: right;
 }
 
 .IconsGroup {
   width: 100%;
-}
-.IconLink {
-  height: min(90px, 10vw, 10vh);
-  width: auto;
-  display: inline;
-  padding-right: 5%;
-  padding-left: 5%;
-  transition: 0.5s ease;
-  opacity: 60%;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
-    hue-rotate(177deg) brightness(101%) contrast(102%);
-}
-
-.IconLink:hover {
   opacity: 100%;
 }
 
-.ResumeLink {
-  width: 100%;
+
+.IconLink {
+  height: min(90px, 10vw, 10vh);
+
+  width: auto;
+  display: inline;
+  padding-right: 1%;
+  padding-left: 1%;
+
+
+  transition: 0.5s ease;
+  opacity: 100%;
+  
+  filter:brightness(0) saturate(100%) invert(100%) sepia(51%) saturate(0%) hue-rotate(351deg) brightness(109%) contrast(101%) drop-shadow(0px 0px 1vh #165275);
+
+  -webkit-filter:  brightness(0) saturate(100%) invert(100%) sepia(51%) saturate(0%) hue-rotate(351deg) brightness(109%) contrast(101%) drop-shadow(0px 0px 0vh #165275);
 }
 
+.IconLink:hover {
+  opacity:100%;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(22%) saturate(1863%) hue-rotate(159deg) brightness(93%) contrast(93%) drop-shadow(0px 0px 1vh #165275);
+  -webkit-filter: brightness(0) saturate(100%) invert(33%) sepia(22%) saturate(1863%) hue-rotate(159deg) brightness(93%) contrast(93%) drop-shadow(0px 0px 1vh #165275);
+
+}
+
+
 .ResumeLinkText {
+  float: left;
   padding-right: 5%;
-  padding-top: 3%;
-  padding-bottom: 4%;
+
   font-weight: 500;
   font-size: min(90px, 10vw, 10vh);
-  opacity: 60%;
+  opacity: 100%;
   padding-left: 5%;
   color: white;
   cursor: pointer;
@@ -140,7 +149,8 @@ button{
 }
 
 .ResumeLinkText:hover {
-  opacity: 100%;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(22%) saturate(1863%) hue-rotate(159deg) brightness(93%) contrast(93%) drop-shadow(0px 0px 1vh #165275);
+  -webkit-filter: brightness(0) saturate(100%) invert(33%) sepia(22%) saturate(1863%) hue-rotate(159deg) brightness(93%) contrast(93%) drop-shadow(0px 0px 1vh #165275);
 }
 
 .Arrow {
@@ -169,12 +179,12 @@ button{
 .Explore {
   display: block;
   position: relative;
+  width:100%;
   z-index: 4;
   font-weight: 500;
   font-size: 2vh;
-  left: 50%;
   top: 85vh;
-  transform: translate(-50%, -50%);
+
   position: fixed;
   text-align: center;
   cursor: pointer;
@@ -185,7 +195,7 @@ button{
   height: 25vh;
   background-color: #f3f3f3;
   position: relative;
-  text-align: left;
+  text-align: center;
   overflow: hidden;
   z-index: 1;
 }
@@ -198,7 +208,7 @@ button{
   display: inline;
   padding-inline: 5%;
   width: 100%;
-  height: 5vh;
+  height:auto;
   text-align: right;
   background-color: #e4e4e4;
   opacity: 100%;
@@ -212,13 +222,14 @@ button{
   height: 100%;
   vertical-align: middle;
   font-size: 2.5vh;
-  font-weight: 500;
+  font-weight: 200;
   padding-inline: 1%;
-  font-family: "Arial";
+  font-family: 'Arial';
   color: #165275;
   appearance: none;
   border: none;
   background: transparent;
+  
 }
 
 .AboutPage {
@@ -243,15 +254,35 @@ button{
 }
 
 .AboutMe {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 2vw;
+  margin-top: 3vh;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0px;
-  padding: auto;
-  text-align: center;
+  flex-grow: inherit;
+  padding-top: 0px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  flex-grow: 1;
+
+  width: 100%;
+  color: #000000;
+  height: auto;
+  justify-content: left;
+  text-align: left;
+  font-size: x-large;
+  padding: 0 10px 30px 10px;
 }
 
+.Portrait {
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  height: auto;
+  width: max(30vw, 500px);
+  margin-bottom: 2%;
+  border-radius: 10px 10px 10px 10px;
+}
 .PageTitle {
   position: relative;
   font: "Arial";
@@ -274,17 +305,17 @@ button{
 
 .PageText {
   font: "Arial";
-  margin: auto;
+
   color: #4a4a4a;
   animation: FadeIn cubic-bezier(0.72, 0.12, 0.88, 0.58);
   animation-duration: 2s;
   animation-timeline: view();
   flex-grow: inherit;
   padding-top: 0px;
-  flex-grow: 1;
-  flex-basis: 50vw;
-  width: 70%;
-  height: auto;
+  padding-bottom:2vh;
+
+  flex-basis: 40vw;
+
   font-size: xx-large;
   background-color: #f3f3f3;
 }
@@ -683,21 +714,22 @@ button{
     height: 7vh;
     width: 100%;
     position: fixed;
-    top: 20%;
-    left: 0;
+    padding-bottom: 10vh;
     z-index: 1;
-    opacity: 60%;
     vertical-align: center;
     justify-content: center;
     text-align: center;
+    
   }
 
   .IconLink {
     height: auto;
-    width: 17%;
 
     padding-right: 5%;
     padding-left: 5%;
+    width: 20%;
+    margin-bottom: 10%;
+  
   }
 
   .LandingPage {
@@ -708,6 +740,7 @@ button{
     justify-content: center;
     padding-right: 0;
     text-align: center;
+
   }
 
   .ResumeLinkText {
@@ -737,6 +770,13 @@ button{
     height: max(70%, fit-content);
     margin-bottom: 5%;
     width: max(30%, 300px);
+  }  
+
+
+  .Portrait {
+    width: 80%;
+    margin: auto;
+
   }
 
   .carousel-container {
@@ -748,12 +788,14 @@ button{
 @media (max-width: 600px) {
   .Name {
     animation: none;
-    top: 6vh;
+    text-wrap:initial;
+    
     font-size: 2.2rem;
     font-weight: 800;
   }
   .NavBar {
     text-align: center;
+    height:auto;
     padding-left: 0;
     padding-right: 0;
     opacity: 1;
@@ -775,9 +817,7 @@ button{
     justify-content: center;
   }
 
-  .Portrait {
-    max-height: 40%;
-  }
+
   .ExploreBar {
     height: 35vh;
   }
@@ -799,18 +839,15 @@ button{
   .Socials {
     height: 7vh;
     max-width: 100%;
-    top: 20%;
+
     left: 0%;
     position: fixed;
-    opacity: 60%;
     vertical-align: center;
     justify-content: center;
     text-align: center;
   }
 
-  .IconLink {
-    width: 20%;
-  }
+  
 
   .PageTitle {
     font-size: xx-large;

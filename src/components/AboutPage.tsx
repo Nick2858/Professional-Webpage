@@ -15,15 +15,18 @@ function AboutPage() {
           About Me
         </h1>
         <div className="AboutMe" >
+          <img className="Portrait" src="Portrait.JPG"></img>
+          
           <p className="PageText">
-            I'm a second year Mechanical Engineering Student at the University
-            of Toronto pursuing a minor in Robotics, and Engineering Business.
-            I've worked in various industries including biomedical research,
-            aerospace and hospitality. My future aspirations are to explore career 
+            I'm a Mechanical Engineering Student at the University
+            of Toronto pursuing a minor in Robotics, and Engineering Business. I'm currently working as a Hardware Intern on the Vision team at Martinrea where I help to build computer vision systems for automotive manufacturing.
+            I'm passionate about photography, the outdoors, music and always looking for new things I can DIY. My future aspirations are to explore career 
             opportunities in mechatronics and robotics, where I can combine my strong
               interests in programming and mechanical design with my passion for cross-disciplinary
               problem-solving.
+              
           </p>
+          
         
         </div>
         <h1 className="PageHeader" style={{ padding: "7vh" }}>

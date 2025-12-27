@@ -1,6 +1,23 @@
 [
     {
     "id":1,        
+    "jobtitle":"Hardware Vision Intern",
+    "company": "Martinrea",
+    "date": "May 2025 - Aug 2025",
+    "description": "Developing computer vision systems for automotive manufacturing lines.",
+    "image": "./experiencePics/Martinrea.jpg",
+    "skills": ["Linux", "Python", "Imaging", "Computer Vision", "Model Training", "SolidWorks", "3D Printing","Office Suite", "Public Speaking"]
+    },
+    {
+    "id":1,        
+    "jobtitle":"Undergraduate Researcher",
+    "company": "Mechatronics and Microsystems Design Laboratory",
+    "date": "May 2025 - Aug 2025",
+    "description": "This research focused on developing lead-free piezoelectric nanogenerators (PENG) with greater piezoelectric coefficients for more efficient energy harvesting. We planned to achieve this by doping and growing Zinc Oxide NanoWires in our lab to improve their piezoelectric properties. This field of research intersects materials science, mechatronics, and chemistry to drive innovations in sustainable energy solutions.",
+    "image": "./experiencePics/UofT.jpg",
+    "skills": ["Piezoelectric Materials", "Python", "Soldering", "Measurement & Handling", "Operating Lab Equipment","Office Suite", "Public Speaking"]
+    },{
+    "id":1,        
     "jobtitle":"Undergraduate Researcher",
     "company": "Bazylak Group and Latner Thoracic Research Laboratories",
     "date": "May 2024 - Aug 2024",

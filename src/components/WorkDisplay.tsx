@@ -18,7 +18,7 @@ function WorkDisplay({ children }: Props) {
       <img src={children.image} className="WorkImage"></img>
       <div className="WorkInfo">
         <h1 style={{ fontSize: "20px" }}>
-          {children.jobtitle} - {children.company} <br></br>
+          {children.jobtitle} @ {children.company} <br></br>
         </h1>
         <h1 style={{ fontSize: "15px" }}>{children.date}</h1>
         
