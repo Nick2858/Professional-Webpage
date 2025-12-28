@@ -271,6 +271,7 @@ button{
   justify-content: left;
   text-align: left;
   font-size: x-large;
+  vertical-align: top;
   padding: 0 10px 30px 10px;
 }
 
@@ -282,6 +283,9 @@ button{
   width: max(30vw, 500px);
   margin-bottom: 2%;
   border-radius: 10px 10px 10px 10px;
+  animation: FadeIn2 cubic-bezier(0.72, 0.12, 0.88, 0.58);
+  animation-duration: 2s;
+  animation-timeline: view();
 }
 .PageTitle {
   position: relative;
@@ -314,7 +318,7 @@ button{
   padding-top: 0px;
   padding-bottom:2vh;
 
-  flex-basis: 40vw;
+  flex-basis: 30vw;
 
   font-size: xx-large;
   background-color: #f3f3f3;
@@ -336,21 +340,8 @@ button{
 }
 
 .WorkDisplay {
-  height: max(70%, fit-content);
-  margin-bottom: 5%;
-  position: relative;
-  width: 20%;
   padding: 1%;
-  box-shadow: 0px 5px 50px 2px rgb(168, 168, 168);
 
-  animation: FadeIn cubic-bezier(0.72, 0.12, 0, 0.9);
-  animation-duration: 2s;
-  animation-timeline: view();
-  border-radius: 10px;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  -webkit-animation-duration: 20s;
 }
 
 .WorkDisplay::-webkit-scrollbar {
@@ -359,6 +350,7 @@ button{
 
 .JobSkills {
   padding-top: 10px;
+  flex:1;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -384,11 +376,12 @@ button{
 .WorkImage {
   float: left;
   position: relative;
-  width: 100%;
+  margin-inline: 10px;
+  width: 30%;
   margin-bottom: 10px;
   height: auto;
   text-align: left;
-  border-radius: 0;
+  border-radius: 2vh 2vh 2vh 2vh;
   border: solid #aaaaaa2d;
 }
 
@@ -397,8 +390,17 @@ button{
   height: auto;
   text-align: left;
   flex-grow: 1;
-  max-width: 1000px;
+
 }
+
+.ShowButton{
+  font-weight: 500;
+  background: none;
+  margin: 5vh;
+  color:black;
+  
+}
+
 
 .AwardList {
   width: 100%;
@@ -542,6 +544,30 @@ button{
   justify-content: center;
 }
 
+.WorkDisplay {
+
+  flex-grow: 1;
+  text-align: left;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 80vw;
+  height: max-content;
+  position: relative;
+
+  animation: FadeIn cubic-bezier(0.72, 0.12, 0, 0.9);
+  animation-duration: 2s;
+  animation-timeline: view();
+  border-radius: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-animation-duration: 20s;
+
+}
+
 .carousel-wrapper {
   padding: 50px;
   position: relative;
@@ -549,14 +575,12 @@ button{
 }
 
 .carousel-container {
-  background-color: #f3f3f3;
-  box-shadow: 0px 5px 50px 2px rgb(168, 168, 168);
 
   flex-grow: 1;
   text-align: left;
   margin: auto;
   color: rgb(0, 0, 0);
-  border-radius: 10px;
+  
   overflow: hidden;
   width: 50%;
   max-width: 80vw;
@@ -575,13 +599,16 @@ button{
   overflow: hidden;
 }
 
+
 .carousel-button {
   top: 50%;
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
-  z-index: 10;
+  z-index:10;
 }
+
+
 
 .carousel-button img {
   width: 40px; /* Adjust size of the arrow image */
@@ -610,19 +637,30 @@ button{
 
 .prc-dotGroup {
   text-align: center;
+  margin-inline: auto;
   margin-top: 20px;
   margin-bottom: 10px;
+  padding: 5px 10px 5px 10px;
+  
+  border-radius: 1000px;
+
+  height: min-content;
+  width:fit-content;
+  background-color: #cacaca;
 }
 .carousel__dot {
   height: 2vh;
   aspect-ratio: 1;
+  background-color: #ffffff;
   margin: 0.25vw;
   border-radius: 50%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
   padding: 0px;
 }
 .carousel__dot--selected {
   background-color: #2274a5;
+  width: 4vh;
+  border-radius: 1vh;
   border: 0px;
 }
 
@@ -687,13 +725,6 @@ button{
     height: fit-content;
   }
 
-  .WorkDisplay {
-    height: max(70%, fit-content);
-    margin-bottom: 5%;
-    width: 100%;
-    min-width: 80%;
-  }
-
   .carousel-container {
     width: 100%;
     height: max(70vh, fit-content);
@@ -731,6 +762,11 @@ button{
     margin-bottom: 10%;
   
   }
+  .Portrait {
+    width: 80%;
+    margin: auto;
+
+  }
 
   .LandingPage {
     justify-content: center;
@@ -767,16 +803,33 @@ button{
   }
 
   .WorkDisplay {
-    height: max(70%, fit-content);
-    margin-bottom: 5%;
-    width: max(30%, 300px);
+
+    height:100%;
+
+    width: 100%;
   }  
 
 
   .Portrait {
-    width: 80%;
-    margin: auto;
+    max-width: 80%;
+    max-height: 50vh;
+    margin-inline: auto;
 
+  }
+
+  .ProjectText {
+    font: "Arial";
+    color: #000000;
+    flex-basis: 500px;
+    flex-grow: 1;
+    width: 50%;
+    font-size: large;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+  .PageText{
+    font-size:large;
   }
 
   .carousel-container {
@@ -905,6 +958,19 @@ button{
   }
 
   50% {
+    opacity: 100%;
+  }
+}
+@keyframes FadeIn2 {
+  0% {
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 0%;
+  }
+
+  30% {
     opacity: 100%;
   }
 }

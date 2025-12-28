@@ -5,28 +5,21 @@ import ProjectsPage from "./components/ProjectsPage";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import { Element } from "react-scroll";
-
+import Home from "./components/Home";
+import Gallery from "./components/Gallery";
+import ScrollToHash from "./components/ScrollToHash";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
-
-      <NavBar /> 
-      <Element name="Home">
-        <LandingPage />
-      </Element>
-      <Element name="AboutPage" id="AboutPage">
-        <AboutPage/>
-      </Element>
-      <Element name="ProjectsPage">
-        <ProjectsPage/>
-      </Element>
-
-      <Element name="About">
-      <Footer />
-      </Element>
-
-
+      <Router>
+        <ScrollToHash />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
