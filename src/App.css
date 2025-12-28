@@ -69,7 +69,8 @@ button{
   top: 26vh;
   position: fixed;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; 
+  text-wrap:inherit;
   animation: nameAnimation linear;
   animation-duration: 3s;
   animation-timeline: scroll();
@@ -377,7 +378,7 @@ button{
   float: left;
   position: relative;
   margin-inline: 10px;
-  width: 30%;
+  width: min(30%, 400px);
   margin-bottom: 10px;
   height: auto;
   text-align: left;
@@ -396,9 +397,22 @@ button{
 .ShowButton{
   font-weight: 500;
   background: none;
-  margin: 5vh;
+  width:fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 10000px;
   color:black;
   
+}
+
+.ExperienceBar{
+  position:relative;
+  width:100%;
+  height:fit-content;
+  background-color: rgb(255, 255, 255);
+  box-shadow:  0 0 1px #000000;
+  border-radius: min(1vw, 1vh);
 }
 
 
@@ -425,6 +439,7 @@ button{
 }
 
 .AwardInfo {
+
   padding: 20px;
   text-align: center;
 }
@@ -556,7 +571,7 @@ button{
   max-width: 80vw;
   height: max-content;
   position: relative;
-
+  
   animation: FadeIn cubic-bezier(0.72, 0.12, 0, 0.9);
   animation-duration: 2s;
   animation-timeline: view();
@@ -589,8 +604,12 @@ button{
 }
 
 .carousel-slider {
+  background-color: #e7e7e7;
+  border: 5px solid #2274a5;
+
+  border-radius: min(1vw, 1vh);
   overflow: hidden;
-  display: flex; /* Use flexbox to display slides inline */
+  display: inline; /* Use flexbox to display slides inline */
   flex-wrap: nowrap; /* Prevent slides from wrapping to the next line */
   transition: transform 0.5s ease; /* Optional: Smooth transition for sliding */
 }
@@ -636,31 +655,36 @@ button{
 }
 
 .prc-dotGroup {
+  display: flex;
+  align-items: center;
   text-align: center;
   margin-inline: auto;
   margin-top: 20px;
   margin-bottom: 10px;
-  padding: 5px 10px 5px 10px;
-  
+  padding-inline: 1vh;
+  vertical-align: center;
   border-radius: 1000px;
-
-  height: min-content;
+  transition: 1 ease;
+  height: 3vh;
   width:fit-content;
   background-color: #cacaca;
 }
 .carousel__dot {
-  height: 2vh;
+  height: 50%;
   aspect-ratio: 1;
   background-color: #ffffff;
   margin: 0.25vw;
-  border-radius: 50%;
+  border-radius: 1000px;
   border: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.3 ease;
   padding: 0px;
 }
 .carousel__dot--selected {
   background-color: #2274a5;
+  height:50%;
   width: 4vh;
   border-radius: 1vh;
+  transition: 1 ease;
   border: 0px;
 }
 
@@ -873,6 +897,7 @@ button{
 
   .ExploreBar {
     height: 35vh;
+    color: #212529;
   }
   .Arrow {
     top: 65vh;
@@ -880,13 +905,11 @@ button{
     width: auto;
   }
 
-  .carousel__dot {
-    height: 2.5vh;
-    width: 2.5vh;
-  }
+
 
   .Explore {
     top: 70vh;
+    color: #212529;
   }
 
   .Socials {
@@ -931,6 +954,7 @@ button{
   }
   .WorkExperiences {
     animation: none;
+
   }
 
   .WorkDisplay {

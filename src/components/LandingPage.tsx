@@ -1,5 +1,5 @@
 import "../App.css";
-import { Link } from "react-scroll";
+import { SmartLink } from "./SmartLink";
 import { useState, useEffect } from "react";
 
 
@@ -56,6 +56,7 @@ function LandingPage() {
                   </div> */}
                 </div>
               </div>
+              
             </div>
           
           </>
@@ -65,11 +66,15 @@ function LandingPage() {
         
         {isVisible &&( 
         <>
-        <Link to="AboutPage">
-          <div className="Explore"> Press to Explore </div>
+        <SmartLink to="/#AboutPage">
+          <>
+          <div className="Explore" style={{color:"#212529"}}> Press to Explore </div>
           <input className="Arrow" type="image" src="./planeArrow.png"></input>
           
-        </Link></>)}
+          </>
+        </SmartLink>
+        <p style={{float: "right", marginTop:"auto", color:"black",  zIndex:"10", fontSize:"x-small", paddingInline:"0.5vw", textAlign:"right"}}>Photo of the Black Tusk Pinnacle taken by Me <br /> (Check out my photo gallery)</p>
+        </>)}
       </div>  
       
     </>

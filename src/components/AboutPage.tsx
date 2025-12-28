@@ -48,6 +48,7 @@ function AboutPage() {
           {" "}
           Experience
         </h1>
+        <div className="ExperienceBar">
         {itemsToDisplay.map((experience) => (
           <WorkDisplay>{experience}</WorkDisplay>
         ))}
@@ -56,6 +57,7 @@ function AboutPage() {
             {isExpanded ? "Show Less" : "Show More"}
           </button>
         )}
+        </div>
         <h1 className="PageHeader" style={{ padding: "10vh 0 5vh " }}>
           Awards
         </h1>
@@ -72,7 +74,7 @@ function AboutPage() {
           >
             <Slider className="carousel-container">
               {Awards.map((award) => (
-                <Slide className="carousel-slide" index={award.id - 1}>
+                <Slide className="carousel-slider" index={award.id - 1}>
                   <AwardPage>{award}</AwardPage>
                 </Slide>
               ))}

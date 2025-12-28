@@ -17,7 +17,7 @@ function Gallery() {
   return (
     <>
       <NavBar></NavBar>
-      <div></div>
+      <div className="Name">Photos</div>
     </>
   );
 }
