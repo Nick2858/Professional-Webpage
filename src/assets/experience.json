@@ -4,7 +4,7 @@
     "jobtitle":"Hardware Vision Intern",
     "company": "Martinrea",
     "date": "May 2025 - Aug 2025",
-    "description": "Developing computer vision systems for automotive manufacturing lines.",
+    "description": "This role focused on developing and deploying computer vision systems for automated quality inspection in automotive manufacturing lines. I contributed across the entire development pipeline, from designing vision panels and collecting data to training models, configuring lighting, developing user interfaces, and installing and validating hardware on-site. This work sits at the intersection of computer vision, mechatronics, and manufacturing engineering to improve reliability and efficiency in industrial automation.",
     "image": "./experiencePics/Martinrea.jpg",
     "skills": ["Linux", "Python", "Imaging", "Computer Vision", "Model Training", "SolidWorks", "3D Printing","Office Suite", "Public Speaking"]
     },

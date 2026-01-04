@@ -1,10 +1,9 @@
 import "../App.css";
 import { SmartLink } from "./SmartLink";
+import { Link as ScrollLink } from "react-scroll";
 import { useState, useEffect } from "react";
 
-
 function LandingPage() {
-  
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
@@ -23,21 +22,35 @@ function LandingPage() {
   return (
     <>
       <div id="Home" className="LandingPage">
-        
         {isVisible && (
           <>
-            <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap" rel="stylesheet"></link>
-            <div className="Name" style={{fontFamily: "Edu NSW ACT Cursive", fontWeight: "700"}}> Nicholas Karantakis </div>
-            
-            <div className="InnerPage">
-              
+            <link
+              href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap"
+              rel="stylesheet"
+            ></link>
+            <div
+              className="Name"
+              style={{ fontFamily: "Edu NSW ACT Cursive", fontWeight: "700" }}
+            >
+              {" "}
+              Nicholas Karantakis{" "}
+            </div>
+
+            <div
+              className="InnerPage"
+              style={{ backgroundImage: "url(DSC02204.jpg)" }}
+            >
               <div className="Socials">
                 <div className="IconsGroup">
-                  <a href="https://github.com/Nick2858" target="_blank" className="IconBox">
-                        <img
-                          className="IconLink"
-                          src="./github-mark-white.svg"
-                        ></img>
+                  <a
+                    href="https://github.com/Nick2858"
+                    target="_blank"
+                    className="IconBox"
+                  >
+                    <img
+                      className="IconLink"
+                      src="./github-mark-white.svg"
+                    ></img>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/nicholas-karantakis-78a54a255"
@@ -46,7 +59,11 @@ function LandingPage() {
                   >
                     <img className="IconLink" src="./In-White-128.png"></img>
                   </a>
-                  <a href="mailto:nicholaskarantakis@gmail.com" target="_blank" className="IconBox">
+                  <a
+                    href="mailto:nicholaskarantakis@gmail.com"
+                    target="_blank"
+                    className="IconBox"
+                  >
                     <img className="IconLink" src="./gmail.svg"></img>
                   </a>
                   {/* <div className="ResumeLink">
@@ -56,29 +73,44 @@ function LandingPage() {
                   </div> */}
                 </div>
               </div>
-              
             </div>
-          
           </>
         )}
       </div>
       <div className="ExploreBar">
-        
-        {isVisible &&( 
-        <>
-        <SmartLink to="/#AboutPage">
+        {isVisible && (
           <>
-          <div className="Explore" style={{color:"#212529"}}> Press to Explore </div>
-          <input className="Arrow" type="image" src="./planeArrow.png"></input>
-          
+            <ScrollLink to="AboutPage">
+              <>
+                <div className="Explore" style={{ color: "#212529" }}>
+                  {" "}
+                  Press to Explore{" "}
+                </div>
+                <input
+                  className="Arrow"
+                  type="image"
+                  src="./planeArrow.png"
+                ></input>
+              </>
+            </ScrollLink>
+            <p
+              style={{
+                float: "right",
+                marginTop: "auto",
+                color: "black",
+                zIndex: "10",
+                fontSize: "x-small",
+                paddingInline: "0.5vw",
+                textAlign: "right",
+              }}
+            >
+              Photo of the Black Tusk Pinnacle taken by Me <br /> (Check out my
+              photo gallery)
+            </p>
           </>
-        </SmartLink>
-        <p style={{float: "right", marginTop:"auto", color:"black",  zIndex:"10", fontSize:"x-small", paddingInline:"0.5vw", textAlign:"right"}}>Photo of the Black Tusk Pinnacle taken by Me <br /> (Check out my photo gallery)</p>
-        </>)}
-      </div>  
-      
+        )}
+      </div>
     </>
-  
   );
 }
 

@@ -17,7 +17,6 @@ function App() {
         <ScrollToHash />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </Router>
     </div>

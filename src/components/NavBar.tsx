@@ -1,5 +1,6 @@
 import "../App.css";
 import { SmartLink } from "./SmartLink";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
   return (
@@ -9,7 +10,7 @@ function NavBar() {
         rel="stylesheet"
       ></link>
 
-      <SmartLink to="/#Home">
+      <ScrollLink to="Home">
         <button
           className="NavPages"
           style={{ fontFamily: "Josefin Sans", fontWeight: "500" }}
@@ -17,8 +18,8 @@ function NavBar() {
           {" "}
           Home{" "}
         </button>
-      </SmartLink>
-      <SmartLink to="/#AboutPage">
+      </ScrollLink>
+      <ScrollLink to="AboutPage">
         <button
           className="NavPages"
           style={{ fontFamily: "Josefin Sans", fontWeight: "500" }}
@@ -26,8 +27,8 @@ function NavBar() {
           {" "}
           About
         </button>
-      </SmartLink>
-      <SmartLink to="/#ProjectsPage">
+      </ScrollLink>
+      <ScrollLink to="ProjectsPage">
         <button
           className="NavPages"
           style={{ fontFamily: "Josefin Sans", fontWeight: "500" }}
@@ -35,8 +36,8 @@ function NavBar() {
           {" "}
           Projects
         </button>
-      </SmartLink>
-      <SmartLink to="/gallery">
+      </ScrollLink>
+      <a href="https://www.instagram.com/boringbroll/" target="_blank">
         <button
           className="NavPages"
           style={{ fontFamily: "Josefin Sans", fontWeight: "500" }}
@@ -44,7 +45,7 @@ function NavBar() {
           {" "}
           Gallery
         </button>
-      </SmartLink>
+      </a>
       <a href="./Resume.pdf" target="_blank">
         <button
           className="NavPages"
